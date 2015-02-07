@@ -1,21 +1,16 @@
 # VTES Database
-
 A simple meteor app that allows for searching among all Vampire the Masquerade crypt and library cards.
 
 ## Installation
-
 This project uses meteor along with some other minor packages. They are downloaded automatically.
 
 ## Tests
-
-JUnit tests are meant to be stored in tests/.
+Tests are meant to be stored in tests/.
 
 ## Contributors
-
 Reach me at @erik_gartner.
 
 ## License
-
 VtES Database is released under The MIT License (MIT).
 
 Copyright (c) 2015 Erik Gärtner
