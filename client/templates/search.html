@@ -1,6 +1,5 @@
 <template name="searchBox">
-    {{> esInput index="cards" placeholder="Search..." }}
-
+    {{> esInput index="cards" placeholder="Search..." class="form-control" }}
     <ul>
         {{#esEach index="cards"}}
             <li>{{> card}}</li>
