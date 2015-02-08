@@ -5,8 +5,6 @@ Meteor.startup(function () {
 
   if (Cards.find().count() === 0) {
 
-    // Read cardlist from csv database and load into mongo.
-
     var cards = JSON.parse(Assets.getText('vteslib.json'));
     for(var i = 0; i < cards.length; i++){
       Cards.insert({name: cards[i]["Name"],
