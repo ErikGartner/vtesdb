@@ -1,12 +1,14 @@
 <template name="searchBox">
+
     <div class="row">
       <div class="col-md-12">
         {{> esInput index="cards" placeholder="Search..." class="form-control" }}
       </div>
     </div>
-    <ul>
+
+    <div class="list-group">
         {{#esEach index="cards"}}
-            <li>{{> card}}</li>
+          {{> card}}
         {{/esEach}}
-    </ul>
+    </div>
 </template>

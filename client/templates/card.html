@@ -1,7 +1,14 @@
 <template name="card">
-  <div>
-    <h4>{{name}} <small>{{adv}}</small></h4>
+  <div class="list-group-item">
+    <div class="row">
+      <div class="col-md-9 col-xs-9">
+        <h4>{{name}} <small>{{adv}}</small></h4>
+      </div>
+      <div class="col-md-3 col-xs-3 text-right">
+          <span class="badge bagde-red">Inv: {{inventoryCount}}</span>
+      </div>
+    </div>
     <p><i>{{clan}} {{capacity}} {{disciplines}}</i></p>
-    {{text}}
+    <p>{{text}}</p>
   </div>
 </template>
