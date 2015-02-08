@@ -5,7 +5,7 @@
 
 meteor-platform
 autopublish
-insecure
+#insecure
 iron:router
 accounts-facebook
 accounts-ui
