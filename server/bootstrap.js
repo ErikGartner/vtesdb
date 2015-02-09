@@ -23,26 +23,4 @@ Meteor.startup(function () {
 
   }
 
-  var myid = ""
-
-  //Inventories.remove({});
-  //Load my inv for testing purpose
-  if(Inventories.find().count() == 0) {
-
-    var inventory = JSON.parse(Assets.getText("inv.json"));
-
-    for(var key in inventory["crypt"]){
-      Inventories.insert({name: key,
-                          count: inventory["crypt"][key],
-                          owner: myid});
-    }
-
-    for(var key in inventory["library"]){
-      Inventories.insert({name: key,
-                          count: inventory["library"][key],
-                          owner: myid});
-    }
-
-  }
-
 });
