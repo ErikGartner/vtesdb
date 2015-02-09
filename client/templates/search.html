@@ -11,4 +11,15 @@
           {{> card}}
         {{/esEach}}
     </div>
+
+    <script>
+      $("body").popover({
+        selector: '[rel="popover"]',
+        placement: "bottom",
+        trigger: "click",
+        container: '.list-group',
+        html: true
+      });
+    </script>
+
 </template>

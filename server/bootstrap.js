@@ -1,7 +1,7 @@
 Meteor.startup(function () {
 
   // Empty database.
-  // Cards.remove({});
+  //Cards.remove({});
 
   if (Cards.find().count() === 0) {
 
@@ -25,8 +25,6 @@ Meteor.startup(function () {
     }
 
   }
-
-  var myid = "bjQG4ttDtEAo76y2S";
 
   //Inventories.remove({});
   //Load my inv for testing purpose
