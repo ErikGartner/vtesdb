@@ -1,8 +1,5 @@
 Meteor.startup(function () {
 
-  // Empty database.
-  //Cards.remove({});
-
   if (Cards.find().count() === 0) {
 
     var cards = JSON.parse(Assets.getText("vteslib.json"));
@@ -25,6 +22,8 @@ Meteor.startup(function () {
     }
 
   }
+
+  var myid = ""
 
   //Inventories.remove({});
   //Load my inv for testing purpose
