@@ -23,5 +23,6 @@ Template.searchBox.events({
     Meteor.call("setInv", id, count);
     $('.badge-inv').popover('destroy');
     return false;
+    
   }
 });

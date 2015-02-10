@@ -6,7 +6,15 @@ Meteor.startup(function () {
     for(var i = 0; i < cards.length; i++){
       Cards.insert({name: cards[i]["Name"],
                     text: cards[i]["Card Text"],
-                    type: 'lib'});
+                    requirement: cards[i]["Requirement"],
+                    clan: cards[i]["Clan"],
+                    discipline: cards[i]["Discipline"],
+                    bloodCost: cards[i]["Blood Cost"],
+                    poolCost: cards[i]["Pool Cost"],
+                    set: cards[i]["Set"],
+                    banned: cards[i]["Banned"],
+                    type: cards[i]["Type"],
+                    cardType: 'lib'});
     }
 
     var cards = JSON.parse(Assets.getText("vtescrypt.json"));
@@ -18,7 +26,12 @@ Meteor.startup(function () {
                     capacity: cards[i]["Capacity"],
                     group: cards[i]["Group"],
                     disciplines: cards[i]["Disciplines"],
-                    type: 'vamp'});
+                    title: cards[i]["Title"],
+                    artist: cards[i]["Artist"],
+                    set: cards[i]["Set"],
+                    banned: cards[i]["Banned"],
+                    type: cards[i]["Type"],
+                    cardType: 'crypt'});
     }
 
   }
