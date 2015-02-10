@@ -12,6 +12,9 @@ Template.card.helpers({
       return 0;
     }
   },
+  isCryptCard: function() {
+    return this.cardType == 'crypt';
+  }
 });
 
 Template.searchBox.events({
