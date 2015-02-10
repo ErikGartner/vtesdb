@@ -1,5 +1,11 @@
 Meteor.startup(function () {
 
+  var meta = Cards.findOne({dbmetadata: "version"});
+  if(!meta || meta.version != CARD_DATABASE_VERSION){
+    console.log("Cards database version incorrect; purging.");
+    Cards.remove({});
+  }
+
   if (Cards.find().count() === 0) {
 
     var cards = JSON.parse(Assets.getText("vteslib.json"));
@@ -33,6 +39,8 @@ Meteor.startup(function () {
                     type: cards[i]["Type"],
                     cardType: 'crypt'});
     }
+
+    Cards.insert({dbmetadata: "version", version: CARD_DATABASE_VERSION});
 
   }
 
