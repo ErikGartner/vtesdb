@@ -5,7 +5,7 @@ Cards.initEasySearch("name");
 // Fetches inventory for a card
 Template.card.helpers({
   inventoryCount: function () {
-    card = Inventories.findOne({name: this.name});
+    card = Inventories.findOne({cardId: this._id});
     if(card){
       return card.count;
     }else{
