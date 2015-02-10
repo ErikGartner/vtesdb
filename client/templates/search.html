@@ -14,13 +14,16 @@
 
     <script>
       $(function () {
-        $("body").popover({
-          selector: '[rel="popover"]',
-          placement: "bottom",
-          trigger: "click",
-          container: '.list-group',
-          html: true
+
+        $(".list-group").on("click", ".badge-inv", function() {
+          $(this).popover("show");
+          $(".badge-input").focus();
         });
+
+        $(".list-group").on("focusout", ".badge-input", function() {
+          $(".badge-inv").popover("hide");
+        });
+
       });
     </script>
 
