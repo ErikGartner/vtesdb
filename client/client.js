@@ -75,5 +75,15 @@ Template.searchBox.events({
     Meteor.call('setDeck', deckId, cardId, count);
     return false;
 
+  },
+
+  'click .badge-inv': function(event) {
+    $(event.target).popover('show');
+    $('.badge-input').focus();
+  },
+
+  'focusout .badge-input': function(event) {
+    $('.badge-inv').popover('hide');
   }
+
 });
