@@ -12,19 +12,4 @@
         {{/esEach}}
     </div>
 
-    <script>
-      $(function () {
-
-        $('.list-group').on('click', '.badge-inv', function() {
-          $(this).popover('show');
-          $('.badge-input').focus();
-        });
-
-        $('.list-group').on('focusout', '.badge-input', function() {
-          $('.badge-inv').popover('hide');
-        });
-
-      });
-    </script>
-
 </template>

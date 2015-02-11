@@ -27,5 +27,15 @@ Template.searchBox.events({
     $('.badge-inv').popover('destroy');
     return false;
 
+  },
+
+  'click .badge-inv': function(event) {
+    $(event.target).popover('show');
+    $('.badge-input').focus();
+  },
+
+  'focusout .badge-input': function(event) {
+    $('.badge-inv').popover('hide');
   }
+
 });
