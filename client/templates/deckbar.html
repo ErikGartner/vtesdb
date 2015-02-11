@@ -11,7 +11,8 @@
   {{/each}}
   <a tabindex="0" class="badge badge-deck badge-button" rel="popover" role="button" data-container=".list-group"
      data-placement="bottom" data-html=true data-trigger="manual" data-content="<form class='add-deck'>
-    <input class='badge-input' type='text' name='deckName' placeholder='Deck name' autofocus/>
+    <input class='badge-input' id='add-deck-input' type='text' name='deckName' placeholder='Deck name' autofocus/>
+    <div id='add-deck-results'></div>
     <input type='hidden' name='cardId' value='{{cardId}}'/>
   </form>">
     +

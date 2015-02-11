@@ -22,9 +22,6 @@ Template.card.helpers({
 });
 
 Template.deckBar.helpers({
-  allDecks: function() {
-    return Decks.find({});
-  },
 
   inDecks: function() {
     return DeckCards.find({cardId: this.cardId});
@@ -38,6 +35,19 @@ Template.deckBar.helpers({
     }else{
       return '';
     }
+  }
+
+});
+
+Template.searchBox.helpers({
+
+  allDecks: function() {
+    return Decks.find({});
+  },
+
+  searchDecks: function(text) {
+    console.log('searched for ' + text);
+    return Decks.find({deckName: text});
   }
 
 });
@@ -77,13 +87,25 @@ Template.searchBox.events({
 
   },
 
-  'click .badge-inv': function(event) {
+  'click .badge-button': function(event) {
     $(event.target).popover('show');
     $('.badge-input').focus();
   },
 
   'focusout .badge-input': function(event) {
-    $('.badge-inv').popover('hide');
+    $('.badge-button').popover('destroy');
+  },
+
+  'input #add-deck-input': function(event) {
+
+    $('#add-deck-results').empty();
+    var val = event.target.value;
+    var decks = Decks.find({$text:{deckName: val}});
+    decks.forEach(function(element) {
+      console.log(element);
+      $('#add-deck-results').append(element);
+    });
+
   }
 
 });
