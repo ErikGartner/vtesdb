@@ -7,3 +7,11 @@ Meteor.publish('cards', function () {
 Meteor.publish('inventories', function () {
   return Inventories.find({owner: this.userId});
 });
+
+Meteor.publish('decks', function () {
+  return Decks.find({owner: this.userId});
+});
+
+Meteor.publish('deckCards', function () {
+  return DeckCards.find({owner: this.userId});
+});
