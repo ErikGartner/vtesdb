@@ -21,7 +21,7 @@ Template.searchBox.events({
   'submit .set-inv': function (event) {
 
     var id = event.target.id.value;
-    var count = event.target.text.value;
+    var count = parseInt(event.target.text.value);
 
     Meteor.call('setInv', id, count);
     $('.badge-inv').popover('destroy');
