@@ -1,4 +1,4 @@
-# VTES Database
+VTES Database
 =========
 A simple meteor app that allows for searching among all Vampire the Masquerade crypt and library cards.
 
