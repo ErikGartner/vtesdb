@@ -9,7 +9,6 @@ meteor-platform
 iron:router
 accounts-facebook
 accounts-ui
-accounts-password
 matteodem:easy-search
 jquery
 twbs:bootstrap
