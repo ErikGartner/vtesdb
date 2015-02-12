@@ -96,14 +96,29 @@ Template.searchBox.events({
     $('.badge-button').popover('destroy');
   },
 
+  'click .badge-item': function(event) {
+
+    var cardId = $('[name="cardId"]').val();
+    var deckId = event.target.attributes['data-deckid'].value;
+
+    $('.badge-button').popover('destroy');
+    Meteor.call('setDeck', deckId, cardId, 1);
+    return false;
+
+  },
+
   'input #add-deck-input': function(event) {
 
     $('#add-deck-results').empty();
     var val = event.target.value;
-    var decks = Decks.find({$text:{deckName: val}});
+    if(val.length===0){
+      return;
+    }
+    var decks = Decks.find({deckName: {$regex : ".*" + val + ".*"}}, {limit:5});
+
     decks.forEach(function(element) {
-      console.log(element);
-      $('#add-deck-results').append(element);
+      var html = '<a class="badge badge-deck badge-item" data-deckid="' + element._id +'">' + element.deckName + '</a> ';
+      $('#add-deck-results').append(html);
     });
 
   }

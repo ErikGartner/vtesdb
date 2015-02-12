@@ -12,3 +12,8 @@
   background-color:#337ab7;
   margin-bottom: 5px;
 }
+
+#add-deck-results {
+  max-width: 152px;
+  padding-top: 6px;
+}
