@@ -5,8 +5,15 @@
 
 .badge-inv {
   background-color:#5cb85c;
+  margin-top: 10px;
 }
 
-.badge{
-  margin-top: 10px;
+.badge-deck{
+  background-color:#337ab7;
+  margin-bottom: 5px;
+}
+
+#add-deck-results {
+  max-width: 152px;
+  padding-top: 6px;
 }
