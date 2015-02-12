@@ -114,8 +114,8 @@ Template.searchBox.events({
     if(val.length===0){
       return;
     }
-    var decks = Decks.find({deckName: {$regex : ".*" + val + ".*"}}, {limit:5});
 
+    var decks = Decks.find({deckName: {$regex : ".*" + val + ".*"}}, {limit:5});
     decks.forEach(function(element) {
       var html = '<a class="badge badge-deck badge-item" data-deckid="' + element._id +'">' + element.deckName + '</a> ';
       $('#add-deck-results').append(html);
