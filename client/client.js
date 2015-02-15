@@ -96,10 +96,6 @@ Template.searchBox.events({
     $('.badge-button').popover('destroy');
   },
 
-  'click .card-name': function(event) {
-    $(event.target).popover('show');
-  },
-
   'click .badge-item': function(event) {
 
     var cardId = $('[name="cardId"]').val();
@@ -128,3 +124,13 @@ Template.searchBox.events({
   }
 
 });
+
+
+Template.card.rendered = function () {
+
+  // Activate popover for card images
+  $(function () {
+    $('.card-name').popover()
+  })
+
+};
