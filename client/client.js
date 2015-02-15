@@ -96,6 +96,10 @@ Template.searchBox.events({
     $('.badge-button').popover('destroy');
   },
 
+  'click .card-name': function(event) {
+    $(event.target).popover('show');
+  },
+
   'click .badge-item': function(event) {
 
     var cardId = $('[name="cardId"]').val();
