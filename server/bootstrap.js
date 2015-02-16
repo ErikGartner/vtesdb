@@ -1,5 +1,11 @@
 Meteor.startup(function () {
 
+  // Update git version
+  if (Version.find().count() > 0){
+    Version.remove({});
+  }
+  Version.insert(JSON.parse(Assets.getText('version.json')));
+
   var meta = Cards.findOne({dbmetadata: 'version'});
   if(!meta || meta.version != CARD_DATABASE_VERSION){
     console.log('Cards database version incorrect; purging.');
@@ -45,11 +51,5 @@ Meteor.startup(function () {
     Cards.insert({dbmetadata: 'version', version: CARD_DATABASE_VERSION});
 
   }
-
-  // Update git version
-  if (Version.find().count() > 0){
-       Version.remove({});
-   }
-   Version.insert(JSON.parse(Assets.getText("version.json")));
 
 });

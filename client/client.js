@@ -2,6 +2,7 @@ Meteor.subscribe('cards');
 Meteor.subscribe('inventories');
 Meteor.subscribe('decks');
 Meteor.subscribe('deckCards');
+Meteor.subscribe('version');
 Cards.initEasySearch('name');
 
 // Fetches inventory for a card

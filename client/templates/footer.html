@@ -1,5 +1,12 @@
 <template name="footer">
   <div class="footer">
-    <p>Developed by @erik_gartner. This is running version </p>
+    <div class="row">
+      <div class="hcol-md-12 col-xs-12 text-center">
+        {{#with version}}
+          <h6>Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
+          <br><small>{{branch}} {{commit}}</small></h6>
+        {{/with}}
+      </div>
+    </div>
   </div>
 </template>
