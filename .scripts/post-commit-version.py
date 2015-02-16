@@ -21,7 +21,7 @@ output = {'commit': commit.decode('utf-8').strip(),
           'timestamp': time.decode('utf-8').strip()}
 
 json_string = json.dumps(output, indent=4, separators=(',', ': '))
-with open('../private/version.json', 'w') as text_file:
+with open('private/version.json', 'w') as text_file:
     text_file.write(json_string)
 
 exit(0)
