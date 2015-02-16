@@ -1,4 +1,8 @@
 /* CSS declarations go here */
+body{
+  padding-bottom: 55px;
+}
+
 .loginbox{
   margin-top: 15px;
 }
