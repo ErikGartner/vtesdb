@@ -16,9 +16,9 @@ process = Popen(['git','log', '-1', '--date=short', '--pretty=format:%cd'], stdo
 (time, err) = process.communicate()
 exit_code = process.wait()
 
-output = {'commit': commit.decode('utf-8').trim(),
-          'branch': branch.decode('utf-8').trim(),
-          'timestamp': time.decode('utf-8').trim()}
+output = {'commit': commit.decode('utf-8').strip(),
+          'branch': branch.decode('utf-8').strip(),
+          'timestamp': time.decode('utf-8').strip()}
 
 json_string = json.dumps(output, indent=4, separators=(',', ': '))
 with open('../private/version.json', 'w') as text_file:
