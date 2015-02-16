@@ -39,6 +39,12 @@ Template.deckBar.helpers({
 
 });
 
+Template.footer.helpers({
+  version:function(){
+    return Version.findOne();
+  }
+})
+
 Template.searchBox.helpers({
 
   allDecks: function() {

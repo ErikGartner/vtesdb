@@ -15,3 +15,7 @@ Meteor.publish('decks', function () {
 Meteor.publish('deckCards', function () {
   return DeckCards.find({owner: this.userId});
 });
+
+Meteor.publish('version', function () {
+  return Version.find();
+});
