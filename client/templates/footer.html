@@ -2,11 +2,12 @@
   <div id="pusher"></div>
   <div class="row">
     <div id="footer" class="col-md-12 col-xs-12 text-center">
-      {{#with version}}
-        <h6>Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
-        <br>
-        <small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small></h6>
-      {{/with}}
+      <span class="h6">
+        Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
+        {{#with version}}
+          <br><small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small>
+        {{/with}}
+      </span>
     </div>
   </div>
 </template>
