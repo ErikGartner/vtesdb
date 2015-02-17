@@ -1,14 +1,12 @@
 <template name="footer">
   <div id="pusher"></div>
-  <div id="footer" class="">
-    <div class="row">
-      <div class="col-md-12 col-xs-12 text-center">
-        {{#with version}}
-          <h6>Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
-          <br>
-          <small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small></h6>
-        {{/with}}
-      </div>
+  <div class="row">
+    <div id="footer" class="col-md-12 col-xs-12 text-center">
+      {{#with version}}
+        <h6>Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
+        <br>
+        <small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small></h6>
+      {{/with}}
     </div>
   </div>
 </template>
