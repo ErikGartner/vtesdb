@@ -1,9 +1,9 @@
-Meteor.subscribe('cards');
-Meteor.subscribe('inventories');
-Meteor.subscribe('decks');
-Meteor.subscribe('deckCards');
+// Order in which databases are sent.
 Meteor.subscribe('version');
-Cards.initEasySearch('name');
+Meteor.subscribe('decks');
+Meteor.subscribe('inventories');
+Meteor.subscribe('deckCards');
+
 
 // Fetches inventory for a card
 Template.card.helpers({
