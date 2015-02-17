@@ -1,10 +1,14 @@
 Meteor.startup(function () {
 
-  // Update git version
-  if (Version.find().count() > 0){
+  Assets.getText('version.json', function(err, data){
+
     Version.remove({});
-  }
-  Version.insert(JSON.parse(Assets.getText('version.json')));
+    if(err == null) {
+      Version.insert(JSON.parse(data));
+    } else {
+      Version.insert({branch:'unknown branch', commit:'', timestamp:''});
+    }
+  });
 
   var meta = Cards.findOne({dbmetadata: 'version'});
   if(!meta || meta.version != CARD_DATABASE_VERSION){
