@@ -59,7 +59,7 @@ Template.cards.helpers({
 
 });
 
-Template.cards.events({
+Template.card.events({
   'submit .set-inv': function (event) {
 
     var id = event.target.id.value;
