@@ -116,18 +116,24 @@ Template.cards.events({
 
   'input #add-deck-input': function(event) {
 
-    $('#add-deck-results').empty();
-    var val = event.target.value;
-    if(val.length===0){
-      return;
+    if(typeof(deckThread) !== 'undefined'){
+      Meteor.clearTimeout(deckThread);
     }
 
-    var decks = Decks.find({deckName: {$regex : ".*" + val.toLowerCase() + ".*"}}, {limit:5});
-    decks.forEach(function(element) {
-      var html = '<a class="badge badge-deck badge-item" data-deckid="' + element._id +'">' + element.deckName + '</a> ';
-      $('#add-deck-results').append(html);
-    });
+    deckThread = Meteor.setTimeout(function() {
 
+      $('#add-deck-results').empty();
+      var val = event.target.value;
+      if(val.length===0){
+        return;
+      }
+
+      var decks = Decks.find({deckName: {$regex : ".*" + val.toLowerCase() + ".*"}}, {limit:5});
+      decks.forEach(function(element) {
+        var html = '<a class="badge badge-deck badge-item" data-deckid="' + element._id +'">' + element.deckName + '</a> ';
+        $('#add-deck-results').append(html);
+      });
+    }, 500);
   }
 
 });
