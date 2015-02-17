@@ -46,7 +46,7 @@ Template.footer.helpers({
   }
 })
 
-Template.searchBox.helpers({
+Template.cards.helpers({
 
   allDecks: function() {
     return Decks.find({});
@@ -59,7 +59,7 @@ Template.searchBox.helpers({
 
 });
 
-Template.searchBox.events({
+Template.cards.events({
   'submit .set-inv': function (event) {
 
     var id = event.target.id.value;
