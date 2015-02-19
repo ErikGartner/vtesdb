@@ -59,7 +59,8 @@ Template.cards.helpers({
 
 });
 
-Template.card.events({
+Template.cards.events({
+
   'submit .set-inv': function (event) {
 
     var id = event.target.id.value;
@@ -94,26 +95,6 @@ Template.card.events({
 
   },
 
-  'click .badge-button': function(event) {
-    $(event.target).popover('show');
-    $('.badge-input').focus();
-  },
-
-  'focusout .badge-input': function(event) {
-    $('.badge-button').popover('destroy');
-  },
-
-  'click .badge-item': function(event) {
-
-    var cardId = $('[name="cardId"]').val();
-    var deckId = event.target.attributes['data-deckid'].value;
-
-    $('.badge-button').popover('destroy');
-    Meteor.call('setDeck', deckId, cardId, 1);
-    return false;
-
-  },
-
   'input #add-deck-input': function(event) {
 
     if(typeof(deckThread) !== 'undefined'){
@@ -134,6 +115,30 @@ Template.card.events({
         $('#add-deck-results').append(html);
       });
     }, 500);
+  },
+
+  'focusout .badge-input': function(event) {
+    $('.badge-button').popover('destroy');
+  },
+
+});
+
+Template.card.events({
+
+  'click .badge-button': function(event) {
+    $(event.target).popover('show');
+    $('.badge-input').focus();
+  },
+
+  'click .badge-item': function(event) {
+
+    var cardId = $('[name="cardId"]').val();
+    var deckId = event.target.attributes['data-deckid'].value;
+
+    $('.badge-button').popover('destroy');
+    Meteor.call('setDeck', deckId, cardId, 1);
+    return false;
+
   }
 
 });
