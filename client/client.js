@@ -121,15 +121,6 @@ Template.cards.events({
     $('.badge-button').popover('destroy');
   },
 
-});
-
-Template.card.events({
-
-  'click .badge-button': function(event) {
-    $(event.target).popover('show');
-    $('.badge-input').focus();
-  },
-
   'click .badge-item': function(event) {
 
     var cardId = $('[name="cardId"]').val();
@@ -139,6 +130,15 @@ Template.card.events({
     Meteor.call('setDeck', deckId, cardId, 1);
     return false;
 
+  }
+
+});
+
+Template.card.events({
+
+  'click .badge-button': function(event) {
+    $(event.target).popover('show');
+    $('.badge-input').focus();
   }
 
 });
