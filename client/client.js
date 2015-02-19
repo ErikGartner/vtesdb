@@ -78,7 +78,8 @@ Template.cards.events({
     var cardId = event.target.cardId.value;
 
     $('.badge-button').popover('destroy');
-    Meteor.call('addDeck', deckName, cardId);
+    Meteor.call('addDeck', deckName);
+    Meteor.call('setDeckCard', deckId, cardId, count);
     return false;
 
   },
@@ -90,7 +91,7 @@ Template.cards.events({
     var count = parseInt(event.target.count.value);
 
     $('.badge-button').popover('destroy');
-    Meteor.call('setDeck', deckId, cardId, count);
+    Meteor.call('setDeckCard', deckId, cardId, count);
     return false;
 
   },
@@ -127,7 +128,7 @@ Template.cards.events({
     var deckId = event.target.attributes['data-deckid'].value;
 
     $('.badge-button').popover('destroy');
-    Meteor.call('setDeck', deckId, cardId, 1);
+    Meteor.call('setDeckCard', deckId, cardId, 1);
     return false;
 
   }
