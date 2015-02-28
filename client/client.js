@@ -78,8 +78,11 @@ Template.cards.events({
     var cardId = event.target.cardId.value;
 
     $('.badge-button').popover('destroy');
-    Meteor.call('addDeck', deckName);
-    Meteor.call('setDeckCard', deckId, cardId, count);
+    Meteor.call('addDeck', deckName, function (err, res){
+      if(!err){
+        Meteor.call('setDeckCard', res, cardId, 1);
+      }
+    });
     return false;
 
   },
@@ -149,7 +152,7 @@ Template.card.rendered = function () {
 
   // Activate popover for card images
   $(function () {
-    $('.card-name').popover()
-  })
+    $('.card-name').popover();
+  });
 
 };
