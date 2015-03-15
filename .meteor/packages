@@ -11,6 +11,7 @@ accounts-facebook
 accounts-ui
 matteodem:easy-search
 jquery
-twbs:bootstrap
+twbs:bootstrap-noglyph
 audit-argument-checks
 check
+appcache

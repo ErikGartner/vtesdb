@@ -3,6 +3,7 @@ accounts-facebook@1.0.3
 accounts-oauth@1.1.3
 accounts-ui@1.1.4
 accounts-ui-unstyled@1.1.6
+appcache@1.0.3
 application-configuration@1.0.4
 audit-argument-checks@1.0.2
 autoupdate@1.1.5
@@ -63,7 +64,7 @@ spacebars@1.0.5
 spacebars-compiler@1.0.4
 templating@1.0.11
 tracker@1.0.5
-twbs:bootstrap@3.3.1_2
+twbs:bootstrap-noglyph@3.3.2
 ui@1.0.5
 underscore@1.0.2
 url@1.0.3
