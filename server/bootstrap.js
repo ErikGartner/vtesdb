@@ -1,5 +1,3 @@
-Meteor.AppCache.config({onlineOnly: ['/cards/']});
-
 Meteor.startup(function () {
 
   Assets.getText('version.json', function(err, data){
