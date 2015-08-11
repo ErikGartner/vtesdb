@@ -1,23 +1,15 @@
 <template name="cards">
 
-  <div class="container">
-
-    {{> navbar}}
-
-    <div class="row">
-      <div class="col-md-12">
-        {{> esInput index="cards" placeholder="Search..." class="form-control" }}
-      </div>
+  <div class="row">
+    <div class="col-md-12">
+      {{> esInput index="cards" placeholder="Search..." class="form-control" }}
     </div>
+  </div>
 
-    <div class="list-group">
-        {{#esEach index="cards"}}
-          {{> card}}
-        {{/esEach}}
-    </div>
-
-    {{> footer}}
-
+  <div class="list-group">
+      {{#esEach index="cards"}}
+        {{> card}}
+      {{/esEach}}
   </div>
 
 </template>

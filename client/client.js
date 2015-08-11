@@ -40,7 +40,7 @@ Template.deckBar.helpers({
 
 });
 
-Template.footer.helpers({
+Template._appFooter.helpers({
   version:function(){
     return Version.findOne();
   }
@@ -146,7 +146,6 @@ Template.card.events({
   }
 
 });
-
 
 Template.card.rendered = function () {
 
