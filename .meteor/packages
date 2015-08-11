@@ -4,14 +4,14 @@
 # but you can also edit it by hand.
 
 meteor-platform
+coffeescript
 iron:router
+accounts-password
 zimme:active-route
-accounts-facebook
-accounts-ui
 matteodem:easy-search
-jquery
-twbs:bootstrap-noglyph
 audit-argument-checks
 check
-coffeescript
-useraccounts:semantic-ui
+
+jquery
+semantic:ui
+iandouglas:accounts-ui-semantic-ui
