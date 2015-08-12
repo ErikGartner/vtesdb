@@ -6,7 +6,8 @@
 meteor-platform
 coffeescript
 iron:router
-accounts-facebook
+#accounts-facebook
+accounts-password
 zimme:active-route
 matteodem:easy-search
 audit-argument-checks

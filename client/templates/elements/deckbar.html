@@ -1,12 +1,9 @@
 <template name="deckBar">
   {{#each inDecks}}
-    <a tabindex="0" class="badge badge-deck badge-button" rel="popover" role="button" data-container=".list-group"
-       data-placement="bottom" data-title='' data-html=true data-trigger="manual" data-content="<form class='set-deck'>
-      <input class='badge-input' type='text' name='count' placeholder='{{deckCount}}' autofocus/>
-      <input type='hidden' name='cardId' value='{{cardId}}'/>
-      <input type='hidden' name='deckId' value='{{deckId}}'/>
-    </form>">
-      {{getDeckName}}: {{deckCount}}
+    <a class="ui blue label">
+       <i class="delete icon"></i>
+      {{getDeckName}}
+      <div class="detail">{{deckCount}}</div>
     </a>
   {{/each}}
   <a tabindex="0" class="badge badge-deck badge-button" rel="popover" role="button" data-container=".list-group"

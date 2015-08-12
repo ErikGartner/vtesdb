@@ -1,11 +1,26 @@
 <template name="card">
   <div class="column">
+
     <div class="fluid ui special card">
 
-      <div class="blurring dimmable image">
+      <div class="ui blurring dimmable rounded image card-image">
             <div class="ui dimmer">
-              <div class="content">
-                <div class="center card-text">
+              <div class="content card-text">
+                <div class="center">
+                  <p>
+                  <h3>{{name}}<small>{{adv}}</small></h3>
+                  {{#if isCryptCard}}
+                    {{clan}} {{capacity}} {{disciplines}}
+                  {{else}}
+                      {{type}} {{clan}} {{requirement}}
+                      {{#if poolCost}}
+                        Pool: {{poolCost}}
+                      {{/if}}
+                      {{#if bloodCost}}
+                        Blood: {{bloodCost}}
+                      {{/if}}
+                    {{/if}}
+                  </p>
                   <p>{{text}}</p>
                 </div>
               </div>
@@ -14,32 +29,28 @@
       </div>
 
       <div class="content">
-        <div class="header">{{name}}<small>{{adv}}</small></div>
-        <div class="meta">
-          {{#if isCryptCard}}
-            {{clan}} {{capacity}} {{disciplines}}
-          {{else}}
-              {{type}} {{clan}} {{requirement}}
-              {{#if poolCost}}
-                Pool: {{poolCost}}
-              {{/if}}
-              {{#if bloodCost}}
-                Blood: {{bloodCost}}
-              {{/if}}
-            {{/if}}
-        </div>
+        <p class="header">{{name}}</p>
         <div class="description">
+          <a class="inventory-button right floated">
+            <i class="heart icon"></i>
+            {{inventoryCount}}
+          </a>
 
+          <div class="ui flowing popup">
+            <form class='set-inv'>
+              <div class="ui input">
+                <input class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
+              </div>
+              <input type='hidden' name='id' value='{{cardId}}'/>
+            </form>
+          </div>
+
+          {{#if isCryptCard}}
+           Crypt
+          {{else}}
+           Library
+          {{/if}}
         </div>
-      </div>
-      <div class="extra content">
-        <span class="right floated">
-          {{> deckBar}}
-        </span>
-        <span>
-          <i class="plus icon"></i>
-          {{inventoryCount}}
-        </span>
       </div>
     </div>
   </div>
