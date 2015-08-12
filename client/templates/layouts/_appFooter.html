@@ -1,14 +1,12 @@
 <template name="_appFooter">
-  
+
   <div id="pusher"></div>
-  <div class="row">
-    <div id="footer" class="col-md-12 col-xs-12 text-center">
-      <p class="h6">Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
-        {{#with version}}
-          <br><small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small>
-        {{/with}}
-      </p>
-    </div>
+  <div id="footer" class="ui one column grid">
+    <p class="h6">Developed by <a target=_blank href="https://twitter.com/intent/tweet?screen_name=Erik_Gartner">@Erik_Gartner</a>
+      {{#with version}}
+        <br><small><a target=_blank href="https://bitbucket.org/smoiz/vtesdb/">{{branch}} {{commit}}</a></small>
+      {{/with}}
+    </p>
   </div>
 
 </template>

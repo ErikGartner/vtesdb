@@ -1,16 +1,10 @@
 <template name="appLayout">
 
-	<div class="ui container">
-
+	<div class="ui container" id="context">
 		{{> _appHeader}}
 
-		<div class="context">
+		{{> yield }}
 
-			{{> yield }}
-
-		</div>
-
-		{{> _appFooter}}
 
 	</div>
 
