@@ -6,12 +6,13 @@
 meteor-platform
 coffeescript
 iron:router
-accounts-password
+accounts-facebook
 zimme:active-route
 matteodem:easy-search
 audit-argument-checks
 check
 
 jquery
+flemay:less-autoprefixer
 semantic:ui
 iandouglas:accounts-ui-semantic-ui
