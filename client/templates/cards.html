@@ -1,19 +1,16 @@
 <template name="cards">
 
-  <div class="ui four column stackable grid">
-    <div class="row">
-      <div class="sixteen wide column">
-        <div class="fluid ui big icon input">
-          {{> esInput index="cards" placeholder="Search..." class="form-control" }}
-          <i class="search icon"></i>
-        </div>
-      </div>
-    </div>
+  <div class="fluid ui big icon input">
+    {{> esInput index="cards" placeholder="Search..." class="form-control" }}
+    <i class="search icon"></i>
+  </div>
 
+  <p></p>
+
+  <div class="ui four column doubling stackable grid">
     {{#esEach index="cards"}}
       {{> card}}
     {{/esEach}}
-
   </div>
 
 </template>
