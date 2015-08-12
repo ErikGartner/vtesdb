@@ -56,10 +56,3 @@ Template.card.events 'click .badge-button': (event) ->
   $(event.target).popover 'show'
   $('.badge-input').focus()
   return
-
-Template.card.rendered = ->
-  # Activate popover for card images
-  $ ->
-    $('.card-name').popover()
-    return
-  return

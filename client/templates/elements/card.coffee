@@ -8,3 +8,6 @@ Template.card.helpers
 
   isCryptCard: ->
     return @cardType == 'crypt'
+
+Template.card.rendered = ->
+  $('.special.card .image').dimmer(on: 'hover')

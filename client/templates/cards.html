@@ -1,15 +1,19 @@
 <template name="cards">
 
-  <div class="row">
-    <div class="col-md-12">
-      {{> esInput index="cards" placeholder="Search..." class="form-control" }}
+  <div class="ui four column grid">
+    <div class="row">
+      <div class="sixteen wide column">
+        <div class="fluid ui big icon input">
+          {{> esInput index="cards" placeholder="Search..." class="form-control" }}
+          <i class="search icon"></i>
+        </div>
+      </div>
     </div>
-  </div>
 
-  <div class="list-group">
-      {{#esEach index="cards"}}
-        {{> card}}
-      {{/esEach}}
+    {{#esEach index="cards"}}
+      {{> card}}
+    {{/esEach}}
+
   </div>
 
 </template>
