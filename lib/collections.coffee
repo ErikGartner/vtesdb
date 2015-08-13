@@ -5,5 +5,5 @@
 @Version = new (Meteor.Collection)('version')
 
 Cards.initEasySearch 'name',
-  'limit': 24
+  'limit': 12
   'use': 'mongo-db'
