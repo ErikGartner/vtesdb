@@ -1,5 +1,3 @@
-Router.plugin 'ensureSignedIn', only: []
-
 Router.route '/',
-  name: 'cards'
+  name: 'home'
   controller: 'CardsController'

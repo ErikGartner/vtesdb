@@ -1,11 +1,4 @@
 Template.cards.events
-  'submit .set-inv': (event) ->
-    id = event.target.id.value
-    count = parseInt(event.target.text.value)
-    Meteor.call 'setInv', id, count
-    $('.badge-button').popover 'destroy'
-    return false
-
   'submit .add-deck': (event) ->
     deckName = event.target.deckName.value
     cardId = event.target.cardId.value
@@ -51,15 +44,3 @@ Template.cards.events
     $('.badge-button').popover 'destroy'
     Meteor.call 'setDeckCard', deckId, cardId, 1
     return false
-
-Template.card.events 'click .badge-button': (event) ->
-  $(event.target).popover 'show'
-  $('.badge-input').focus()
-  return
-
-Template.card.rendered = ->
-  # Activate popover for card images
-  $ ->
-    $('.card-name').popover()
-    return
-  return

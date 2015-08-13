@@ -1,50 +1,56 @@
 <template name="card">
-  <div class="list-group-item">
-    <div class="row">
+  <div class="column">
 
-      <div class="col-md-9 col-xs-9">
-        <h4><a tabindex="0" class='card-name' rel="popover" role="button"
-           data-placement="bottom" data-html=true data-trigger="focus" data-title='' data-content="<img class='card-img' src='/cards/{{cardId}}.jpg'>">{{name}}</a> <small>{{adv}}</small></h4>
+    <div class="fluid ui special card">
+
+      <div class="ui blurring dimmable rounded image card-image">
+            <div class="ui dimmer">
+              <div class="content card-text">
+                <div class="center">
+                  <p>
+                  <h3>{{name}}<small>{{adv}}</small></h3>
+                  {{#if isCryptCard}}
+                    {{clan}} {{capacity}} {{disciplines}}
+                  {{else}}
+                      {{type}} {{clan}} {{requirement}}
+                      {{#if poolCost}}
+                        Pool: {{poolCost}}
+                      {{/if}}
+                      {{#if bloodCost}}
+                        Blood: {{bloodCost}}
+                      {{/if}}
+                    {{/if}}
+                  </p>
+                  <p>{{text}}</p>
+                </div>
+              </div>
+            </div>
+            <img src="/cards/{{cardId}}.jpg">
       </div>
 
-      <div class="col-md-3 col-xs-3 text-right">
-        <a tabindex="0" class="badge badge-inv badge-button" rel="popover" role="button" data-container=".list-group"
-           data-placement="bottom" data-html=true data-title='' data-trigger="manual" data-content="<form class='set-inv'>
-          <input class='badge-input' type='text' name='text' placeholder='{{inventoryCount}}' autofocus/>
-          <input type='hidden' name='id' value='{{cardId}}'/>
-        </form>">
-          Inv: {{inventoryCount}}
-        </a>
-      </div>
+      <div class="content">
+        <p class="header">{{name}}</p>
+        <div class="description">
+          <a class="inventory-button right floated">
+            <i class="heart icon"></i>
+            {{inventoryCount}}
+          </a>
 
-    </div>
-    <div class="row">
-      <div class="col-md-12 col-xs-12">
-        {{>deckBar}}
-      </div>
-    </div>
+          <div class="ui flowing popup">
+            <form class='set-inv'>
+              <div class="ui input">
+                <input class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
+              </div>
+              <input type='hidden' name='id' value='{{cardId}}'/>
+            </form>
+          </div>
 
-    <div class="row">
-      <div class="col-md-12 col-xs-12">
-        {{#if isCryptCard}}
-          <i>{{clan}} {{capacity}} {{disciplines}}</i>
-        {{else}}
-          <i>
-            {{type}} {{clan}} {{requirement}}
-            {{#if poolCost}}
-              Pool: {{poolCost}}
-            {{/if}}
-            {{#if bloodCost}}
-              Blood: {{bloodCost}}
-            {{/if}}
-          </i>
-        {{/if}}
-      </div>
-    </div>
-
-    <div class="row">
-      <div class="col-md-12 col-xs-12">
-        {{text}}
+          {{#if isCryptCard}}
+           Crypt
+          {{else}}
+           Library
+          {{/if}}
+        </div>
       </div>
     </div>
   </div>
