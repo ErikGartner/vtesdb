@@ -10,13 +10,13 @@ Meteor.methods
   setInv: (id, count) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check count, Match.Integer
     check id, String
     if count < 0
       return
     if !Meteor.call('validCard', id)
-      throw new (Meteor.Error)('invalid card id')
+      throw new Meteor.Error('invalid card id')
     if count > 0
       Inventories.upsert {
         cardId: id
@@ -32,7 +32,7 @@ Meteor.methods
   addDeck: (deckName) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check deckName, String
     if Decks.findOne('deckName': deckName.toLowerCase())
       throw new (Meteor.Error)('deck-exists')
@@ -44,14 +44,14 @@ Meteor.methods
   setDeckCard: (deckId, cardId, count) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check cardId, String
     check count, Match.Integer
     check deckId, String
     if count < 0
       return
     if !Meteor.call('validCard', cardId)
-      throw new (Meteor.Error)('invalid card id')
+      throw new Meteor.Error('invalid card id')
     if count > 0
       DeckCards.upsert {
         'deckId': deckId
@@ -68,3 +68,18 @@ Meteor.methods
       if DeckCards.find('deckId': deckId).count() == 0
         Decks.remove _id: deckId
     return
+
+  idFromName: (name, adv) ->
+    uid = Meteor.userId()
+    if !uid
+      throw new Meteor.Error('not-authorized')
+    check name, String
+    check adv, String
+    if adv != ''
+      card = Cards.findOne('name': name, 'adv': adv)
+    else
+      card = Cards.findOne('name': name)
+    if card?
+      return card['cardId']
+    else
+      return -1

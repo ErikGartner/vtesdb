@@ -2,6 +2,8 @@
 
 @CardsController = AppController.extend(
   template: 'cards'
-  onAfterAction: ->
-    Meta.setTitle ''
+)
+
+@InventoryController = AppController.extend(
+  template: 'inventory'
 )
