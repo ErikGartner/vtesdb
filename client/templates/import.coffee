@@ -1,6 +1,6 @@
 @ArdbInventory = new Mongo.Collection(null)
 
-Template.inventory.helpers
+Template.import.helpers
   libraryCount: ->
     return ArdbInventory.find(type: 'lib').count()
 
@@ -19,10 +19,10 @@ Template.inventory.helpers
   ardbCards: ->
     return ArdbInventory.find()
 
-Template.inventory.onDestroyed ->
+Template.import.onDestroyed ->
   ArdbInventory.remove({})
 
-Template.inventory.events
+Template.import.events
   'change #ardb-load': (event) ->
     file = event.target.files[0]
     reader = new FileReader()

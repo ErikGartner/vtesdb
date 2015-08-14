@@ -4,6 +4,6 @@
   template: 'cards'
 )
 
-@InventoryController = AppController.extend(
-  template: 'inventory'
+@ImportController = AppController.extend(
+  template: 'import'
 )
