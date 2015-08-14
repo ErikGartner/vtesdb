@@ -69,17 +69,31 @@ Meteor.methods
         Decks.remove _id: deckId
     return
 
-  idFromName: (name, adv) ->
+  importCardByName: (name, adv, count) ->
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
     check name, String
     check adv, String
+    check count, Match.Integer
+    if count < 0
+      throw new Meteor.Error('negative-count')
+
     if adv != ''
-      card = Cards.findOne('name': name, 'adv': adv)
+      selector = 'name': name, 'adv': adv
     else
-      card = Cards.findOne('name': name)
-    if card?
-      return card['cardId']
-    else
+      selector = 'name': name
+
+    card = Cards.findOne(selector)
+    if not card?
       return -1
+    id = card.cardId
+
+    Inventories.upsert {
+      cardId: id
+      owner: uid
+    },
+      $set: {cardId: id, owner: uid}
+      $inc: {count: count}
+      $setOnInsert: {count: count}
+    return id

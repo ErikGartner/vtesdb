@@ -1,6 +1,5 @@
 <template name="inventory">
 
-
     <div class="container" id="card-table">
 
     <div class="ui three statistics">
@@ -22,10 +21,10 @@
       </div>
       <div class="statistic">
         <div class="value">
-          {{unmatchedCount}}
+          {{importedCount}}
         </div>
         <div class="label">
-          Unmatched
+          Imported
         </div>
       </div>
     </div>
@@ -37,23 +36,13 @@
         <div class="item">
           <label for="ardb-load" class="ui blue icon button">
               <i class="file icon"></i>
-              Import from ARDB</label>
+              Import ARDB inventory</label>
           <input type="file" id="ardb-load" style="display:none">
-        </div>
-        <div class="item">
-          <div id="ardb-import" class="ui green icon button">
-              <i class="file icon"></i>
-              Merge with ARDB</div>
-        </div>
-        <div class="item">
-          <div id="reset-inv" class="ui red icon button">
-              <i class="file icon"></i>
-              Reset Inventory</div>
         </div>
       </div>
     </div>
 
-    <table class="ui sortable padded table">
+    <table class="ui padded table">
       <thead>
         <tr>
           <th>Name</th>
@@ -66,15 +55,18 @@
 
         {{#each ardbCards}}
           <tr>
-            <td> {{name}} </td>
-            <td> {{have}} </td>
-            <td>
-              {{#if isMatched }}
-                <i class="ui big green checkmark icon"></i>
-              {{else}}
-                <div class="ui active small inline loader"></div>
-              {{/if}}
-            </td>
+            {{#if isMatched }}
+            {{else}}
+              <td> {{name}} </td>
+              <td> {{have}} </td>
+              <td>
+                {{#if isLoading}}
+                  <div class="ui active small inline loader"></div>
+                {{else}}
+                  <i class="red remove icon"></i>
+                {{/if}}
+              </td>
+            {{/if}}
           </tr>
         {{/each}}
 
