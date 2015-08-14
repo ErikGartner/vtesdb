@@ -8,8 +8,8 @@ Meteor.startup ->
         branch: ''
         commit: 'detached'
         timestamp: ''
-    if not oldVer? or oldVer.commit != ver.commit or Cards.find().count() == 0
-      console.log 'Updating carddatabase and git version..'
+    if !oldVer or oldVer.commit != ver.commit or Cards.find().count() == 0
+      console.log 'Updating card database and git version..'
       Version.remove {}
       Version.insert ver
       Cards.remove {}

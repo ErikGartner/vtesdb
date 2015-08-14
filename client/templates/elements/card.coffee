@@ -20,3 +20,6 @@ Template.card.events
     Meteor.call 'setInv', id, count
     $('.inventory-button').popup 'hide all'
     return false
+
+  'click .inventory-button': (event) ->
+    $('.badge-input').focus()
