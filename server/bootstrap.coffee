@@ -19,6 +19,7 @@ Meteor.startup ->
       while i < cards.length
         Cards.insert
           name: cards[i]['Name']
+          norm_name: cards[i]['Norm-Name']
           text: cards[i]['Card Text']
           requirement: cards[i]['Requirement']
           clan: cards[i]['Clan']
@@ -36,6 +37,7 @@ Meteor.startup ->
       while i < cards.length
         Cards.insert
           name: cards[i]['Name']
+          norm_name: cards[i]['Norm-Name']
           text: cards[i]['Card Text']
           clan: cards[i]['Clan']
           adv: cards[i]['Adv']

@@ -79,10 +79,11 @@ Meteor.methods
     if count < 0
       throw new Meteor.Error('negative-count')
 
+    name = name.toLowerCase()
     if adv != ''
-      selector = 'name': name, 'adv': adv
+      selector = 'norm_name': name, 'adv': adv
     else
-      selector = 'name': name
+      selector = 'norm_name': name
 
     card = Cards.findOne(selector)
     if not card?
@@ -93,7 +94,5 @@ Meteor.methods
       cardId: id
       owner: uid
     },
-      $set: {cardId: id, owner: uid}
-      $inc: {count: count}
-      $setOnInsert: {count: count}
+      $set: {cardId: id, owner: uid, count: count}
     return id
