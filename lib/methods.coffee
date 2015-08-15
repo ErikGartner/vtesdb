@@ -92,7 +92,7 @@ Meteor.methods
 
     inv = Inventories.findOne {cardId: id, owner: uid}
     if inv?
-      Inventories.update {_id:inv._inv}, {$inc: {count: count}}
+      Inventories.update {_id:inv._id}, {$inc: {count: count}}
     else
       Inventories.insert {cardId: id, owner: uid, count: count}
 

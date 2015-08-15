@@ -74,5 +74,7 @@ Template.import.events
             ArdbInventory.update ardbid:ardbid, {$set: {id: res}}
       return
 
+    $('#ardb-load-button').addClass 'disabled'
     reader.readAsText(file)
+    $('#ardb-load-button').removeClass 'disabled'
     return false
