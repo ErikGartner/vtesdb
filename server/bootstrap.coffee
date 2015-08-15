@@ -8,6 +8,7 @@ Meteor.startup ->
         branch: ''
         commit: 'detached'
         timestamp: ''
+
     if !oldVer or oldVer.commit != ver.commit or Cards.find().count() == 0
       console.log 'Updating card database and git version..'
       Version.remove {}
@@ -52,6 +53,16 @@ Meteor.startup ->
           cardId: cards[i]['id']
           cardType: 'crypt'
         i++
+      console.log 'Done!'
+
+      Rulings.remove {}
+      console.log 'Reading rulings'
+      rulings = JSON.parse(Assets.getText('vtescardrulings.json'))
+      for rule in rulings
+        Rulings.insert
+          name: rule['name']
+          id: rule['id']
+          rulings: rule['rulings']
       console.log 'Done!'
     return
   return
