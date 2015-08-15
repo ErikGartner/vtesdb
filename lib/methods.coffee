@@ -34,10 +34,8 @@ Meteor.methods
     if !uid
       throw new Meteor.Error('not-authorized')
     check deckName, String
-    if Decks.findOne('deckName': deckName.toLowerCase())
-      throw new (Meteor.Error)('deck-exists')
     deckId = Decks.insert(
-      'deckName': deckName.toLowerCase()
+      name: deckName
       owner: uid)
     return deckId
 

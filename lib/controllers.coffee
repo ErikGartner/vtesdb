@@ -7,3 +7,7 @@
 @ImportController = AppController.extend(
   template: 'import'
 )
+
+@DecksController = AppController.extend(
+  template: 'decks'
+)
