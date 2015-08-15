@@ -90,9 +90,10 @@ Meteor.methods
       return -1
     id = card.cardId
 
-    Inventories.upsert {
-      cardId: id
-      owner: uid
-    },
-      $set: {cardId: id, owner: uid, count: count}
+    inv = Inventories.findOne {cardId: id, owner: uid}
+    if inv?
+      Inventories.update {_id:inv._inv}, {$inc: {count: count}}
+    else
+      Inventories.insert {cardId: id, owner: uid, count: count}
+
     return id
