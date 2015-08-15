@@ -10,13 +10,13 @@ Meteor.methods
   setInv: (id, count) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check count, Match.Integer
     check id, String
     if count < 0
       return
     if !Meteor.call('validCard', id)
-      throw new (Meteor.Error)('invalid card id')
+      throw new Meteor.Error('invalid card id')
     if count > 0
       Inventories.upsert {
         cardId: id
@@ -32,7 +32,7 @@ Meteor.methods
   addDeck: (deckName) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check deckName, String
     if Decks.findOne('deckName': deckName.toLowerCase())
       throw new (Meteor.Error)('deck-exists')
@@ -44,14 +44,14 @@ Meteor.methods
   setDeckCard: (deckId, cardId, count) ->
     uid = Meteor.userId()
     if !uid
-      throw new (Meteor.Error)('not-authorized')
+      throw new Meteor.Error('not-authorized')
     check cardId, String
     check count, Match.Integer
     check deckId, String
     if count < 0
       return
     if !Meteor.call('validCard', cardId)
-      throw new (Meteor.Error)('invalid card id')
+      throw new Meteor.Error('invalid card id')
     if count > 0
       DeckCards.upsert {
         'deckId': deckId
@@ -68,3 +68,32 @@ Meteor.methods
       if DeckCards.find('deckId': deckId).count() == 0
         Decks.remove _id: deckId
     return
+
+  importCardByName: (name, adv, count) ->
+    uid = Meteor.userId()
+    if !uid
+      throw new Meteor.Error('not-authorized')
+    check name, String
+    check adv, String
+    check count, Match.Integer
+    if count < 0
+      throw new Meteor.Error('negative-count')
+
+    name = name.toLowerCase()
+    if adv != ''
+      selector = 'norm_name': name, 'adv': adv
+    else
+      selector = 'norm_name': name
+
+    card = Cards.findOne(selector)
+    if not card?
+      return -1
+    id = card.cardId
+
+    inv = Inventories.findOne {cardId: id, owner: uid}
+    if inv?
+      Inventories.update {_id:inv._id}, {$inc: {count: count}}
+    else
+      Inventories.insert {cardId: id, owner: uid, count: count}
+
+    return id

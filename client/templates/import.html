@@ -1,0 +1,73 @@
+<template name="import">
+
+    <div>
+      <label id="ardb-load-button" for="ardb-load" class="ui top attached blue  icon button">
+          <i class="file icon"></i>
+          Import ARDB inventory</label>
+      <input type="file" id="ardb-load" style="display:none">
+    </div>
+
+    <div class="ui attached segment" id="card-table">
+
+      <div class="ui three statistics">
+        <div class="statistic">
+          <div class="value">
+            {{cryptCount}}
+          </div>
+          <div class="label">
+            Crypt Cards
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="value">
+            {{libraryCount}}
+          </div>
+          <div class="label">
+            Library Cards
+          </div>
+        </div>
+        <div class="statistic">
+          <div class="value">
+            {{importedCount}}
+          </div>
+          <div class="label">
+            Imported
+          </div>
+        </div>
+      </div>
+
+
+      <table class="ui padded table">
+        <thead>
+          <tr>
+            <th>Name</th>
+            <th>Have</th>
+            <th>Matched</th>
+          </tr>
+        </thead>
+
+        <tbody>
+
+          {{#each ardbCards}}
+            <tr>
+                <td> {{name}} </td>
+                <td> {{have}} </td>
+                <td>
+                  {{#if isMatched }}
+                    <i class="green checkmark icon"></i>
+                  {{else}}
+                    {{#if isLoading}}
+                      <div class="ui active small inline loader"></div>
+                    {{else}}
+                      <i class="red remove icon"></i>
+                    {{/if}}
+                  {{/if}}
+                </td>
+            </tr>
+          {{/each}}
+
+        </tbody>
+      </table>
+  </div>
+
+</template>

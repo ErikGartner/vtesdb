@@ -2,6 +2,8 @@
 
 @CardsController = AppController.extend(
   template: 'cards'
-  onAfterAction: ->
-    Meta.setTitle ''
+)
+
+@ImportController = AppController.extend(
+  template: 'import'
 )

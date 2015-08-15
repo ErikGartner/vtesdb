@@ -4,10 +4,10 @@
       Vtesdb
     </a>
     <a class="item">
-      Inventory
-    </a>
-    <a class="item">
       Decks
+    </a>
+    <a class="{{ isActiveRoute name='import'}} item" href="{{ pathFor 'import'}}">
+      Import
     </a>
     <div class="right menu">
       {{> loginButtons}}

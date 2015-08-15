@@ -4,6 +4,6 @@
 @DeckCards = new (Meteor.Collection)('deckCards')
 @Version = new (Meteor.Collection)('version')
 
-Cards.initEasySearch 'name',
+Cards.initEasySearch 'norm_name',
   'limit': 12
   'use': 'mongo-db'

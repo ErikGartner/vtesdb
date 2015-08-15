@@ -8,8 +8,8 @@ Meteor.startup ->
         branch: ''
         commit: 'detached'
         timestamp: ''
-    if !oldVer or oldVer.commit != ver.commit
-      console.log 'Updating carddatabase and git version..'
+    if !oldVer or oldVer.commit != ver.commit or Cards.find().count() == 0
+      console.log 'Updating card database and git version..'
       Version.remove {}
       Version.insert ver
       Cards.remove {}
@@ -19,6 +19,7 @@ Meteor.startup ->
       while i < cards.length
         Cards.insert
           name: cards[i]['Name']
+          norm_name: cards[i]['Norm-Name']
           text: cards[i]['Card Text']
           requirement: cards[i]['Requirement']
           clan: cards[i]['Clan']
@@ -36,6 +37,7 @@ Meteor.startup ->
       while i < cards.length
         Cards.insert
           name: cards[i]['Name']
+          norm_name: cards[i]['Norm-Name']
           text: cards[i]['Card Text']
           clan: cards[i]['Clan']
           adv: cards[i]['Adv']
