@@ -2,5 +2,5 @@ Template.decks.helpers
   decks: ->
     return Decks.find()
 
-Template.decks.onRender ->
+Template.decks.onRendered ->
   $('.ui.dropdown').dropdown()

@@ -6,6 +6,9 @@ Meteor.publish 'decks', ->
 
 Meteor.publish 'deckCards', ->
   DeckCards.find owner: @userId
-  
+
 Meteor.publish 'version', ->
   Version.find()
+
+Meteor.publish 'rulings', ->
+  Rulings.find()

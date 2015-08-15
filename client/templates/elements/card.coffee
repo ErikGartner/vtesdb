@@ -1,7 +1,7 @@
 Template.card.helpers
   inventoryCount: ->
     card = Inventories.findOne(cardId: @cardId)
-    if card
+    if card?
       return card.count
     else
       return 0
@@ -9,9 +9,14 @@ Template.card.helpers
   isCryptCard: ->
     return @cardType == 'crypt'
 
-Template.card.rendered = ->
+  rulings: ->
+    rulings = Rulings.findOne(id: @cardId)
+    return rulings?.rulings
+
+Template.card.onRendered ->
   $('.special.card .image').dimmer(on: 'hover')
   $('.inventory-button').popup(inline: true, on: 'click')
+  $('.rulings-icon').popup(inline: true, on: 'hover')
 
 Template.card.events
   'submit .set-inv': (event) ->
