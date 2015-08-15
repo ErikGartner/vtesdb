@@ -39,17 +39,17 @@
           <div class="ui flowing popup">
             <form class='set-inv'>
               <div class="ui input">
-                <input class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
+                <input title="Inventory" class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
               </div>
               <input type='hidden' name='id' value='{{cardId}}'/>
             </form>
           </div>
 
-          {{#if isCryptCard}}
-           Crypt
-          {{else}}
-           Library
+          {{#if banned}}
+            <i title="Banned" class="red remove icon"></i>
           {{/if}}
+          {{set}}
+
         </div>
       </div>
     </div>

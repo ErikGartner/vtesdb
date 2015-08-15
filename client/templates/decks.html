@@ -1,0 +1,20 @@
+<template name="decks">
+
+  <div class="ui fluid big search selection dropdown">
+    <input type="hidden" name="deck">
+    <i class="dropdown icon"></i>
+    <div class="default text">Select Deck</div>
+    <div class="menu">
+    {{#each decks}}
+          <div class="item" data-value="{{_id}}">{{name}}</div>
+    {{/each}}
+    </div>
+  </div>
+
+</template>
+
+<template name="deck">
+
+
+
+</template>
