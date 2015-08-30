@@ -1,3 +1,12 @@
+Template.cards.onRendered ->
+  console.log 'detected'
+  commands =
+    'show': () ->
+      $('.search-field').text('hej')
+      return
+  annyang.init(commands, true)
+  return
+
 Template.cards.events
   'submit .add-deck': (event) ->
     deckName = event.target.deckName.value
@@ -44,6 +53,13 @@ Template.cards.events
     $('.badge-button').popover 'destroy'
     Meteor.call 'setDeckCard', deckId, cardId, 1
     return false
+
+  'click #voice-button': (event) ->
+    console.log 'hello'
+    if $(event.target).hasClass('unmute')
+      annyang.start()
+      annyang.debug(true)
+    return
 
 Template.cards.helpers
   CardsIndex: ->
