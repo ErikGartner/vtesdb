@@ -13,8 +13,7 @@ audit-argument-checks
 check
 
 jquery
-flemay:less-autoprefixer
-semantic:ui
+semantic:ui-css
 iandouglas:accounts-ui-semantic-ui
 
 msavin:mongol
