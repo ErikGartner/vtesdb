@@ -1,10 +1,15 @@
 Template.cards.onRendered ->
-  console.log 'detected'
   commands =
-    'show': () ->
-      $('.search-field').text('hej')
-      return
-  annyang.init(commands, true)
+    'show :card': {
+      regexp: /^show (AK-47|Ablative Skin|Shotgun blast|)$/
+      callback: (card) ->
+        console.log card
+        $('.search-field').val(card)
+        $('.search-field').change()
+    }
+  annyang.addCommands commands
+  annyang.debug(true)
+  annyang.start {continuous: true}
   return
 
 Template.cards.events
@@ -55,10 +60,8 @@ Template.cards.events
     return false
 
   'click #voice-button': (event) ->
-    console.log 'hello'
     if $(event.target).hasClass('unmute')
-      annyang.start()
-      annyang.debug(true)
+      return
     return
 
 Template.cards.helpers
