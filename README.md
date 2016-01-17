@@ -1,7 +1,6 @@
 VTES Database
 =========
-A meteor app that allows for searching among all cards in the collectible card game VtES.
-A running version can be found at http://vtes.smoiz.com. Please report any bugs and feature request here.
+*A meteor app that allows for searching among all cards in the collectible card game VtES.*
 
 ## What is Meteor?
 [Meteor](http://meteor.com) is a NodeJS framework for building reactive webapps. It combines several features such as reactive databinding, data-over-wire, lag compensation and database everywhere to make webapp building awesome and fast.
