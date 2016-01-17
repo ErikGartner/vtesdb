@@ -97,3 +97,11 @@ Meteor.methods
       Inventories.insert {cardId: id, owner: uid, count: count}
 
     return id
+
+  cardRegex: ->
+    reg = '('
+    Cards.find().forEach (doc) ->
+      name = doc.name.replace(/[\-\[\]\/\{\}\(\)\*\+\?\.\\\^\$\|]/g, '\\$&')
+      reg += name + '|'
+    reg += ')'
+    return reg

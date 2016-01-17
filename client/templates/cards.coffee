@@ -1,15 +1,15 @@
 Template.cards.onRendered ->
-  commands =
-    'show :card': {
-      regexp: /^show (AK-47|Ablative Skin|Shotgun blast|)$/
-      callback: (card) ->
-        console.log card
-        $('.search-field').val(card)
-        $('.search-field').change()
-    }
-  annyang.addCommands commands
-  annyang.debug(true)
-  annyang.start {continuous: true}
+  Meteor.call 'cardRegex', (err, res) ->
+    if !err
+      console.log res
+      commands =
+        'show :card':
+          regexp: new RegExp('^show ' + res + '$')
+          callback: (card) ->
+            $('#searchDiv > input').val(card)
+            $('#searchDiv > input').trigger('keyup')
+      annyang.debug true
+      annyang.addCommands commands
   return
 
 Template.cards.events
@@ -39,9 +39,11 @@ Template.cards.events
       val = event.target.value
       if val.length == 0
         return
-      decks = Decks.find({ deckName: $regex: '.*' + val.toLowerCase() + '.*' }, limit: 5)
+      decks = Decks.find({ deckName: $regex: '.*' + val.toLowerCase() + '.*' },
+        limit: 5)
       decks.forEach (element) ->
-        html = '<a class="badge badge-deck badge-item" data-deckid="' + element._id + '">' + element.deckName + '</a> '
+        html = '<a class="badge badge-deck badge-item" data-deckid="' +
+          element._id + '">' + element.deckName + '</a> '
         $('#add-deck-results').append html
         return
       return
@@ -61,7 +63,13 @@ Template.cards.events
 
   'click #voice-button': (event) ->
     if $(event.target).hasClass('unmute')
-      return
+      annyang.start {continuous: true}
+      $(event.target).removeClass('unmute')
+      $(event.target).addClass('mute')
+    else
+      annyang.abort()
+      $(event.target).removeClass('mute')
+      $(event.target).addClass('unmute')
     return
 
 Template.cards.helpers
