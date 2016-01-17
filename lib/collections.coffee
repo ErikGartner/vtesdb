@@ -5,6 +5,8 @@
 @Version = new Meteor.Collection 'version'
 @Rulings = new Meteor.Collection 'rulings'
 
-Cards.initEasySearch 'norm_name',
-  'limit': 12
-  'use': 'mongo-db'
+@CardsIndex = new EasySearch.Index
+  collection: Cards
+  limit: 12
+  fields: ['norm_name']
+  engine: new EasySearch.MongoDB()

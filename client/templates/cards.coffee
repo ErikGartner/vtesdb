@@ -44,3 +44,10 @@ Template.cards.events
     $('.badge-button').popover 'destroy'
     Meteor.call 'setDeckCard', deckId, cardId, 1
     return false
+
+Template.cards.helpers
+  CardsIndex: ->
+    return CardsIndex
+
+  loadMoreAttributes: ->
+    return {class: "ui green fluid button"}

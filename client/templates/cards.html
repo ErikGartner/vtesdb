@@ -1,21 +1,21 @@
 <template name="cards">
 
   <div class="fluid ui big icon input">
-    {{> esInput index="cards" placeholder="Search..." class="form-control" }}
+    {{> EasySearch.Input index=CardsIndex placeholder="Search..." class="form-control" }}
     <i class="search icon"></i>
   </div>
 
   <p></p>
 
   <div class="ui four column doubling stackable grid">
-    {{#esEach index="cards"}}
+    {{#EasySearch.Each index=CardsIndex}}
       {{> card}}
-    {{/esEach}}
+    {{/EasySearch.Each}}
   </div>
 
   <div class="ui two column centered grid">
     <div class="column">
-      {{> esLoadMoreButton index="cards" class="ui green fluid button"}}
+      {{> EasySearch.LoadMore index=CardsIndex attributes=loadMoreAttributes}}
     </div>
   </div>
 </template>
