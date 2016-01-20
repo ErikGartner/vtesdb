@@ -2,29 +2,18 @@ VTES Database
 =========
 *A meteor app that allows for searching among all cards in the collectible card game VtES.*
 
-## What is Meteor?
-[Meteor](http://meteor.com) is a NodeJS framework for building reactive webapps. It combines several features such as reactive databinding, data-over-wire, lag compensation and database everywhere to make webapp building awesome and fast.
+## Features
+
+- Searching with large visible images
+- Track your inventory
+- Displays specific card rulings
 
 ## Installation
 This project uses meteor along with some other minor packages. They are downloaded automatically.
 
-1. Install NodeJS from http://nodejs.org/
-2. Install meteor from http://meteor.com
-3. Checkout this repo.
-4. Start the app locally using `meteor run` in the project folder.
-
-## Packages
-This program uses several open source meteor packages:
-
-* [iron:router](https://atmospherejs.com/iron/router) - A simple router implementation to add url routing
-* [matteodem:easy-search](https://atmospherejs.com/matteodem/easy-search) - A simple search implementation that uses MongoDB
-* [twbs:bootstrap](https://atmospherejs.com/twbs/bootstrap) - A wrapper for Bootstrap 3
-
-## Tests
-Tests are being worked on. They will be stored in test/. Nightwatch and Mocha are the intended frameworks.
-
-## Contributors
-Reach me at @erik_gartner.
+1. Install meteor from http://meteor.com
+2. Checkout this repo.
+3. Start the app locally using `meteor run` in the project folder.
 
 ## License
 VtES Database is released under The MIT License (MIT).
