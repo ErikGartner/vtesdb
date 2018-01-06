@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/ErikGartner/vtesdb",
   "dependencies": {
+    "babel-runtime": "^6.26.0",
     "meteor-node-stubs": "^0.3.2"
   }
 }
