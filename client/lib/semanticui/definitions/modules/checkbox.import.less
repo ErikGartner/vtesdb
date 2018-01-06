@@ -1,13 +1,12 @@
 /*
   DO NOT MODIFY - This file has been generated and will be regenerated
-  Semantic UI v2.0.8
+  Semantic UI v2.2.6
 */
 /*!
  * # Semantic UI - Checkbox
  * http://github.com/semantic-org/semantic-ui/
  *
  *
- * Copyright 2015 Contributors
  * Released under the MIT license
  * http://opensource.org/licenses/MIT
  *
@@ -200,13 +199,13 @@
   Indeterminate
 ---------------*/
 
-.ui.checkbox input:indeterminate ~ .box:before,
-.ui.checkbox input:indeterminate ~ label:before {
+.ui.checkbox input:not([type=radio]):indeterminate ~ .box:before,
+.ui.checkbox input:not([type=radio]):indeterminate ~ label:before {
   background: @checkboxIndeterminateBackground;
   border-color: @checkboxIndeterminateBorderColor;
 }
-.ui.checkbox input:indeterminate ~ .box:after,
-.ui.checkbox input:indeterminate ~ label:after {
+.ui.checkbox input:not([type=radio]):indeterminate ~ .box:after,
+.ui.checkbox input:not([type=radio]):indeterminate ~ label:after {
   opacity: @checkboxIndeterminateCheckOpacity;
   color: @checkboxIndeterminateCheckColor;
 }
@@ -215,15 +214,15 @@
   Active Focus
 ---------------*/
 
-.ui.checkbox input:indeterminate:focus ~ .box:before,
-.ui.checkbox input:indeterminate:focus ~ label:before,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:before,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:before,
 .ui.checkbox input:checked:focus ~ .box:before,
 .ui.checkbox input:checked:focus ~ label:before  {
   background: @checkboxActiveFocusBackground;
   border-color: @checkboxActiveFocusBorderColor;
 }
-.ui.checkbox input:indeterminate:focus ~ .box:after,
-.ui.checkbox input:indeterminate:focus ~ label:after,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ .box:after,
+.ui.checkbox input:not([type=radio]):indeterminate:focus ~ label:after,
 .ui.checkbox input:checked:focus ~ .box:after,
 .ui.checkbox input:checked:focus ~ label:after {
   color: @checkboxActiveFocusCheckColor;
@@ -248,7 +247,7 @@
 .ui.disabled.checkbox label,
 .ui.checkbox input[disabled] ~ .box:after,
 .ui.checkbox input[disabled] ~ label {
-  cursor: default;
+  cursor: default !important;
   opacity: @disabledCheckboxOpacity;
   color: @disabledCheckboxLabelColor;
 }
@@ -505,6 +504,7 @@
   top: @toggleLaneVerticalOffset;
 
   background: @toggleLaneBackground;
+  box-shadow: @toggleLaneBoxShadow;
   width: @toggleLaneWidth;
   height: @toggleLaneHeight;
   border-radius: @toggleHandleRadius;
@@ -533,6 +533,7 @@
 .ui.toggle.checkbox input ~ .box:after,
 .ui.toggle.checkbox input ~ label:after {
   left: @toggleOffOffset;
+  box-shadow: @toggleOffHandleBoxShadow;
 }
 
 /* Focus */
@@ -561,6 +562,7 @@
 .ui.toggle.checkbox input:checked ~ .box:after,
 .ui.toggle.checkbox input:checked ~ label:after {
   left: @toggleOnOffset;
+  box-shadow: @toggleOnHandleBoxShadow;
 }
 
 
