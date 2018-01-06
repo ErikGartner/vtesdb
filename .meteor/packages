@@ -8,7 +8,7 @@ iron:router
 accounts-facebook@1.3.0
 #accounts-password
 zimme:active-route
-matteodem:easy-search
+easy:search
 audit-argument-checks@1.0.7
 check@1.2.5
 
