@@ -17,7 +17,6 @@ semantic:ui-css
 iandouglas:accounts-ui-semantic-ui
 
 msavin:mongol
-standard-minifiers
 meteor-base
 mobile-experience
 mongo
@@ -30,3 +29,5 @@ random
 ejson
 spacebars
 okgrow:analytics
+standard-minifier-css
+standard-minifier-js
