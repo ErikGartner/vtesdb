@@ -6,7 +6,7 @@
 coffeescript@1.2.3
 iron:router
 accounts-facebook@1.3.0
-#accounts-password
+accounts-password
 zimme:active-route
 easy:search
 audit-argument-checks@1.0.7
@@ -35,3 +35,10 @@ dynamic-import@0.2.0
 less
 semantic:ui
 juliancwirko:postcss
+
+reywood:publish-composite
+aldeed:autoform
+aldeed:collection2
+fabienb4:autoform-semantic-ui
+aldeed:delete-button
+dburles:collection-helpers

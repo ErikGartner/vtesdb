@@ -1,9 +1,9 @@
 <template name="_appHeader">
-  <div id="header" class="ui secondary pointing menu">
+  <div id="header" class="ui huge secondary pointing menu">
     <a class="{{ isActiveRoute name='home'}} item" href="{{ pathFor 'home'}}">
       Vtesdb
     </a>
-    <a class="item">
+    <a class="{{ isActiveRoute name='decks'}} item" href="{{ pathFor 'decks'}}">
       Decks
     </a>
     <a class="{{ isActiveRoute name='import'}} item" href="{{ pathFor 'import'}}">

@@ -50,4 +50,4 @@ Template.cards.helpers
     return CardsIndex
 
   loadMoreAttributes: ->
-    return {class: "ui green fluid button"}
+    return {class: "ui green fluid big button"}

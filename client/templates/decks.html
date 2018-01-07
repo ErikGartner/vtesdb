@@ -1,20 +1,80 @@
 <template name="decks">
 
-  <div class="ui fluid big search selection dropdown">
-    <input type="hidden" name="deck">
-    <i class="dropdown icon"></i>
-    <div class="default text">Select Deck</div>
-    <div class="menu">
-    {{#each decks}}
+  {{> deckSearch data=decks}}
+
+  {{> Template.dynamic template=deckModal}}
+
+</template>
+
+<template name="deckSearch">
+  <div class="ui grid">
+    <div class="fourteen wide column">
+      <div class="ui fluid big search selection dropdown">
+        <input id="selected_deck" type="hidden" name="deck">
+        <i class="dropdown icon"></i>
+        <div class="default text">Select Deck</div>
+        <div class="menu">
+        {{#each decks}}
           <div class="item" data-value="{{_id}}">{{name}}</div>
-    {{/each}}
+        {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="two wide column">
+      <a id="add_deck_button" class="ui green fluid big button" href="{{pathFor 'decks.add'}}"><i class="plus icon"></i>Add</a>
     </div>
   </div>
-
 </template>
 
 <template name="deck">
 
+  {{#with deck}}
+  <h3 class="ui top attached header">
+      {{name}}
+  </h3>
+  <div class="ui attached segment">
+    <h5>Description</h5>
+    <p>{{description}}</p>
 
+    <h5>Crypt Cards</h5>
+    <div class="ui list">
+      {{#each cryptItems}}
+        <div class="item">
+          <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+          <div class="content">
+            <div class="header">{{deck_count}}x {{name}}</div>
+            <div class="description">{{capacity}} {{clan}}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
 
+    <h5>Library Cards</h5>
+    <div class="ui list">
+      {{#each libItems}}
+        <div class="item">
+          <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+          <div class="content">
+            <div class="header">{{deck_count}}x {{name}}</div>
+            <div class="description">{{type}}</div>
+          </div>
+        </div>
+      {{/each}}
+    </div>
+
+  </div>
+  {{/with}}
+
+</template>
+
+<template name="addDeck">
+  <div>
+  {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
+    {{> afQuickField name='name'}}
+    {{> afQuickField name='active'}}
+    {{> afQuickField name='description'}}
+    <button type="submit" class="ui green button">Create</button>
+  {{/autoForm}}
+  </div>
 </template>
