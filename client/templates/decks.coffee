@@ -14,7 +14,7 @@ Template.deck.helpers
     library = Decks.findOne(@_id).library
     count = _.countBy(library)
     items = _.map(_.uniq(library), (id) ->
-      card = Cards.findOne(id)
+      card = Cards.findOne(cardId: id)
       card.deck_count = count[id]
       return card
     )
@@ -24,7 +24,7 @@ Template.deck.helpers
     library = Decks.findOne(@_id).crypt
     count = _.countBy(library)
     items = _.map(_.uniq(library), (id) ->
-      card = Cards.findOne(id)
+      card = Cards.findOne(cardId: id)
       card.deck_count = count[id]
       return card
     )

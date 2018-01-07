@@ -32,6 +32,11 @@
   {{#with deck}}
   <h3 class="ui top attached header">
       {{name}}
+      {{#if active}}
+        <div class="ui green horizontal label">active</div>
+      {{else}}
+        <div class="ui horizontal label">inactive</div>
+      {{/if}}
   </h3>
   <div class="ui attached segment">
     <h5>Description</h5>
