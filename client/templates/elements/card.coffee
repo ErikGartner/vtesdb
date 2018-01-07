@@ -15,7 +15,7 @@ Template.card.helpers
 
 Template.card.onRendered ->
   $('.special.card .image').dimmer(on: 'hover')
-  $('.inventory-button').popup(inline: true, on: 'click')
+  $('.inventory-button').popup(popup: '.inv.popup', on: 'click')
   $('.rulings-icon').popup(inline: true, on: 'hover')
 
 Template.card.events

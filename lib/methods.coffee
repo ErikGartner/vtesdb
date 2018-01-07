@@ -29,19 +29,7 @@ Meteor.methods
       Inventories.remove cardId: id
     return
 
-  addDeck: (deckName) ->
-    uid = Meteor.userId()
-    if !uid
-      throw new Meteor.Error('not-authorized')
-    check deckName, String
-    if Decks.findOne('deckName': deckName.toLowerCase())
-      throw new (Meteor.Error)('deck-exists')
-    deckId = Decks.insert(
-      'deckName': deckName.toLowerCase()
-      owner: uid)
-    return deckId
-
-  setDeckCard: (deckId, cardId, count) ->
+  setDeckCard: (cardId, deckId, count) ->
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
@@ -50,23 +38,25 @@ Meteor.methods
     check deckId, String
     if count < 0
       return
-    if !Meteor.call('validCard', cardId)
-      throw new Meteor.Error('invalid card id')
-    if count > 0
-      DeckCards.upsert {
-        'deckId': deckId
-        'cardId': cardId
-      },
-        'deckId': deckId
-        'cardId': cardId
-        deckCount: count
-        owner: uid
+
+    card = Cards.findOne(cardId: cardId)
+    if not card?
+      throw new Meteor.Error('invalid-card')
+
+    deck = Decks.findOne(_id: deckId, owner: uid)
+    if not deck?
+      throw new Meteor.Error('invalid deck')
+
+    if card.cardType == 'lib'
+      library = deck.library
+      library = _.filter(library, (id) -> return id != cardId)
+      library.push(cardId) for i in [0...count]
+      Decks.update {_id: deck._id}, $set: {library: library}
     else
-      DeckCards.remove
-        'deckId': deckId
-        'cardId': cardId
-      if DeckCards.find('deckId': deckId).count() == 0
-        Decks.remove _id: deckId
+      crypt = deck.crypt
+      crypt = _.reject(crypt, (id) -> return id == cardId)
+      crypt.push(cardId) for i in [0...count]
+      Decks.update {_id: deck._id}, $set: {crypt: crypt}
     return
 
   importCardByName: (name, adv, count) ->

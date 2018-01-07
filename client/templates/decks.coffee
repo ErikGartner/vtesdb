@@ -33,10 +33,6 @@ Template.deck.helpers
 Template.decks.onRendered ->
   $('.ui.dropdown').dropdown()
 
-Template.decks.events
-  'click #add_deck_button': (event) ->
-    console.log 'click'
-
 Template.deckSearch.events
   'change #selected_deck': (event) ->
     if event.target.value?

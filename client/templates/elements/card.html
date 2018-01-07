@@ -31,19 +31,22 @@
       <div class="content">
         <p class="header">{{name}}</p>
         <div class="description">
-          <a class="inventory-button right floated">
-            <i class="star icon"></i>
+          <a class="inventory-button">
             {{inventoryCount}}
+            <i class="star link icon"></i>
           </a>
 
-          <div class="ui flowing popup">
+          <div class="ui flowing inv popup">
             <form class='set-inv'>
               <div class="ui input">
                 <input title="Inventory" class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
               </div>
               <input type='hidden' name='id' value='{{cardId}}'/>
+              <input type="submit" style="visibility: hidden;" />
             </form>
           </div>
+
+          {{> deckControl}}
 
           {{#if banned}}
             <i title="Banned" class="red remove icon"></i>
@@ -63,9 +66,12 @@
               </div>
             </div>
           {{/if}}
-          {{set}}
+
 
         </div>
+      </div>
+      <div class="extra content">
+        <emph>{{set}}</emph>
       </div>
     </div>
   </div>
