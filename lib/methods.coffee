@@ -22,7 +22,7 @@ Meteor.methods
         cardId: id
         owner: uid
       },
-        'count': count
+        count: count
         cardId: id
         owner: uid
     else
@@ -39,6 +39,9 @@ Meteor.methods
     if count < 0
       return
 
+    if Meteor.isClient
+      return
+
     card = Cards.findOne(cardId: cardId)
     if not card?
       throw new Meteor.Error('invalid-card')
@@ -47,16 +50,9 @@ Meteor.methods
     if not deck?
       throw new Meteor.Error('invalid deck')
 
-    if card.cardType == 'lib'
-      library = deck.library
-      library = _.filter(library, (id) -> return id != cardId)
-      library.push(cardId) for i in [0...count]
-      Decks.update {_id: deck._id}, $set: {library: library}
-    else
-      crypt = deck.crypt
-      crypt = _.reject(crypt, (id) -> return id == cardId)
-      crypt.push(cardId) for i in [0...count]
-      Decks.update {_id: deck._id}, $set: {crypt: crypt}
+    cards = deck.cards
+    cards[cardId] = count
+    Decks.update {_id: deck._id}, $set: {cards: cards}
     return
 
   importCardByName: (name, adv, count) ->

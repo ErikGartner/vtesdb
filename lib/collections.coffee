@@ -33,19 +33,13 @@ DeckSchema = new SimpleSchema
     optional: true
     label: 'Description'
 
-  crypt:
-    type: [String]
-    label: 'Crypt cards'
+  cards:
+    type: Object
+    label: 'Cards'
     autoValue: ->
       if @isInsert
-        return []
+        return {}
 
-  library:
-    type: [String]
-    label: 'Library cards'
-    autoValue: ->
-      if @isInsert
-        return []
 
 Decks.attachSchema DeckSchema
 Decks.allow(
@@ -58,3 +52,31 @@ Decks.allow(
   remove: (userId, doc) ->
     return userId == doc.owner
 )
+
+Decks.helpers
+
+  library: ->
+    items = _.map(@cards, (num, id) ->
+      card = Cards.findOne(cardId: id)
+      if card.cardType == 'lib'
+        card.deck_count = num
+        return card
+      else
+        return null
+    )
+    return _.filter(items, (card) ->
+      return card?
+    )
+
+  crypt: ->
+    items = _.map(@cards, (num, id) ->
+      card = Cards.findOne(cardId: id)
+      if card.cardType == 'crypt'
+        card.deck_count = num
+        return card
+      else
+        return null
+    )
+    return _.filter(items, (card) ->
+      return card?
+    )

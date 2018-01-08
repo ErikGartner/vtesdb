@@ -20,7 +20,7 @@ Meteor.publishComposite 'decks', ->
   children: [
     {
       find: (deck) ->
-        cards = deck.library.concat(deck.crypt)
+        cards = Object.keys(deck.cards)
         return Cards.find cardId: $in: cards
     }
   ]

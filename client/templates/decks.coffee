@@ -11,23 +11,11 @@ Template.deck.helpers
     return Decks.findOne(@_id)
 
   libItems: ->
-    library = Decks.findOne(@_id).library
-    count = _.countBy(library)
-    items = _.map(_.uniq(library), (id) ->
-      card = Cards.findOne(cardId: id)
-      card.deck_count = count[id]
-      return card
-    )
+    items = Decks.findOne(@_id).library()
     return _.sortBy(items, ['name'])
 
   cryptItems: ->
-    library = Decks.findOne(@_id).crypt
-    count = _.countBy(library)
-    items = _.map(_.uniq(library), (id) ->
-      card = Cards.findOne(cardId: id)
-      card.deck_count = count[id]
-      return card
-    )
+    items = Decks.findOne(@_id).crypt()
     return _.sortBy(items, ['name'])
 
 Template.decks.onRendered ->
