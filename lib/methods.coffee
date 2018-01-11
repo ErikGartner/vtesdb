@@ -33,14 +33,16 @@ Meteor.methods
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
+
     check cardId, String
     check count, Match.Integer
     check deckId, String
+
     if count < 0
       return
 
-    if Meteor.isClient
-      return
+    if not Meteor.isServer
+      return true
 
     card = Cards.findOne(cardId: cardId)
     if not card?
@@ -50,9 +52,8 @@ Meteor.methods
     if not deck?
       throw new Meteor.Error('invalid deck')
 
-    cards = deck.cards
-    cards[cardId] = count
-    Decks.update {_id: deck._id}, $set: {cards: cards}
+    deck.cards[cardId] = count
+    Decks.update deckId, $set: cards: deck.cards
     return
 
   importCardByName: (name, adv, count) ->

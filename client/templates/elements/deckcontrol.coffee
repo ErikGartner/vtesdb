@@ -8,7 +8,6 @@ Template.deckControl.onRendered ->
 
 Template.deckControl.events
   'submit .deck-form': (event) ->
-    console.log 'hej'
     id = event.target.id.value
     count = parseInt(event.target.count.value)
     deck = event.target.deck.value

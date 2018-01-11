@@ -1,27 +1,24 @@
 Template.decks.helpers
+  DeckIndex: ->
+    return DeckIndex
+
   deckModal: ->
     return @deckModal
 
-Template.deckSearch.helpers
-  decks: ->
-    return Decks.find()
+  loadMoreAttributes: ->
+    return {class: "ui green fluid big button"}
 
-Template.deck.helpers
-  deck: ->
-    return Decks.findOne(@_id)
 
-  libItems: ->
-    items = Decks.findOne(@_id).library()
-    return _.sortBy(items, ['name'])
-
-  cryptItems: ->
-    items = Decks.findOne(@_id).crypt()
-    return _.sortBy(items, ['name'])
-
-Template.decks.onRendered ->
-  $('.ui.dropdown').dropdown()
-
-Template.deckSearch.events
-  'change #selected_deck': (event) ->
-    if event.target.value?
-      Router.go 'decks.view', {_id: event.target.value}
+Template.deckResult.helpers
+  stats: ->
+    sum = (list) ->
+      list = _.map(list, (l) ->
+        return l.deck_count
+      )
+      return _.reduce(list, (m, n) ->
+        return m + n
+      )
+    return {
+      libCount: sum(_.values(Decks.findOne(@_id).library()))
+      cryptCount: sum(_.values(Decks.findOne(@_id).crypt()))
+    }

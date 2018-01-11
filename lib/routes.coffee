@@ -22,10 +22,9 @@ Router.route '/decks/add',
 
 Router.route '/decks/:_id',
   name: 'decks.view'
-  controller: 'DecksController'
+  controller: AppController
   action: ->
-    @render 'decks', {
+    @render 'deck', {
       data: ->
-        data = {deckModal: 'deck', _id: @params._id}
-        return data
+        return {_id: @params._id}
     }

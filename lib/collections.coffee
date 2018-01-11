@@ -6,9 +6,13 @@
 
 @CardsIndex = new EasySearch.Index
   collection: Cards
-  limit: 12
   fields: ['norm_name']
   engine: new EasySearch.MongoDB()
+
+@DeckIndex = new EasySearch.Index
+  collection: Decks
+  fields: ['name']
+  engine: new EasySearch.Minimongo()
 
 # Schemas
 DeckSchema = new SimpleSchema
@@ -36,9 +40,8 @@ DeckSchema = new SimpleSchema
   cards:
     type: Object
     label: 'Cards'
-    autoValue: ->
-      if @isInsert
-        return {}
+    optional: true
+    blackbox: true
 
 
 Decks.attachSchema DeckSchema
