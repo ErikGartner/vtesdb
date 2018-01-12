@@ -20,7 +20,7 @@ Router.route '/decks/add',
         return data
     }
 
-Router.route '/decks/:_id',
+Router.route '/deck/:_id',
   name: 'decks.view'
   controller: AppController
   action: ->
