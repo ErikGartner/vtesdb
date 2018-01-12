@@ -2,7 +2,7 @@ Meteor.methods
   validCard: (cardId) ->
     check cardId, String
     if Meteor.isServer
-      Cards.find('cardId': cardId).count() == 1
+      return Cards.findOne('cardId': cardId)?
     else
       # Client assums valid cardId. This allows for latency comp.
       return true

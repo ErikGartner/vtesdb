@@ -13,12 +13,7 @@ Router.route '/decks',
 Router.route '/decks/add',
   name: 'decks.add'
   controller: 'DecksController'
-  action: ->
-    @render 'decks', {
-      data: ->
-        data = {deckModal: 'addDeck'}
-        return data
-    }
+  template: 'addDeck'
 
 Router.route '/deck/:_id',
   name: 'decks.view'
