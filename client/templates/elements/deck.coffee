@@ -1,6 +1,4 @@
 Template.deck.helpers
-  deck: ->
-    return Decks.findOne(@_id)
 
   libItems: ->
     items = Decks.findOne(@_id).library()

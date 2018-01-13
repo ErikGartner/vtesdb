@@ -15,11 +15,20 @@ Router.route '/decks/add',
   controller: 'DecksController'
   template: 'addDeck'
 
-Router.route '/deck/:_id',
+Router.route '/decks/view/:_id',
   name: 'decks.view'
   controller: AppController
   action: ->
     @render 'deck', {
       data: ->
-        return {_id: @params._id}
+        return Decks.findOne(@params._id)
+    }
+
+Router.route '/decks/edit/:_id',
+  name: 'decks.edit'
+  controller: AppController
+  action: ->
+    @render 'editDeck', {
+      data: ->
+        return Decks.findOne(@params._id)
     }

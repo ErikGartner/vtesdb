@@ -1,11 +1,11 @@
 <template name="deck">
 
-  {{#with deck}}
-
   <div class="ui grid">
 
     <div class="twelve wide column">
       <h3 class="ui top attached header">
+          <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
+
           {{name}}
           {{#if active}}
             <div class="ui green horizontal label">active</div>
@@ -53,18 +53,27 @@
 
   </div>
 
-  {{/with}}
-
 </template>
 
 <template name="addDeck">
-  <div>
-  {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
-    {{> afQuickField name='name'}}
-    {{> afQuickField name='active'}}
-    {{> afQuickField name='description'}}
-    <button type="submit" class="ui green button">Create</button>
-  {{/autoForm}}
+  <div class="ui container">
+    {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='active'}}
+      {{> afQuickField name='description'}}
+      <button type="submit" class="ui green button">Create</button>
+    {{/autoForm}}
+  </div>
+</template>
+
+<template name="editDeck">
+  <div class="ui container">
+    {{#autoForm collection="Decks" id="addDeckForm" type="update" doc=this}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='active'}}
+      {{> afQuickField name='description'}}
+      <button type="submit" class="ui green button">Update</button>
+    {{/autoForm}}
   </div>
 </template>
 

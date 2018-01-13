@@ -1,8 +1,20 @@
 <template name="decks">
 
-  <div class="fluid ui big icon input">
-    {{> EasySearch.Input index=DeckIndex placeholder="Search..." class="form-control" }}
-    <i class="search icon"></i>
+  <div class="ui doubling stackable grid">
+
+    <div class="twelve wide column">
+      <div class="fluid ui big icon input">
+        {{> EasySearch.Input index=DeckIndex placeholder="Search..." class="form-control" }}
+        <i class="search icon"></i>
+      </div>
+    </div>
+
+    <div class="four wide column">
+      <a class="ui big fluid green button" id="addDeckButton" href={{pathFor 'decks.add'}}>
+        Add
+      </a>
+    </div>
+
   </div>
 
   <p></p>
