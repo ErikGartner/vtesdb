@@ -15,6 +15,9 @@ Template.bareCard.events
     return false
 
 Template.bareCard.helpers
+  isCryptCard: ->
+    return @cardType == 'crypt'
+
   cardCount: ->
     deck = Router.current().params._id
     count = Decks.findOne(deck).cards[@cardId]
