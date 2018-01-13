@@ -2,7 +2,7 @@ Meteor.methods
   validCard: (cardId) ->
     check cardId, String
     if Meteor.isServer
-      Cards.find('cardId': cardId).count() == 1
+      return Cards.findOne('cardId': cardId)?
     else
       # Client assums valid cardId. This allows for latency comp.
       return true
@@ -22,51 +22,38 @@ Meteor.methods
         cardId: id
         owner: uid
       },
-        'count': count
+        count: count
         cardId: id
         owner: uid
     else
       Inventories.remove cardId: id
     return
 
-  addDeck: (deckName) ->
+  setDeckCard: (cardId, deckId, count) ->
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
-    check deckName, String
-    if Decks.findOne('deckName': deckName.toLowerCase())
-      throw new (Meteor.Error)('deck-exists')
-    deckId = Decks.insert(
-      'deckName': deckName.toLowerCase()
-      owner: uid)
-    return deckId
 
-  setDeckCard: (deckId, cardId, count) ->
-    uid = Meteor.userId()
-    if !uid
-      throw new Meteor.Error('not-authorized')
     check cardId, String
     check count, Match.Integer
     check deckId, String
+
     if count < 0
       return
-    if !Meteor.call('validCard', cardId)
-      throw new Meteor.Error('invalid card id')
-    if count > 0
-      DeckCards.upsert {
-        'deckId': deckId
-        'cardId': cardId
-      },
-        'deckId': deckId
-        'cardId': cardId
-        deckCount: count
-        owner: uid
-    else
-      DeckCards.remove
-        'deckId': deckId
-        'cardId': cardId
-      if DeckCards.find('deckId': deckId).count() == 0
-        Decks.remove _id: deckId
+
+    if not Meteor.isServer
+      return true
+
+    card = Cards.findOne(cardId: cardId)
+    if not card?
+      throw new Meteor.Error('invalid-card')
+
+    deck = Decks.findOne(_id: deckId, owner: uid)
+    if not deck?
+      throw new Meteor.Error('invalid deck')
+
+    deck.cards[cardId] = count
+    Decks.update deckId, $set: cards: deck.cards
     return
 
   importCardByName: (name, adv, count) ->

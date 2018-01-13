@@ -1,0 +1,35 @@
+<template name="deckControl">
+
+  <a class="deck-button">
+    <i class="align justify link icon"></i>
+  </a>
+
+  <div class="deck ui flowing popup">
+    <div class="ui form">
+      <form class="deck-form">
+        <div class="field">
+        <div class="fields">
+          <div class="six wide field">
+            <input title="Count" class="badge-input" name="count" type="text" placeholder=0>
+          </div>
+          <div class="ten wide field">
+            <div class="ui fluid search selection dropdown">
+              <input id="selected_deck" type="hidden" name="deck">
+              <i class="dropdown icon"></i>
+              <div class="default text">Deck</div>
+              <div class="menu">
+              {{#each decks}}
+                <div class="item" data-value="{{_id}}">{{name}}</div>
+              {{/each}}
+              </div>
+            </div>
+          </div>
+        </div>
+        </div>
+        <input type="hidden" name="id" value="{{cardId}}"/>
+        <input type="submit" style="visibility: hidden;" />
+      </form>
+    </div>
+  </div>
+
+</template>

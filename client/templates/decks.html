@@ -1,20 +1,59 @@
 <template name="decks">
 
-  <div class="ui fluid big search selection dropdown">
-    <input type="hidden" name="deck">
-    <i class="dropdown icon"></i>
-    <div class="default text">Select Deck</div>
-    <div class="menu">
-    {{#each decks}}
-          <div class="item" data-value="{{_id}}">{{name}}</div>
-    {{/each}}
+  <div class="ui doubling stackable grid">
+
+    <div class="twelve wide column">
+      <div class="fluid ui big icon input">
+        {{> EasySearch.Input index=DeckIndex placeholder="Search..." class="form-control" }}
+        <i class="search icon"></i>
+      </div>
+    </div>
+
+    <div class="four wide column">
+      <a class="ui big fluid green button" id="addDeckButton" href={{pathFor 'decks.add'}}>
+        Add
+      </a>
+    </div>
+
+  </div>
+
+  <p></p>
+
+  <div class="ui container">
+    <div class="ui three cards">
+      {{#EasySearch.Each index=DeckIndex}}
+        {{> deckResult}}
+      {{/EasySearch.Each}}
+    </div>
+
+    <div class="ui two column centered grid">
+      <div class="column">
+        {{> EasySearch.LoadMore index=DeckIndex attributes=loadMoreAttributes}}
+      </div>
     </div>
   </div>
 
 </template>
 
-<template name="deck">
-
-
-
+<template name="deckResult">
+  <div class="ui card">
+    <div class="content">
+      <a class="header" href={{pathFor 'decks.view' _id }}>
+        {{name}}
+      </a>
+      <div class="meta">
+        Crypt: {{stats.cryptCount}}, Library: {{stats.libCount}}
+      </div>
+      <div class="description">
+        <p>{{description}}</p>
+      </div>
+    </div>
+    <div class="extra content">
+      {{#if active}}
+        <div class="ui green horizontal label">active</div>
+      {{else}}
+        <div class="ui horizontal label">inactive</div>
+      {{/if}}
+    </div>
+  </div>
 </template>

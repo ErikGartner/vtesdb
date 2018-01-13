@@ -1,0 +1,149 @@
+<template name="deck">
+
+  <div class="ui grid">
+
+    <div class="twelve wide column">
+      <h3 class="ui top attached header">
+          <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
+
+          {{name}}
+          {{#if active}}
+            <div class="ui green horizontal label">active</div>
+          {{else}}
+            <div class="ui horizontal label">inactive</div>
+          {{/if}}
+      </h3>
+      <div class="ui attached segment">
+        <h5>Description</h5>
+        <p>{{description}}</p>
+
+        <h5>Crypt Cards</h5>
+        <div class="ui list">
+          {{#each cryptItems}}
+            <div class="item">
+              <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+              <div class="content">
+                <div class="header">{{deck_count}}x {{name}}</div>
+                <div class="description">{{clan}} {{capacity}} {{disciplines}}</div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+
+        <h5>Library Cards</h5>
+        <div class="ui list">
+          {{#each libItems}}
+            <div class="item">
+              <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+              <div class="content">
+                <div class="header">{{deck_count}}x {{name}}</div>
+                <div class="description">{{type}}</div>
+              </div>
+            </div>
+          {{/each}}
+        </div>
+      </div>
+    </div>
+
+    <div class="four wide column">
+      <div class="ui segment">
+        {{> cardSearch deck=_id}}
+      </div>
+    </div>
+
+  </div>
+
+</template>
+
+<template name="addDeck">
+  <div class="ui container">
+    {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='active'}}
+      {{> afQuickField name='description'}}
+      <button type="submit" class="ui green button">Create</button>
+    {{/autoForm}}
+  </div>
+</template>
+
+<template name="editDeck">
+  <div class="ui container">
+    {{#autoForm collection="Decks" id="addDeckForm" type="update" doc=this}}
+      {{> afQuickField name='name'}}
+      {{> afQuickField name='active'}}
+      {{> afQuickField name='description'}}
+      <button type="submit" class="ui green button">Update</button>
+    {{/autoForm}}
+  </div>
+</template>
+
+<template name="cardSearch">
+  <div class="fluid ui icon input">
+    {{> EasySearch.Input index=CardsIndex placeholder="Search..." class="form-control" limit=3}}
+    <i class="search icon"></i>
+  </div>
+
+  {{#EasySearch.Each index=CardsIndex}}
+    {{> bareCard}}
+  {{/EasySearch.Each}}
+
+  <div class="ui two column centered grid">
+    <div class="column">
+      {{> EasySearch.LoadMore index=CardsIndex attributes=loadMoreAttributes}}
+    </div>
+  </div>
+</template>
+
+<template name="bareCard">
+  <div class="ui card">
+    <div class="content">
+      <p class="header">{{name}}</p>
+      <div class="meta">
+        {{#if isCryptCard}}
+          {{clan}} {{capacity}} {{disciplines}}
+        {{else}}
+            {{type}} {{clan}} {{requirement}}
+            {{#if poolCost}}
+              Pool: {{poolCost}}
+            {{/if}}
+            {{#if bloodCost}}
+              Blood: {{bloodCost}}
+            {{/if}}
+          {{/if}}
+      </div>
+      <div class="description">
+        <p>{{text}}</p>
+
+        {{#if banned}}
+          <i title="Banned" class="red remove icon"></i>
+        {{/if}}
+        {{#if rulings}}
+          <i class="warning circle icon rulings-icon"></i>
+
+          <div class="fluid ui popup inverted ruling-popup">
+            <div class="header">Rulings</div>
+            <div class="ui list">
+              {{#each rulings}}
+                <li class="item">
+                  <i class="right triangle icon"></i>
+                  {{this}}
+                </li>
+              {{/each}}
+            </div>
+          </div>
+        {{/if}}
+      </div>
+    </div>
+    <div class="extra content">
+      <form class='set-card' action="#">
+        <div class="ui fluid action input">
+          <input title="Count" class="badge-input" name="count" type="text" value={{cardCount}}>
+          <button type="submit" class="ui green right icon button">
+            <i class="check icon"></i>
+          </button>
+        </div>
+        <input type='hidden' name='id' value='{{cardId}}'/>
+      </form>
+    </div>
+  </div>
+</template>
