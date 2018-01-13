@@ -1,23 +1,26 @@
+@AppController = RouteController.extend(layoutTemplate: 'appLayout')
+
+Router.configure
+  controller: 'AppController'
+
 Router.route '/',
   name: 'home'
-  controller: 'CardsController'
+  template: 'cards'
 
 Router.route '/import',
   name: 'import'
-  controller: 'ImportController'
+  template: 'import'
 
 Router.route '/decks',
   name: 'decks'
-  controller: 'DecksController'
+  template: 'decks'
 
 Router.route '/decks/add',
   name: 'decks.add'
-  controller: 'DecksController'
   template: 'addDeck'
 
 Router.route '/decks/view/:_id',
   name: 'decks.view'
-  controller: AppController
   action: ->
     @render 'deck', {
       data: ->
@@ -26,7 +29,6 @@ Router.route '/decks/view/:_id',
 
 Router.route '/decks/edit/:_id',
   name: 'decks.edit'
-  controller: AppController
   action: ->
     @render 'editDeck', {
       data: ->
