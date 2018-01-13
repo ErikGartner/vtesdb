@@ -1,13 +1,19 @@
 Template.deck.helpers
 
   libItems: ->
-    items = Decks.findOne(@_id).library()
+    deck = Decks.findOne(@_id)
+    if not deck?
+      return []
+    items = deck.library()
     items = _.groupBy(items, (item) -> return item.type)
     items = _.map(items, (val, key) -> return {type: key, cards: val})
     return _.sortBy(items, ['type'])
 
   cryptItems: ->
-    items = Decks.findOne(@_id).crypt()
+    deck = Decks.findOne(@_id)
+    if not deck?
+      return []
+    items = deck.crypt()
     return _.sortBy(items, ['name'])
 
   stats: ->
@@ -32,7 +38,11 @@ Template.registerHelper 'deckStats', ->
     return _.reduce(list, (m, n) ->
       return m + n
     , 0)
-  return {
-    libCount: sum(_.values(Decks.findOne(@_id).library()))
-    cryptCount: sum(_.values(Decks.findOne(@_id).crypt()))
-  }
+  deck = Decks.findOne(@_id)
+  if not deck?
+    return {}
+  else
+    return {
+      libCount: sum(_.values(deck.library()))
+      cryptCount: sum(_.values(deck.crypt()))
+    }
