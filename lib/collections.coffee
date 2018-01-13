@@ -53,6 +53,9 @@ DeckSchema = new SimpleSchema
     label: 'Cards'
     optional: true
     blackbox: true
+    autoValue: ->
+      if @isInsert
+        return {}
 
 
 Decks.attachSchema DeckSchema

@@ -13,3 +13,11 @@ Template.deck.helpers
       libCount: Decks.findOne(@_id).library().length
       cryptCount: Decks.findOne(@_id).crypt().length
     }
+
+
+Template.editDeck.helpers
+  beforeRemove: ->
+    return (collection, id) ->
+      doc = collection.findOne id
+      if confirm('Really delete "' + doc.name + '"?')
+        this.remove()

@@ -58,7 +58,7 @@
     {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
       {{> afQuickField name='name'}}
       {{> afQuickField name='active'}}
-      {{> afQuickField name='description'}}
+      {{> afQuickField name='description' rows=5}}
       <button type="submit" class="ui green button">Create</button>
     {{/autoForm}}
   </div>
@@ -69,8 +69,9 @@
     {{#autoForm collection="Decks" id="addDeckForm" type="update" doc=this}}
       {{> afQuickField name='name'}}
       {{> afQuickField name='active'}}
-      {{> afQuickField name='description'}}
+      {{> afQuickField name='description' rows=5}}
       <button type="submit" class="ui green button">Update</button>
+      {{> quickRemoveButton collection="Decks" _id=this._id class="ui red button" beforeRemove=beforeRemove}}
     {{/autoForm}}
   </div>
 </template>
