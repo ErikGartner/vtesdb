@@ -35,6 +35,6 @@ Template.bareCard.helpers
       used = _.reduce(used, (memo, num) ->
         return memo + num
       , 0)
-      return {inv: card.count, free: Math.max(card.count - used, 0)}
+      return {inv: card.count, used: used}
     else
-      return {inv: 0, free: 0}
+      return {inv: 0, used: 0}
