@@ -34,7 +34,7 @@ Template.cardSearch.helpers
     return CardsIndex
 
   loadMoreAttributes: ->
-    return {class: "ui green button"}
+    return {class: "ui green fluid button"}
 
 Template.bareCard.events
 
