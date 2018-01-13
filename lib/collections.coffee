@@ -8,6 +8,17 @@
   collection: Cards
   fields: ['norm_name']
   engine: new EasySearch.MongoDB()
+  name: 'card_index'
+  defaultSearchOptions:
+    limit: 8
+
+@ShortCardsIndex = new EasySearch.Index
+  collection: Cards
+  fields: ['norm_name']
+  engine: new EasySearch.MongoDB()
+  name: 'short_card_index'
+  defaultSearchOptions:
+    limit: 3
 
 @DeckIndex = new EasySearch.Index
   collection: Decks

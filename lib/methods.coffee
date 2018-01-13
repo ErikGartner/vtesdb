@@ -52,7 +52,10 @@ Meteor.methods
     if not deck?
       throw new Meteor.Error('invalid deck')
 
-    deck.cards[cardId] = count
+    if count == 0
+      delete deck.cards[cardId]
+    else
+      deck.cards[cardId] = count
     Decks.update deckId, $set: cards: deck.cards
     return
 
