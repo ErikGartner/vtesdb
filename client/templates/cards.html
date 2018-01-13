@@ -9,7 +9,9 @@
 
   <div class="ui four column doubling stackable grid">
     {{#EasySearch.Each index=CardsIndex}}
-      {{> card}}
+      <div class="column">
+        {{> card}}
+      </div>
     {{/EasySearch.Each}}
   </div>
 
