@@ -2,7 +2,9 @@ Template.deck.helpers
 
   libItems: ->
     items = Decks.findOne(@_id).library()
-    return _.sortBy(items, ['name'])
+    items = _.groupBy(items, (item) -> return item.type)
+    items = _.map(items, (val, key) -> return {type: key, cards: val})
+    return _.sortBy(items, ['type'])
 
   cryptItems: ->
     items = Decks.findOne(@_id).crypt()

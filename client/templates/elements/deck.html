@@ -14,34 +14,45 @@
           {{/if}}
       </h3>
       <div class="ui attached segment">
-        <h5>Description</h5>
+        <h4>Description</h4>
         <p>{{description}}</p>
 
-        <h5>Crypt Cards ({{deckStats.cryptCount}})</h5>
+        <h4>Crypt Cards ({{deckStats.cryptCount}})</h4>
         <div class="ui list">
           {{#each cryptItems}}
             <div class="item">
               <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
               <div class="content">
                 <div class="header">{{deck_count}}x {{name}}</div>
-                <div class="description">{{clan}} {{capacity}} {{disciplines}}</div>
+                <div class="description">{{clan}} {{title}} {{capacity}} {{disciplines}}</div>
               </div>
             </div>
           {{/each}}
         </div>
 
-        <h5>Library Cards ({{deckStats.libCount}})</h5>
-        <div class="ui list">
+        <h4>Library Cards ({{deckStats.libCount}})</h4>
+          <div class="ui list">
           {{#each libItems}}
-            <div class="item">
-              <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
-              <div class="content">
-                <div class="header">{{deck_count}}x {{name}}</div>
-                <div class="description">{{type}}</div>
-              </div>
-            </div>
+            <h5>{{type}}</h5>
+              {{#each cards}}
+                <div class="item">
+                  <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+                  <div class="content">
+                    <div class="header">{{deck_count}}x {{name}}</div>
+                    <div class="description">
+                      {{#if poolCost}}
+                        Pool: {{poolCost}}
+                      {{/if}}
+                      {{#if bloodCost}}
+                        Blood: {{bloodCost}}
+                      {{/if}}
+                      {{clan}} {{discipline}} {{requirement}}
+                    </div>
+                  </div>
+                </div>
+              {{/each}}
           {{/each}}
-        </div>
+          </div>
       </div>
     </div>
 
