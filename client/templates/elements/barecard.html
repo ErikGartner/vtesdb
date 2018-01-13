@@ -55,15 +55,18 @@
       </div>
     </div>
     <div class="extra content">
-      <form class='set-card' action="#">
-        <div class="ui fluid action input">
-          <input title="Count" class="badge-input" name="count" type="text" value={{cardCount}}>
-          <button type="submit" class="ui green right icon button">
-            <i class="check icon"></i>
-          </button>
+          <form class='set-card ui form' action="#">
+            <div class="inline field">
+              <label>Inv: {{inventoryCount}}, deck:</label>
+              <div class="ui fluid action input">
+                <input title="Count" class="badge-input" name="count" type="text" value={{cardCount}}>
+                <button type="submit" class="ui green right icon button">
+                  <i class="check icon"></i>
+                </button>
+              </div>
+              <input type='hidden' name='id' value='{{cardId}}'/>
+            </div>
+          </form>
         </div>
-        <input type='hidden' name='id' value='{{cardId}}'/>
-      </form>
-    </div>
   </div>
 </template>

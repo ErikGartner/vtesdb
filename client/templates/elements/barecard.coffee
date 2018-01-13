@@ -22,3 +22,10 @@ Template.bareCard.helpers
       return count
     else
       return 0
+
+  inventoryCount: ->
+    card = Inventories.findOne(cardId: @cardId)
+    if card?
+      return card.count
+    else
+      return 0
