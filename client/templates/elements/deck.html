@@ -17,7 +17,7 @@
         <h5>Description</h5>
         <p>{{description}}</p>
 
-        <h5>Crypt Cards</h5>
+        <h5>Crypt Cards ({{deckStats.cryptCount}})</h5>
         <div class="ui list">
           {{#each cryptItems}}
             <div class="item">
@@ -30,7 +30,7 @@
           {{/each}}
         </div>
 
-        <h5>Library Cards</h5>
+        <h5>Library Cards ({{deckStats.libCount}})</h5>
         <div class="ui list">
           {{#each libItems}}
             <div class="item">

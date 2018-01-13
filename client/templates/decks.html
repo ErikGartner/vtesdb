@@ -42,7 +42,9 @@
         {{name}}
       </a>
       <div class="meta">
-        Crypt: {{stats.cryptCount}}, Library: {{stats.libCount}}
+        {{#with deckStats}}
+        Crypt: {{cryptCount}}, Library: {{libCount}}
+        {{/with}}
       </div>
       <div class="description">
         <p>{{description}}</p>
