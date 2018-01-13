@@ -7,6 +7,7 @@ VTES Database
 - Searching with large visible images
 - Track your inventory
 - Displays specific card rulings
+- Manage your decks
 
 ## Installation
 This project uses meteor along with some other minor packages. They are downloaded automatically.
@@ -18,7 +19,7 @@ This project uses meteor along with some other minor packages. They are download
 ## License
 VtES Database is released under The MIT License (MIT).
 
-Copyright (c) 2015 Erik Gärtner
+Copyright (c) 2015-2018 Erik Gärtner
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal
