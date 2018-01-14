@@ -1,16 +1,16 @@
 Template.card.helpers
   inventoryCount: ->
-    card = Inventories.findOne(cardId: @cardId)
+    card = Inventories.findOne(card_id: @card_id)
     if card?
       return card.count
     else
       return 0
 
   isCryptCard: ->
-    return @cardType == 'crypt'
+    return @card_type == 'crypt'
 
   rulings: ->
-    rulings = Rulings.findOne(id: @cardId)
+    rulings = Rulings.findOne(id: @card_id)
     return rulings?.rulings
 
 Template.card.onRendered ->

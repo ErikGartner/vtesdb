@@ -25,13 +25,13 @@ Meteor.startup ->
           requirement: cards[i]['Requirement']
           clan: cards[i]['Clan']
           discipline: cards[i]['Discipline']
-          bloodCost: cards[i]['Blood Cost']
-          poolCost: cards[i]['Pool Cost']
+          blood_cost: cards[i]['Blood Cost']
+          pool_cost: cards[i]['Pool Cost']
           set: cards[i]['Set']
           banned: cards[i]['Banned']
           type: cards[i]['Type']
-          cardId: cards[i]['id']
-          cardType: 'lib'
+          card_id: cards[i]['id']
+          card_type: 'lib'
         i++
       cards = JSON.parse(Assets.getText('vtescrypt.json'))
       i = 0
@@ -50,8 +50,8 @@ Meteor.startup ->
           set: cards[i]['Set']
           banned: cards[i]['Banned']
           type: cards[i]['Type']
-          cardId: cards[i]['id']
-          cardType: 'crypt'
+          card_id: cards[i]['id']
+          card_type: 'crypt'
         i++
       console.log 'Done!'
 

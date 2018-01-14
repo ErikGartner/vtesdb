@@ -11,11 +11,11 @@
                     {{clan}} {{capacity}} {{disciplines}}
                   {{else}}
                       {{type}} {{clan}} {{requirement}}
-                      {{#if poolCost}}
-                        Pool: {{poolCost}}
+                      {{#if pool_cost}}
+                        Pool: {{pool_cost}}
                       {{/if}}
-                      {{#if bloodCost}}
-                        Blood: {{bloodCost}}
+                      {{#if blood_cost}}
+                        Blood: {{blood_cost}}
                       {{/if}}
                     {{/if}}
                   </p>
@@ -23,7 +23,7 @@
                 </div>
               </div>
             </div>
-            <img src="/cards/{{cardId}}.jpg" onerror="this.src='/cardback.jpg'">
+            <img src="/cards/{{card_id}}.jpg" onerror="this.src='/cardback.jpg'">
       </div>
 
       <div class="content">
@@ -39,7 +39,7 @@
               <div class="ui input">
                 <input title="Inventory" class="badge-input" name="count" type="text" placeholder={{inventoryCount}}>
               </div>
-              <input type='hidden' name='id' value='{{cardId}}'/>
+              <input type='hidden' name='id' value='{{card_id}}'/>
               <input type="submit" style="visibility: hidden;" />
             </form>
           </div>

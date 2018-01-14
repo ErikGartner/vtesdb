@@ -21,7 +21,7 @@
         <div class="ui list">
           {{#each cryptItems}}
             <div class="item">
-              <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+              <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
               <div class="content">
                 <div class="header">{{deck_count}}x {{name}}</div>
                 <div class="description">{{clan}} {{title}} {{capacity}} {{disciplines}}</div>
@@ -36,15 +36,15 @@
             <h5>{{type}}</h5>
               {{#each cards}}
                 <div class="item">
-                  <img class="ui avatar image" src="/cards/{{cardId}}.jpg">
+                  <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
                   <div class="content">
                     <div class="header">{{deck_count}}x {{name}}</div>
                     <div class="description">
-                      {{#if poolCost}}
-                        Pool: {{poolCost}}
+                      {{#if pool_cost}}
+                        Pool: {{pool_cost}}
                       {{/if}}
-                      {{#if bloodCost}}
-                        Blood: {{bloodCost}}
+                      {{#if blood_cost}}
+                        Blood: {{blood_cost}}
                       {{/if}}
                       {{clan}} {{discipline}} {{requirement}}
                     </div>

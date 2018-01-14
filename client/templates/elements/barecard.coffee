@@ -16,22 +16,22 @@ Template.bareCard.events
 
 Template.bareCard.helpers
   isCryptCard: ->
-    return @cardType == 'crypt'
+    return @card_type == 'crypt'
 
   cardCount: ->
     deck = Router.current().params._id
-    count = Decks.findOne(deck).cards[@cardId]
+    count = Decks.findOne(deck).cards[@card_id]
     if count?
       return count
     else
       return 0
 
   inventoryCount: ->
-    card = Inventories.findOne(cardId: @cardId)
+    card = Inventories.findOne(card_id: @card_id)
     if card?
-      cardId = @cardId
+      card_id = @card_id
       used = Decks.find(owner: Meteor.userId, active: true).map (doc) ->
-        return if doc.cards[cardId]? then doc.cards[cardId] else 0
+        return if doc.cards[card_id]? then doc.cards[card_id] else 0
       used = _.reduce(used, (memo, num) ->
         return memo + num
       , 0)

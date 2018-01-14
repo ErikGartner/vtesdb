@@ -5,12 +5,17 @@
 @Rulings = new Meteor.Collection 'rulings'
 
 @CardsIndex = new EasySearch.Index
+  name: 'card_index'
   collection: Cards
   fields: ['norm_name']
-  engine: new EasySearch.MongoDB()
-  name: 'card_index'
   defaultSearchOptions:
     limit: 8
+  engine: new EasySearch.MongoDB
+    selector: (searchObject, options, aggregation) ->
+      selector = @defaultConfiguration()
+        .selector(searchObject, options, aggregation)
+      return selector
+
 
 @ShortCardsIndex = new EasySearch.Index
   collection: Cards
@@ -74,8 +79,8 @@ Decks.helpers
 
   library: ->
     items = _.map(@cards, (num, id) ->
-      card = Cards.findOne(cardId: id)
-      if card?.cardType == 'lib'
+      card = Cards.findOne(card_id: id)
+      if card?.card_type == 'lib'
         card.deck_count = num
         return card
       else
@@ -87,8 +92,8 @@ Decks.helpers
 
   crypt: ->
     items = _.map(@cards, (num, id) ->
-      card = Cards.findOne(cardId: id)
-      if card?.cardType == 'crypt'
+      card = Cards.findOne(card_id: id)
+      if card?.card_type == 'crypt'
         card.deck_count = num
         return card
       else

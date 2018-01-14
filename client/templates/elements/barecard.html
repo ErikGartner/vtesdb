@@ -23,11 +23,11 @@
           {{clan}} {{capacity}} {{disciplines}}
         {{else}}
             {{type}} {{clan}} {{requirement}}
-            {{#if poolCost}}
-              Pool: {{poolCost}}
+            {{#if pool_cost}}
+              Pool: {{pool_cost}}
             {{/if}}
-            {{#if bloodCost}}
-              Blood: {{bloodCost}}
+            {{#if blood_cost}}
+              Blood: {{blood_cost}}
             {{/if}}
           {{/if}}
       </div>
@@ -64,7 +64,7 @@
                   <i class="check icon"></i>
                 </button>
               </div>
-              <input type='hidden' name='id' value='{{cardId}}'/>
+              <input type='hidden' name='id' value='{{card_id}}'/>
             </div>
           </form>
         </div>

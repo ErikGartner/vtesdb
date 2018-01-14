@@ -21,6 +21,6 @@ Meteor.publishComposite 'decks', ->
     {
       find: (deck) ->
         cards = Object.keys(deck.cards)
-        return Cards.find cardId: $in: cards
+        return Cards.find card_id: $in: cards
     }
   ]

@@ -1,10 +1,10 @@
 Meteor.methods
-  validCard: (cardId) ->
-    check cardId, String
+  validCard: (card_id) ->
+    check card_id, String
     if Meteor.isServer
-      return Cards.findOne('cardId': cardId)?
+      return Cards.findOne('card_id': card_id)?
     else
-      # Client assums valid cardId. This allows for latency comp.
+      # Client assums valid card_id. This allows for latency comp.
       return true
 
   setInv: (id, count) ->
@@ -19,22 +19,22 @@ Meteor.methods
       throw new Meteor.Error('invalid card id')
     if count > 0
       Inventories.upsert {
-        cardId: id
+        card_id: id
         owner: uid
       },
         count: count
-        cardId: id
+        card_id: id
         owner: uid
     else
-      Inventories.remove cardId: id
+      Inventories.remove card_id: id
     return
 
-  setDeckCard: (cardId, deckId, count) ->
+  setDeckCard: (card_id, deckId, count) ->
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
 
-    check cardId, String
+    check card_id, String
     check count, Match.Integer
     check deckId, String
 
@@ -44,7 +44,7 @@ Meteor.methods
     if not Meteor.isServer
       return true
 
-    card = Cards.findOne(cardId: cardId)
+    card = Cards.findOne(card_id: card_id)
     if not card?
       throw new Meteor.Error('invalid-card')
 
@@ -53,9 +53,9 @@ Meteor.methods
       throw new Meteor.Error('invalid deck')
 
     if count == 0
-      delete deck.cards[cardId]
+      delete deck.cards[card_id]
     else
-      deck.cards[cardId] = count
+      deck.cards[card_id] = count
     Decks.update deckId, $set: cards: deck.cards
     return
 
@@ -78,12 +78,12 @@ Meteor.methods
     card = Cards.findOne(selector)
     if not card?
       return -1
-    id = card.cardId
+    id = card.card_id
 
-    inv = Inventories.findOne {cardId: id, owner: uid}
+    inv = Inventories.findOne {card_id: id, owner: uid}
     if inv?
       Inventories.update {_id:inv._id}, {$inc: {count: count}}
     else
-      Inventories.insert {cardId: id, owner: uid, count: count}
+      Inventories.insert {card_id: id, owner: uid, count: count}
 
     return id
