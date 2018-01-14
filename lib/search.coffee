@@ -9,7 +9,7 @@ parameter_regex = ///
 parameterize_query = (searchObject) ->
   orig_query = searchObject.norm_name
   norm_name = orig_query
-  new_object = {}
+  new_objects = []
 
   while (m = parameter_regex.exec orig_query)?
     quoted_match = if m[1] then true else false
@@ -17,10 +17,10 @@ parameterize_query = (searchObject) ->
     field = if quoted_match then m[1] else m[3]
     value = if quoted_match then m[2] else m[4]
     norm_name = norm_name.replace matched_string, ''
-    new_object[field] = value
+    new_objects.push {field: field, value: value}
 
-  new_object.norm_name = norm_name
-  return new_object
+  new_objects.push {field: 'norm_name', value: norm_name}
+  return new_objects
 
 
 @CardsIndex = new EasySearch.Index
@@ -31,10 +31,12 @@ parameterize_query = (searchObject) ->
     limit: 8
   engine: new EasySearch.MongoDB
     selector: (searchObject, options, aggregation) ->
-      searchObject = parameterize_query(searchObject)
-      selector = @defaultConfiguration()
-        .selector(searchObject, options, '$and')
-      return selector
+      searchObjects = parameterize_query(searchObject)
+      engine = @
+      selectors = _.map searchObjects, (searchObject) ->
+        return engine.defaultConfiguration()
+          .selectorPerField searchObject.field, searchObject.value
+      return {$and: selectors}
 
 @ShortCardsIndex = new EasySearch.Index
   name: 'short_card_index'
@@ -44,10 +46,12 @@ parameterize_query = (searchObject) ->
     limit: 3
   engine: new EasySearch.MongoDB
     selector: (searchObject, options, aggregation) ->
-      searchObject = parameterize_query(searchObject)
-      selector = @defaultConfiguration()
-        .selector(searchObject, options, '$and')
-      return selector
+      searchObjects = parameterize_query(searchObject)
+      engine = @
+      selectors = _.map searchObjects, (searchObject) ->
+        return engine.defaultConfiguration()
+          .selectorPerField searchObject.field, searchObject.value
+      return {$and: selectors}
 
 @DeckIndex = new EasySearch.Index
   collection: Decks
