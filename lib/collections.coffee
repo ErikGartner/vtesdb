@@ -54,7 +54,7 @@ Decks.helpers
   library: ->
     items = _.map(@cards, (num, id) ->
       card = Cards.findOne(card_id: id)
-      if card?.card_type == 'lib'
+      if card?.type != 'Vampire'
         card.deck_count = num
         return card
       else
@@ -67,7 +67,7 @@ Decks.helpers
   crypt: ->
     items = _.map(@cards, (num, id) ->
       card = Cards.findOne(card_id: id)
-      if card?.card_type == 'crypt'
+      if card?.type == 'Vampire'
         card.deck_count = num
         return card
       else

@@ -6,6 +6,8 @@ Uses Python 3.5.
 import os
 import csv
 import json
+import unicodedata
+import re
 
 import requests
 
@@ -13,7 +15,12 @@ import requests
 LISTING = 'http://www.lackeyccg.com/vtes/common/allsets.txt'
 
 
-def main():
+def create_normalized_name(name):
+    name = unicodedata.normalize('NFKD', name).lower()
+    return re.sub(r'[^\x00-\x7F]+', '', name)
+
+
+def download_card_list():
     r = requests.get(LISTING)
     if r.status_code != 200:
         print('Error while downloading file list.')
@@ -24,6 +31,7 @@ def main():
                               quoting=csv.QUOTE_NONE):
         data.append({
             'name': row['Name'],
+            'norm_name': create_normalized_name(row['Name']),
             'set': row['Set'],
             'card_id': row['ImageFile'].split(',')[0],
             'expansion': row['Expansion'],
@@ -33,12 +41,16 @@ def main():
             'group': row['Group'],
             'capacity': row['Capacity'],
             'disciplines': row['Discipline'].split(),
-            'pool': row['PCost'],
-            'blood': row['BCost'],
+            'pool_cost': row['PCost'],
+            'blood_cost': row['BCost'],
             'text': row['Text'],
             'artist': row['Artist'],
         })
+    return data
 
+
+def main():
+    data = download_card_list()
     with open('cards.json', 'w') as f:
         json.dump(data, f, indent=2, sort_keys=True)
 

@@ -13,46 +13,12 @@ Meteor.startup ->
       console.log 'Updating card database and git version..'
       Version.remove {}
       Version.insert ver
-      Cards.remove {}
+
       console.log 'Reading all cards...'
-      cards = JSON.parse(Assets.getText('vteslib.json'))
-      i = 0
-      while i < cards.length
-        Cards.insert
-          name: cards[i]['Name']
-          norm_name: cards[i]['Norm-Name']
-          text: cards[i]['Card Text']
-          requirement: cards[i]['Requirement']
-          clan: cards[i]['Clan']
-          discipline: cards[i]['Discipline']
-          blood_cost: cards[i]['Blood Cost']
-          pool_cost: cards[i]['Pool Cost']
-          set: cards[i]['Set']
-          banned: cards[i]['Banned']
-          type: cards[i]['Type']
-          card_id: cards[i]['id']
-          card_type: 'lib'
-        i++
-      cards = JSON.parse(Assets.getText('vtescrypt.json'))
-      i = 0
-      while i < cards.length
-        Cards.insert
-          name: cards[i]['Name']
-          norm_name: cards[i]['Norm-Name']
-          text: cards[i]['Card Text']
-          clan: cards[i]['Clan']
-          adv: cards[i]['Adv']
-          capacity: cards[i]['Capacity']
-          group: cards[i]['Group']
-          disciplines: cards[i]['Disciplines']
-          title: cards[i]['Title']
-          artist: cards[i]['Artist']
-          set: cards[i]['Set']
-          banned: cards[i]['Banned']
-          type: cards[i]['Type']
-          card_id: cards[i]['id']
-          card_type: 'crypt'
-        i++
+      Cards.remove {}
+      cards = JSON.parse(Assets.getText('cards.json'))
+      _.each cards, (card) ->
+        Cards.insert card
       console.log 'Done!'
 
       Rulings.remove {}
@@ -64,5 +30,6 @@ Meteor.startup ->
           id: rule['id']
           rulings: rule['rulings']
       console.log 'Done!'
+
     return
   return

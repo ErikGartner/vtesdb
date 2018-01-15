@@ -7,7 +7,7 @@ Template.card.helpers
       return 0
 
   isCryptCard: ->
-    return @card_type == 'crypt'
+    return @type == 'Vampire'
 
   rulings: ->
     rulings = Rulings.findOne(id: @card_id)
