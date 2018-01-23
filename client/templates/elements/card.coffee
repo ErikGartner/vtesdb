@@ -1,6 +1,6 @@
 Template.card.helpers
   inventoryCount: ->
-    card = Inventories.findOne(card_id: @card_id)
+    card = Inventories.findOne(cardId: @card_id)
     if card?
       return card.count
     else

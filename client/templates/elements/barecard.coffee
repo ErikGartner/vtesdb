@@ -27,7 +27,7 @@ Template.bareCard.helpers
       return 0
 
   inventoryCount: ->
-    card = Inventories.findOne(card_id: @card_id)
+    card = Inventories.findOne(cardId: @card_id)
     if card?
       card_id = @card_id
       used = Decks.find(owner: Meteor.userId, active: true).map (doc) ->
