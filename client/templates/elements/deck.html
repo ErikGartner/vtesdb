@@ -5,7 +5,6 @@
     <div class="twelve wide column">
       <h3 class="ui top attached header">
           <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
-
           {{name}}
           {{#if active}}
             <div class="ui green horizontal label">active</div>
@@ -23,8 +22,12 @@
             <div class="item">
               <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
               <div class="content">
-                <div class="header">{{deck_count}}x {{name}}</div>
-                <div class="description">{{clan}} {{title}} {{capacity}} {{disciplines}}</div>
+                <div class="header">{{deck_count}}x {{name}} <small>{{clan}} {{capacity}} {{title}}</small></div>
+                <div class="description">
+                  {{#each disciplines}}
+                    <icon class="{{this}}"></icon>
+                  {{/each}}
+                </div>
               </div>
             </div>
           {{/each}}

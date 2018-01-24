@@ -1,0 +1,145 @@
+@font-face {
+    font-family: "ankha";
+    src: url(/fonts/ankha.ttf) format("truetype");
+}
+
+icon{
+    display: inline-block;
+    font-family: sans-serif;
+    position: relative;
+    height: 1em;
+    /* float: left; */
+    /* clear: left; */
+    flex-grow: 1;
+    width: 1em;
+    margin: 0;
+    /* margin-right: -0.36em; */
+
+    
+    font-size: 150%;
+    vertical-align: middle;
+}
+
+icon:before,
+icon:after{
+    position: absolute;
+    font-family: ankha;
+    font-weight: 100;
+    z-index: 3;
+    top:0;
+    left:0;
+    right: 0;
+    border: 0;
+}
+
+icon:before{
+    content: '<';
+    z-index: 1;
+    display: inline-block !important;
+    color: white;
+}
+
+/* Icon mappings */
+.abo:after{content: 'w'}
+.ACTION_MODIFIER:after{content: '1'}
+.ACTION:after{content: '0'}
+.ani:after{content: 'i'}
+.aus:after{content: 'a';}
+.cel:after{content: 'c'}
+.chi:after{content: 'k'}
+.COMBAT:after{content: '4'}
+.dai:after{content: 'y'}
+.dem:after{content: 'e'}
+.dom:after{content: 'd'}
+.FLIGHT:after{content: '^'}
+.flight:after{content: '^'}
+.for:after{content: 'f'}
+.mal:after{content: 'â';}
+.mel:after{content: 'm'}
+.myt:after{content: 'x'}
+.nec:after{content: 'n'}
+.obe:after{content: 'b'}
+.obf:after{content: 'o'}
+.obt:after{content: '$'}
+.pot:after{content: 'p'}
+.pre:after{content: 'r'}
+.pro:after{content: 'j'}
+.qui:after{content: 'q'}
+.REACTION:after{content: '7'}
+.REFLEX:after{content: '6'}
+.san:after{content: 'g'}
+.ser:after{content: 's'}
+.spi:after{content: 'z'}
+.str:after{content: 'à';}
+.tem:after{content: '?'}
+.tha:after{content: 't'}
+.thn:after{content: 'h'}
+.val:after{content: 'l'}
+.vic:after{content: 'v'}
+.vis:after{content: 'u';}
+
+.ABO:after{content: 'W'; left: -0.09em; top: -0.08em;}
+.ANI:after{content: 'I'; left: -0.09em; top: -0.08em;}
+.AUS:after{content: 'A'; left: -0.09em; top: -0.08em;}
+.CEL:after{content: 'C'; left: -0.09em; top: -0.08em;}
+.CHI:after{content: 'K'; left: -0.09em; top: -0.08em;}
+.DAI:after{content: 'Y'; left: -0.09em; top: -0.08em;}
+.DEM:after{content: 'E';left: -0.09em;top: -0.08em;}
+.DOM:after{content: 'D'; left: -0.09em; top: -0.08em;}
+.FOR:after{content: 'F'; left: -0.09em; top: -0.08em;}
+.MAL:after{content: 'ã';left: -0.09em;top: -0.08em;}
+.MEL:after{content: 'M';left: -0.09em;top: -0.08em;}
+.MYT:after{content: 'X'; left: -0.09em; top: -0.08em;}
+.NEC:after{content: 'N'; left: -0.09em; top: -0.08em;}
+.OBE:after{content: 'B'; left: -0.09em;top: -0.08em;}
+.OBF:after{content: 'O'; left: -0.09em; top: -0.08em;}
+.OBT:after{content: '£';left: -0.09em;top: -0.08em;}
+.POT:after{content: 'P'; left: -0.09em; top: -0.08em;}
+.PRE:after{content: 'R'; left: -0.09em; top: -0.08em;}
+.PRO:after{content: 'J'; left: -0.09em; top: -0.08em;}
+.QUI:after{content: 'Q'; left: -0.09em; top: -0.08em;}
+.SAN:after{content: 'G'; left: -0.09em; top: -0.08em;}
+.SER:after{content: 'S'; left: -0.09em; top: -0.08em;}
+.SPI:after{content: 'Z'; left: -0.09em; top: -0.08em;}
+.STR:after{content: 'á';left: -0.09em;top: -0.08em;}
+.TEM:after{content: '!'; left: -0.09em; top: -0.08em;}
+.THA:after{content: 'T'; left: -0.09em; top: -0.08em;}
+.THN:after{content: 'H'; left: -0.09em; top: -0.08em;}
+.VAL:after{content: 'L'; left: -0.09em; top: -0.08em;}
+.VIC:after{content: 'V'; left: -0.09em; top: -0.08em;}
+.VIS:after{content: 'U';left: -0.09em;top: -0.08em;}
+
+.ABO:before{content:'>'; left: -0.09em; top: -0.08em;}
+.ANI:before{content:'>'; left: -0.09em; top: -0.08em;}
+.AUS:before{content:'>';left: -0.09em;top: -0.08em;}
+.CEL:before{content:'>'; left: -0.09em; top: -0.08em;}
+.CHI:before{content:'>'; left: -0.09em; top: -0.08em;}
+.DAI:before{content:'>'; left: -0.09em; top: -0.08em;}
+.DEM:before{content:'>'; left: -0.09em; top: -0.08em;}
+.DOM:before{content:'>'; left: -0.09em; top: -0.08em;}
+.FOR:before{content:'>'; left: -0.09em; top: -0.08em;}
+.MAL:before{content:'>'; left: -0.09em; top: -0.08em;}
+.MEL:before{content:'>'; left: -0.09em; top: -0.08em;}
+.MYT:before{content:'>'; left: -0.09em; top: -0.08em;}
+.NEC:before{content:'>'; left: -0.09em; top: -0.08em;}
+.OBE:before{content:'>'; left: -0.09em;top: -0.08em;}
+.OBF:before{content:'>'; left: -0.09em; top: -0.08em;}
+.OBT:before{content:'>';left: -0.09em;top: -0.08em;}
+.POT:before{content:'>'; left: -0.09em; top: -0.08em;}
+.PRE:before{content:'>'; left: -0.09em; top: -0.08em;}
+.PRO:before{content:'>'; left: -0.09em; top: -0.08em;}
+.QUI:before{content:'>'; left: -0.09em; top: -0.08em;}
+.SAN:before{content:'>'; left: -0.09em; top: -0.08em;}
+.SER:before{content:'>'; left: -0.09em; top: -0.08em;}
+.SPI:before{content:'>'; left: -0.09em; top: -0.08em;}
+.STR:before{content:'>'; left: -0.09em; top: -0.08em;}
+.TEM:before{content:'>'; left: -0.09em; top: -0.08em;}
+.THA:before{content:'>'; left: -0.09em; top: -0.08em;}
+.THN:before{content:'>'; left: -0.09em; top: -0.08em;}
+.VAL:before{content:'>'; left: -0.09em; top: -0.08em;}
+.VIC:before{content:'>'; left: -0.09em; top: -0.08em;}
+.VIS:before{content: '>';left: -0.09em;top: -0.08em;}
+
+.FLIGHT:before{content: '`'}
+.flight:before{content: '`'}
+.flight{ margin-right: 0.2em}
