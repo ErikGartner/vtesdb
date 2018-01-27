@@ -1,9 +1,5 @@
 Meteor.startup ->
   if Cards.find().count() == 0
-    console.log 'Updating card database and git version..'
-    Version.remove {}
-    Version.insert ver
-
     console.log 'Reading all cards...'
     Cards.remove {}
     cards = JSON.parse(Assets.getText('cards.json'))
