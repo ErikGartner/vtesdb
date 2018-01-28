@@ -2,6 +2,8 @@ VTES Database
 =========
 *A meteor app that allows for searching among all cards in the collectible card game VtES.*
 
+The offical version of the app is hosted at [vtes.gartner.io](https://vtes.gartner.io), though note that the app is under active development and may be unstable. 
+
 ## Features
 
 - Searching with large visible images
@@ -14,8 +16,10 @@ This project uses meteor along with some other minor packages. They are download
 
 1. Install meteor from http://meteor.com
 2. Checkout this repo.
-3. Install the npm packages using `meteor npm install
+3. Install the npm packages using `meteor npm install`
 4. Start the app locally using `meteor run` in the project folder.
+
+If you intend to run the app locally only rather than hosting it on a server you might also want to use local accounts rather than Facebook login. To enable that run `meteor add accounts-password`.
 
 ## License
 VtES Database is released under The MIT License (MIT).
