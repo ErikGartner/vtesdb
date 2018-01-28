@@ -14,7 +14,8 @@ This project uses meteor along with some other minor packages. They are download
 
 1. Install meteor from http://meteor.com
 2. Checkout this repo.
-3. Start the app locally using `meteor run` in the project folder.
+3. Install the npm packages using `meteor npm install
+4. Start the app locally using `meteor run` in the project folder.
 
 ## License
 VtES Database is released under The MIT License (MIT).
