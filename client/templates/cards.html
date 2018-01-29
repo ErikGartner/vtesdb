@@ -5,7 +5,7 @@
     <i class="search icon"></i>
   </div>
 
-  <p></p>
+  {{> searchHelp}}
 
   <div class="ui four doubling stackable cards">
     {{#EasySearch.Each index=CardsIndex}}
@@ -16,6 +16,61 @@
   <div class="ui two column centered grid">
     <div class="column">
       {{> EasySearch.LoadMore index=CardsIndex attributes=loadMoreAttributes}}
+    </div>
+  </div>
+</template>
+
+<template name="searchHelp">
+  <div class="ui accordion">
+    <div class="title">
+      <i class="question icon"></i>
+      Search help
+    </div>
+    <div class="content">
+      <div class="ui info message" style="margin-bottom: 1em;">
+        <p>
+          By default the search field only queries by name, however there exists a syntax.<br>
+          The simplest way is <i>keyword: value</i> or <i>keyword: "value with spaces"</i>
+        </p>
+
+        <ul>
+          <li>The basics
+            <ul>
+              <li>
+                <a href='#' class="searchExample item">type: vampire</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">type: equipment</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">clan: ventrue</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">disciplines: dom</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">text: "2R damage each strike"</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">capacity: 4</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">pool_cost: 6</a>
+              </li>
+            </ul>
+          </li>
+          <li>More advanced
+            <ul>
+              <li>All thauma cards that prevent damage
+                <a href='#' class="searchExample item">type:combat disciplines: tha text: prevent</a>
+              </li>
+              <li>Vampires with dominate and fortitude
+                <a href='#' class="searchExample item">type: vampire disciplines: dom disciplines: for</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </div>
     </div>
   </div>
 </template>

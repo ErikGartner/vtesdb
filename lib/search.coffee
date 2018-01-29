@@ -55,5 +55,5 @@ parameterize_query = (searchObject) ->
 
 @DeckIndex = new EasySearch.Index
   collection: Decks
-  fields: ['name']
+  fields: ['name', 'description']
   engine: new EasySearch.Minimongo()
