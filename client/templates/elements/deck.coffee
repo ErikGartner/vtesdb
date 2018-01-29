@@ -22,6 +22,10 @@ Template.deck.helpers
       cryptCount: Decks.findOne(@_id).crypt().length
     }
 
+  countCards: (cards) ->
+    counts = _.map(cards, (card) -> return card.deck_count)
+    return _.reduce(counts, (m, n) -> return m + n)
+
 Template.deck.events
 
   'click a.card-name': (e) ->
@@ -35,20 +39,3 @@ Template.editDeck.helpers
       doc = collection.findOne id
       if confirm('Really delete "' + doc.name + '"?')
         this.remove()
-
-Template.registerHelper 'deckStats', ->
-  sum = (list) ->
-    list = _.map(list, (l) ->
-      return l.deck_count
-    , 0)
-    return _.reduce(list, (m, n) ->
-      return m + n
-    , 0)
-  deck = Decks.findOne(@_id)
-  if not deck?
-    return {}
-  else
-    return {
-      libCount: sum(_.values(deck.library()))
-      cryptCount: sum(_.values(deck.crypt()))
-    }
