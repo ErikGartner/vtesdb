@@ -17,7 +17,7 @@
 <template name="bareCard">
   <div class="ui card">
     <div class="content">
-      <p class="header">{{name}}</p>
+      <a href="{{pathFor route='searchCard' searchString=name}}" class="header">{{name}}</a>
       <div class="meta">
         {{#if isCryptCard}}
           {{clan}} {{capacity}} {{disciplines}}
