@@ -22,6 +22,12 @@ Template.deck.helpers
       cryptCount: Decks.findOne(@_id).crypt().length
     }
 
+Template.deck.events
+
+  'click a.card-name': (e) ->
+    name = e.target.innerText
+    $('input#card-search-input').val(name)
+    ShortCardsIndex.getComponentMethods().search(name)
 
 Template.editDeck.helpers
   beforeRemove: ->

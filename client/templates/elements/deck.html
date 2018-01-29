@@ -22,7 +22,9 @@
             <div class="item">
               <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
               <div class="content">
-                <div class="header">{{deck_count}}x {{name}} <small>{{clan}} {{capacity}} {{title}}</small></div>
+                <div class="header">
+                  {{deck_count}}x <a class="card-name">{{name}}</a> <small>{{clan}} {{capacity}} {{title}}</small>
+                </div>
                 <div class="description">
                   {{#each disciplines}}
                     <icon class="{{this}}"></icon>
@@ -41,7 +43,9 @@
                 <div class="item">
                   <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
                   <div class="content">
-                    <div class="header">{{deck_count}}x {{name}}</div>
+                    <div class="header">
+                      {{deck_count}}x <a class="card-name">{{name}}</a>
+                    </div>
                     <div class="description">
                       {{#if pool_cost}}
                         Pool: {{pool_cost}}

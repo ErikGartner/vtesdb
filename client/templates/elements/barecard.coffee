@@ -5,6 +5,9 @@ Template.cardSearch.helpers
   loadMoreAttributes: ->
     return {class: "ui green fluid button"}
 
+  inputAttributes: ->
+    return {id: 'card-search-input'}
+
 Template.bareCard.events
 
   'submit .set-card': (event) ->
