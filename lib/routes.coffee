@@ -7,6 +7,14 @@ Router.route '/',
   name: 'home'
   template: 'cards'
 
+Router.route '/s/:searchString',
+  name: 'searchCard'
+  action: ->
+    @render 'cards', {
+      data: ->
+        return {searchString: @params.searchString}
+    }
+
 Router.route '/import',
   name: 'import'
   template: 'import'

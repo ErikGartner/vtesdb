@@ -3,4 +3,7 @@ Template.cards.helpers
     return CardsIndex
 
   loadMoreAttributes: ->
-    return {class: "ui green fluid big button"}
+    return {class: 'ui green fluid big button'}
+
+  inputAttributes: ->
+    return {value: @searchString, id: 'searchField'}
