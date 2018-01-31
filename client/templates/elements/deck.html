@@ -20,7 +20,7 @@
         <div class="ui list">
           {{#each cryptItems}}
             <div class="item">
-              <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
+              <img class="ui circular card-small image" src="/thumbnails/{{card_id}}.jpg">
               <div class="content">
                 <div class="header">
                   {{deck_count}}x <a class="card-name">{{name}}</a> <small></small>
@@ -42,7 +42,7 @@
             <h5>{{type}} ({{countCards cards}})</h5>
               {{#each cards}}
                 <div class="item">
-                  <img class="ui avatar image" src="/cards/{{card_id}}.jpg">
+                  <img class="ui circular card-small image" src="/thumbnails/{{card_id}}.jpg">
                   <div class="content">
                     <div class="header">
                       {{deck_count}}x <a class="card-name">{{name}}</a>
