@@ -24,3 +24,10 @@ Meteor.publishComposite 'decks', ->
         return Cards.find card_id: $in: cards
     }
   ]
+
+
+# Setup the indices
+Meteor.startup ->
+  # Most important is an index for the Cards since they are searched
+  # on the server.
+  Cards._ensureIndex {norm_name: 1, name: 1, type: 1, disciplines: 1, text: 1}
