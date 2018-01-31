@@ -5,11 +5,13 @@
     <i class="search icon"></i>
   </div>
 
+  <div style="padding-top: 1em;" class="ui doubling stackable cards">
   {{#EasySearch.Each index=ShortCardsIndex}}
     {{> bareCard}}
   {{/EasySearch.Each}}
+  </div>
 
-  <div>
+  <div style="padding-top: 1em;">
     {{> EasySearch.LoadMore index=ShortCardsIndex attributes=loadMoreAttributes}}
   </div>
 </template>
