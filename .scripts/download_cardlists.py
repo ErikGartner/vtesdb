@@ -43,8 +43,8 @@ def download_card_list():
             'group': row['Group'],
             'capacity': row['Capacity'],
             'disciplines': row['Discipline'].split(),
-            'pool_cost': row['PCost'],
-            'blood_cost': row['BCost'],
+            'pool': row['PCost'],
+            'blood': row['BCost'],
             'text': row['Text'],
             'artist': row['Artist'],
         })
