@@ -7,6 +7,7 @@ parameter_regex = ///
   ///ig
 
 parameterize_query = (searchObject) ->
+  # Takes a query string and splits it into fields
   orig_query = searchObject.norm_name
   norm_name = orig_query
   new_objects = []
@@ -22,6 +23,19 @@ parameterize_query = (searchObject) ->
   new_objects.push {field: 'norm_name', value: norm_name}
   return new_objects
 
+selectorPerField = (field, searchString) ->
+  # My custom implementation of handling fields and their search strings
+  selector = {}
+  searchString = searchString.replace(/(\W{1})/g, '\\$1')
+  selector[field] = { '$regex' : ".*#{ searchString }.*", '$options' : 'i'}
+  return selector
+
+selector_function = (searchObject, options, aggregation) ->
+  searchObjects = parameterize_query(searchObject)
+  engine = @
+  selectors = _.map searchObjects, (searchObject) ->
+    return selectorPerField searchObject.field, searchObject.value
+  return {$and: selectors}
 
 @CardsIndex = new EasySearch.Index
   name: 'card_index'
@@ -30,13 +44,7 @@ parameterize_query = (searchObject) ->
   defaultSearchOptions:
     limit: 8
   engine: new EasySearch.MongoDB
-    selector: (searchObject, options, aggregation) ->
-      searchObjects = parameterize_query(searchObject)
-      engine = @
-      selectors = _.map searchObjects, (searchObject) ->
-        return engine.defaultConfiguration()
-          .selectorPerField searchObject.field, searchObject.value
-      return {$and: selectors}
+    selector: selector_function
 
 @ShortCardsIndex = new EasySearch.Index
   name: 'short_card_index'
@@ -45,13 +53,7 @@ parameterize_query = (searchObject) ->
   defaultSearchOptions:
     limit: 3
   engine: new EasySearch.MongoDB
-    selector: (searchObject, options, aggregation) ->
-      searchObjects = parameterize_query(searchObject)
-      engine = @
-      selectors = _.map searchObjects, (searchObject) ->
-        return engine.defaultConfiguration()
-          .selectorPerField searchObject.field, searchObject.value
-      return {$and: selectors}
+    selector: selector_function
 
 @DeckIndex = new EasySearch.Index
   collection: Decks
