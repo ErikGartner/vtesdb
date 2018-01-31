@@ -29,6 +29,8 @@ def download_card_list():
     data = []
     for row in csv.DictReader(r.text.splitlines(), delimiter='\t',
                               quoting=csv.QUOTE_NONE):
+        if row['Type'] == 'Token':
+            continue
         data.append({
             'name': row['Name'],
             'norm_name': create_normalized_name(row['Name']),
