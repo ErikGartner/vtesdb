@@ -3,6 +3,11 @@
     src: url(/fonts/ankha.ttf) format("truetype");
 }
 
+@font-face {
+    font-family: "wod-icons";
+    src: url(/fonts/wod-icons.ttf) format("truetype");
+}
+
 icon{
     display: inline-block;
     font-family: sans-serif;
@@ -15,9 +20,6 @@ icon{
     margin: 0;
     /* margin-right: -0.36em; */
 
-    
-    font-size: 150%;
-    vertical-align: middle;
 }
 
 icon:before,
@@ -39,7 +41,34 @@ icon:before{
     color: white;
 }
 
-/* Icon mappings */
+.D:before{content: '{';}
+.D:after{content: '}'}
+card-text .D{
+	margin-left: -0.1em;
+	margin-right: 0.05em;
+}
+
+.MERGED:before{content: '¶'}
+.MERGED:after{content: 'µ'}
+
+.CONVICTION{margin-left: -0.15em;}
+.CONVICTION:before{content: '¥';}
+.CONVICTION:after{content: '¤';}
+.CONVICTION span{
+    position: absolute;
+    z-index: 3;
+    font-size: 50%;
+    margin-top: 0.25em;
+    width: 1em;
+    height: 1em;
+    display: block;
+    text-align: center;
+    margin-left: 0.4em;
+}
+
+.ADVANCED:after{content: '|'; margin-left: 0.1em;}
+.ADVANCED:before{content: '_'; margin-left: 0.1em;}
+
 .abo:after{content: 'w'}
 .ACTION_MODIFIER:after{content: '1'}
 .ACTION:after{content: '0'}
@@ -143,3 +172,316 @@ icon:before{
 .FLIGHT:before{content: '`'}
 .flight:before{content: '`'}
 .flight{ margin-right: 0.2em}
+
+
+
+icon.abomination:after,
+icon.ahrimane:after,
+icon.akunanse:after,
+icon.gargoyle:after,
+icon.giovanni:after,
+icon.guruhi:after,
+icon.ishtarri:after,
+icon.osebo:after,
+icon.defense:after   , icon.def:after,
+icon.innocence:after , icon.inn:after,
+icon.judgment:after  , icon.jus:after,
+icon.judgment:after  , icon.jud:after,
+icon.martyrdom:after , icon.mar:after,
+icon.redemption:after, icon.red:after,
+icon.vengeance:after , icon.ven:after,
+icon.vision:after    , icon.Vis:after,
+icon.avenger:after,
+icon.defender:after,
+icon.innocent:after,
+icon.judge:after,
+icon.martyr:after,
+icon.redeemer:after,
+icon.visionary:after,
+icon.tremere_antitribu:after {
+	 content: ' ';
+	 display: block;
+	 width: 100%;
+	 height: 100%;
+	 background-repeat: no-repeat;
+	 background-size: contain;
+	 margin-top: 0.2em;
+}
+icon.abomination:after           {background-image: url(/fonts/icons/iconclanabo.gif);top: -0.18em;}
+
+icon.defense:after   , icon.def:after { background-image: url(/fonts/icons/iconvirtuedefense.gif);}
+icon.innocence:after , icon.inn:after { background-image: url(/fonts/icons/iconvirtueinnocence.gif);}
+icon.judgment:after  , icon.jus:after { background-image: url(/fonts/icons/iconvirtuejustice.gif);}
+icon.judgment:after  , icon.jud:after { background-image: url(/fonts/icons/iconvirtuejustice.gif);}
+icon.martyrdom:after , icon.mar:after { background-image: url(/fonts/icons/iconvirtuemartyrdom.gif);}
+icon.redemption:after, icon.red:after { background-image: url(/fonts/icons/iconvirtueredemption.gif);}
+icon.vengeance:after , icon.ven:after { background-image: url(/fonts/icons/iconvirtuevengeance.gif);}
+icon.vision:after    , icon.Vis:after { background-image: url(/fonts/icons/iconvirtuevision.gif);}
+
+
+icon.ahrimane:after              {background-image: url(/fonts/icons/iconclanahrimanes.gif);top: -0.1em;}
+icon.akunanse:after              {background-image: url(/fonts/icons/iconclanakunanse.gif);height: 1.1em;left: 0.04em;width: 1.2em;top: -0.11em;}
+icon.gargoyle:after              {background-image: url(/fonts/icons/iconclangargoyle.gif);top: -0.25em;}
+icon.giovanni:after              {background-image: url(/fonts/icons/iconclangiovanni.gif);top: -0.2em;}
+icon.guruhi:after                {background-image: url(/fonts/icons/iconclanguruhi.gif);height: 1.1em;left: 0.04em;width: 1.2em;top: -0.15em;}
+icon.ishtarri:after              {background-image: url(/fonts/icons/iconclanishtarri.gif);height: 1.1em;left: 0;width: 1.2em;top: -0.15em;}
+icon.osebo:after                 {background-image: url(/fonts/icons/iconclanosebo.gif);height: 1em;left: -0.1em;width: 1.2em;top: -0.15em;}
+icon.tremere_antitribu:after     {background-image: url(/fonts/icons/iconclantremereanti.gif);height: 1.2em;display: block;width: 1.2em;content: ' ';top: -0.27em;left: -0.1em;}
+icon.assamite:after              {font-family: 'wod-icons';font-size:90%; content: 'n';}
+icon.baali:after                 {font-family: 'wod-icons';font-size: 104%;content: 'H';left: -0.03em;}
+icon.blood_brother:after         {font-family: 'wod-icons';content: 'u';left: -0.08em;top: 0.07em;font-size: 95%;}
+icon.brujah:after                {font-family: 'wod-icons';font-size: 97%;content: 'c';}
+icon.brujah_antitribu:after      {font-family: 'wod-icons';content: 'z';left: -0.05em;top: 0.05em;font-size: 95%;}
+icon.caitiff:after               {font-family: 'wod-icons';font-size: 95%;content: 'k';}
+icon.daughter_of_cacophony:after {font-family: 'wod-icons';font-size: 90%;content: 'd';left: -0.15em;}
+icon.follower_of_set:after       {font-family: 'wod-icons';font-size:90%;content: 'b';font-size: 116%;top: -0.2em;}
+icon.gangrel:after               { font-family: 'wod-icons'; font-size:90%; content: 'e';}
+icon.gangrel_antitribu:after     {font-family: 'wod-icons';font-size:90%;content: 'C';margin-top: 0.08em;}
+icon.harbinger_of_skulls:after   {font-family: 'wod-icons';content: 't';left: -0.05em;top: 0.05em;font-size: 95%;}
+icon.harbingers_of_skulls:after  { font-family: 'wod-icons'; font-size:90%; content: 't';}
+icon.kiasyd:after                {font-family: 'wod-icons';font-size:90%;content: 'y';left: -0.05em;top: 0.05em;font-size: 95%;}
+icon.lasombra:after              {font-family: 'wod-icons';font-size:90%;content: 'r';margin-left: -0.05em;top: -0.05em;}
+icon.malkavian:after             { font-family: 'wod-icons'; font-size:90%; content: 'f';}
+icon.malkavian_antitribu:after   {font-family: 'wod-icons';content: 'w';left: -0.05em;top: 0.02em;font-size: 100%;}
+icon.nagaraja:after              {font-family: 'wod-icons';font-size: 70%;content: 'J';margin-left: -0.1em;top: 0.15em;}
+icon.nosferatu:after             {font-family: 'wod-icons';font-size: 95%;content: 'g';top: -0.1em;}
+icon.nosferatu_antitribu:after   {font-family: 'wod-icons';content: 'v';left: -0.05em;top: 0.05em;font-size: 95%;}
+icon.pander:after                {font-family: 'wod-icons';font-size: 97%;content: 's';}
+icon.ravnos:after                {font-family: 'wod-icons';font-size: 105%;content: 'a';top: -0.05em;}
+icon.salubri:after               {font-family: 'wod-icons';font-size: 106%;content: 'm';top: -0.07em;}
+icon.salubri_antitribu:after     {font-family: 'wod-icons';font-size:90%;content: 'x';color: black;content: 'm';}
+icon.samedi:after                {font-family: 'wod-icons';font-size: 100%;content: 'p';top: -0.05em;}
+icon.toreador:after              {font-family: 'wod-icons';font-size: 75%;content: 'h';/* transform: rotateY(180deg) rotateZ(15deg); */}
+icon.toreador_antitribu:after    {font-family: 'wod-icons';content: 'B';left: -0.05em;top: 0.05em;font-size: 95%;}
+icon.tremere:after               { font-family: 'wod-icons'; font-size:90%; content: 'i';}
+icon.true_brujah:after           {font-family: 'wod-icons';font-size: 96%;content: 'K';left: -0.04em;top: -0.04em;}
+icon.tzimisce:after              {font-family: 'wod-icons';font-size:90%;content: 'q';left: -0.05em;top: -0.02em;font-size: 95%;}
+icon.ventrue:after               { font-family: 'wod-icons'; font-size:90%; content: 'j';}
+icon.ventrue_antitribu:after     {font-family: 'wod-icons';font-size:90%;content: 'A';left: -0.05em;top: 0.05em;font-size: 95%;}
+
+
+icon.avenger:after{background-image: url(/fonts/icons/iconcreavenger.gif);width: 1.2em;height: 1.2em;left: 0.2em;}
+icon.defender:after{background-image: url(/fonts/icons/iconcredefender.gif);left: 0.05em;}
+icon.innocent:after{background-image: url(/fonts/icons/iconcreinnocent.gif);left: 0.1em;height: 1.1em;width: 1.1em;}
+icon.judge:after{background-image: url(/fonts/icons/iconcrejudge.gif);left: 0.05em;}
+icon.martyr:after{background-image: url(/fonts/icons/iconcremartyr.gif);left: 0.05em;}
+icon.redeemer:after{background-image: url(/fonts/icons/iconcreredeemer.gif);left: 0.05em;}
+icon.visionary:after{ background-image: url(/fonts/icons/iconcrevisionary.gif);}
+
+icon.defense:before   , icon.def:before,
+icon.innocence:before , icon.inn:before,
+icon.judgment:before  , icon.jus:before,
+icon.judgment:before  , icon.jud:before,
+icon.martyrdom:before , icon.mar:before,
+icon.redemption:before, icon.red:before,
+icon.vengeance:before , icon.ven:before,
+icon.vision:before    , icon.Vis:before,
+icon.abomination:before,
+icon.ahrimane:before,
+icon.akunanse:before,
+icon.gargoyle:before,
+icon.giovanni:before,
+icon.guruhi:before,
+icon.ishtarri:before,
+icon.osebo:before,
+icon.tremere_antitribu:before,
+icon.abomination:before,
+icon.ahrimane:before,
+icon.akunanse:before,
+icon.gargoyle:before,
+icon.giovanni:before,
+icon.guruhi:before,
+icon.ishtarri:before,
+icon.osebo:before,
+icon.tremere_antitribu:before,
+icon.gangrel_antitribu:before,
+icon.assamite:before,
+icon.baali:before,
+icon.blood_brother:before,
+icon.brujah:before,
+icon.brujah_antitribu:before,
+icon.caitiff:before,
+icon.daughter_of_cacophony:before,
+icon.follower_of_set:before,
+icon.gangrel:before,
+icon.harbinger_of_skulls:before,
+icon.harbingers_of_skulls:before,
+icon.kiasyd:before,
+icon.lasombra:before,
+icon.malkavian:before,
+icon.malkavian_antitribu:before,
+icon.nagaraja:before,
+icon.nosferatu:before,
+icon.nosferatu_antitribu:before,
+icon.pander:before,
+icon.ravnos:before,
+icon.salubri:before,
+icon.salubri_antitribu:before,
+icon.samedi:before,
+icon.toreador:before,
+icon.toreador_antitribu:before,
+icon.tremere:before,
+icon.true_brujah:before,
+icon.tzimisce:before,
+icon.ventrue:before,
+icon.ventrue_antitribu:before,
+icon.martyr:before,
+icon.innocent:before,
+icon.visionary:before,
+icon.judge:before,
+icon.defender:before,
+icon.avenger:before,
+icon.redeemer:before {
+	display: none !important;
+}
+
+effect-requirements icon.daughter_of_cacophony:after{font-size: 70%}
+effect-requirements icon.assamite:after { -webkit-transform: rotate(-90deg); margin-top:0.3em;}
+effect-requirements icon.abomination:after{}
+effect-requirements icon.ahrimane:after{}
+effect-requirements icon.akunanse:after{}
+effect-requirements icon.avenger:after{}
+effect-requirements icon.baali:after{}
+effect-requirements icon.blood_brother:after{}
+effect-requirements icon.brujah:after{}
+effect-requirements icon.brujah_antitribu:after{}
+effect-requirements icon.caitiff:after{}
+effect-requirements icon.def:after{}
+effect-requirements icon.defender:after{}
+effect-requirements icon.follower_of_set:after{}
+effect-requirements icon.gangrel:after{}
+effect-requirements icon.gargoyle:after{}
+effect-requirements icon.giovanni:after{}
+effect-requirements icon.guruhi:after{}
+effect-requirements icon.harbinger_of_skulls:after{}
+effect-requirements icon.harbingers_of_skulls:after{}
+effect-requirements icon.inn:after{}
+effect-requirements icon.innocent:after{}
+effect-requirements icon.ishtarri:after{}
+effect-requirements icon.judge:after{}
+effect-requirements icon.kiasyd:after{ margin-left: -0.1em;}
+effect-requirements icon.lasombra:after{}
+effect-requirements icon.malkavian:after{}
+effect-requirements icon.malkavian_antitribu:after{}
+effect-requirements icon.martyr:after{}
+effect-requirements icon.nagaraja:after{}
+effect-requirements icon.nosferatu:after{}
+effect-requirements icon.nosferatu_antitribu:after{}
+effect-requirements icon.osebo:after{}
+effect-requirements icon.pander:after{}
+effect-requirements icon.ravnos:after{}
+effect-requirements icon.redeemer:after{}
+effect-requirements icon.salubri:after{}
+effect-requirements icon.salubri_antitribu:after{}
+effect-requirements icon.samedi:after{}
+effect-requirements icon.toreador:after{}
+effect-requirements icon.toreador_antitribu:after{}
+effect-requirements icon.tremere:after{}
+effect-requirements icon.tremere_antitribu:after{ margin-left: -0.1em;}
+effect-requirements icon.true_brujah:after{}
+effect-requirements icon.tzimisce:after{}
+effect-requirements icon.ventrue:after{}
+effect-requirements icon.ventrue_antitribu:after{}
+effect-requirements icon.visionary:after{}
+
+effect-requirements icon.nagaraja:after{
+	font-size: 55%;
+}
+effect-requirements icon.defense:after,
+effect-requirements icon.innocence:after,
+effect-requirements icon.judgment:after,
+effect-requirements icon.judgment:after,
+effect-requirements icon.martyrdom:after,
+effect-requirements icon.redemption:after,
+effect-requirements icon.vengeance:after,
+effect-requirements icon.vision:after{
+	width: 0.7em;
+	height: 0.7em;
+	margin-top: -0em;
+}
+
+effect-requirements icon.CONVICTION{
+	margin-top: -0.2em;
+	margin-bottom: 0.2em;
+}
+
+effect-requirements .FLIGHT{
+    margin-left: -0.2em;
+}
+
+clan-icon icon,
+clan-icon-stroke icon {
+	_width: 1.2em;
+	_height: 1.2em;
+}
+
+/* SABBAT WAX */
+clan-icon-stroke icon.pander:before,
+clan-icon-stroke icon.ahrimane:before,
+clan-icon-stroke icon.tzimisce:before,
+clan-icon-stroke icon.lasombra:before,
+clan-icon-stroke icon.harbinger_of_skulls:before,
+clan-icon-stroke icon.blood_brother:before,
+clan-icon-stroke icon.kiasyd:before,
+clan-icon-stroke icon.brujah_antitribu:before,
+clan-icon-stroke icon.malkavian_antitribu:before,
+clan-icon-stroke icon.nosferatu_antitribu:before,
+clan-icon-stroke icon.tremere_antitribu:before,
+clan-icon-stroke icon.gangrel_antitribu:before,
+clan-icon-stroke icon.salubri_antitribu:before,
+clan-icon-stroke icon.toreador_antitribu:before,
+clan-icon-stroke icon.ventrue_antitribu:before,
+clan-icon-stroke icon.salubri_antitribu:before {
+	 display: block !important;
+	 background-color: rgba(0,0,0,0);
+	 background-image: url(/img/wax.png);
+	 background-size: cover;
+	 height: 1.5em;
+	 width: 1.5em;
+	 z-index: -92;
+	 margin-left: -0.25em;
+	 position: absolute;
+	 content: ' ';
+	 margin-top: -0.2em;
+	 /* opacity: 0.6; */
+}
+
+/* WHITE DOT */
+clan-icon icon.kiasyd:before,
+clan-icon icon.brujah:before,
+clan-icon icon.pander:before,
+clan-icon icon.lasombra:before,
+clan-icon icon.harbinger_of_skulls:before,
+clan-icon icon.nosferatu_antitribu:before,
+clan-icon icon.tzimisce:before,
+clan-icon icon.true_brujah:before,
+clan-icon icon.brujah_antitribu:before,
+clan-icon icon.toreador_antitribu:before,
+clan-icon icon.malkavian_antitribu:before,
+clan-icon icon.gangrel_antitribu:before {
+	content: ' ';
+	width: 0.7em;
+	height: 0.7em;
+	background: white;
+	border-radius: 30px;
+	display: block !important;
+	top: 0.2em;
+	left: 0.2em;
+}
+
+clan-icon icon.tzimisce:before{
+	left: 0.1em;
+}
+clan-icon icon.toreador_antitribu:before{
+	left: 0.2em;
+}
+clan-icon icon.pander:before{
+	top: 0.10em;
+
+}
+clan-icon icon.true_brujah:before{
+	top: 0.1em;
+	width: 0.8em;
+	height: 0.8em;
+	left: 0.15em;
+}
