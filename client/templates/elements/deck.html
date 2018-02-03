@@ -20,7 +20,9 @@
         <div class="ui list">
           {{#each cryptItems}}
             <div class="item">
-              <img class="ui circular card-small image" src="/thumbnails/{{card_id}}.jpg">
+              <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
+                <img src="/thumbnails/{{card_id}}.jpg">
+              </a>
               <div class="content">
                 <div class="header">
                   {{deck_count}}x <a class="card-name">{{name}}</a>
