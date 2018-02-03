@@ -20,6 +20,13 @@ def create_normalized_name(name):
     return re.sub(r'[^\x00-\x7F]+', '', name)
 
 
+def try_int(val):
+    try:
+        return int(val)
+    except ValueError:
+        return val
+
+
 def download_card_list():
     r = requests.get(LISTING)
     if r.status_code != 200:
@@ -31,6 +38,7 @@ def download_card_list():
                               quoting=csv.QUOTE_NONE):
         if row['Type'] == 'Token':
             continue
+
         data.append({
             'name': row['Name'],
             'norm_name': create_normalized_name(row['Name']),
@@ -41,10 +49,10 @@ def download_card_list():
             'type': row['Type'],
             'clan': row['Clan'],
             'group': row['Group'],
-            'capacity': row['Capacity'],
+            'capacity': try_int(row['Capacity']),
             'disciplines': row['Discipline'].split(),
-            'pool': row['PCost'],
-            'blood': row['BCost'],
+            'pool': try_int(row['PCost']),
+            'blood': try_int(row['BCost']),
             'text': row['Text'],
             'artist': row['Artist'],
         })

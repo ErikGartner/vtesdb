@@ -24,6 +24,7 @@
   "homepage": "https://github.com/ErikGartner/vtesdb",
   "dependencies": {
     "babel-runtime": "^6.26.0",
+    "easy-query-dsl": "git+https://github.com/ErikGartner/easy-query-dsl.git",
     "meteor-node-stubs": "^0.3.2"
   },
   "devDependencies": {

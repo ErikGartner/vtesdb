@@ -1,41 +1,91 @@
-parameter_regex = ///
-  (?:
-    \s*([^\s]*):\s?"([^"]*)"\s*     # capture field_name:"value with spaces"
-    |                               # or
-    \s*([^\s]*):\s?([^\s]*)\s*      # field_name:value_with_no_spaces
-  )
-  ///ig
-
-parameterize_query = (searchObject) ->
-  # Takes a query string and splits it into fields
-  orig_query = searchObject.norm_name
-  norm_name = orig_query
-  new_objects = []
-
-  while (m = parameter_regex.exec orig_query)?
-    quoted_match = if m[1] then true else false
-    matched_string = m[0]
-    field = if quoted_match then m[1] else m[3]
-    value = if quoted_match then m[2] else m[4]
-    norm_name = norm_name.replace matched_string, ''
-    new_objects.push {field: field, value: value}
-
-  new_objects.push {field: 'norm_name', value: norm_name}
-  return new_objects
-
-selectorPerField = (field, searchString) ->
-  # My custom implementation of handling fields and their search strings
-  selector = {}
-  searchString = searchString.replace(/(\W{1})/g, '\\$1')
-  selector[field] = { '$regex' : ".*#{ searchString }.*", '$options' : 'i'}
-  return selector
+import EasyQuery from 'easy-query-dsl'
 
 selector_function = (searchObject, options, aggregation) ->
-  searchObjects = parameterize_query(searchObject)
-  engine = @
-  selectors = _.map searchObjects, (searchObject) ->
-    return selectorPerField searchObject.field, searchObject.value
-  return {$and: selectors}
+  eq = new EasyQuery({
+    default: {
+      field: 'norm_name',
+      type: 'string',
+      opts: {
+        caseSensitive: false,
+        fuzzy: true,
+      }
+    },
+    keys: [
+      {
+        field: 'artist',
+        alias: ['artist'],
+        type: 'string',
+        opts: {
+          caseSensitive: false,
+          fuzzy: true,
+        }
+      },
+      {
+        field: 'blood',
+        alias: ['blood', 'b'],
+        type: 'number',
+        opts: {}
+      },
+      {
+        field: 'capacity',
+        alias: ['capacity', 'cap'],
+        type: 'number',
+        opts: {}
+      },
+      {
+        field: 'clan',
+        alias: ['clan', 'c'],
+        type: 'string',
+        opts: {
+          caseSensitive: false,
+          fuzzy: true,
+        }
+      },
+      {
+        field: 'disciplines',
+        alias: ['discipline', 'd'],
+        type: 'string',
+        opts: {
+          caseSensitive: true,
+          fuzzy: true,
+        }
+      },
+      {
+        field: 'pool',
+        alias: ['pool', 'p'],
+        type: 'number',
+        opts: {}
+      },
+      {
+        field: 'rarity',
+        alias: ['rarity'],
+        type: 'string',
+        opts: {
+          caseSensitive: false,
+          fuzzy: true,
+        }
+      },
+      {
+        field: 'text',
+        alias: ['text'],
+        type: 'text',
+        opts: {
+          caseSensitive: false,
+          diacriticSensitive: false,
+        }
+      },
+      {
+        field: 'type',
+        alias: ['type', 't'],
+        type: 'string',
+        opts: {
+          caseSensitive: false,
+          fuzzy: true,
+        }
+      },
+    ]
+  })
+  return eq.parse(searchObject['norm_name'])
 
 @CardsIndex = new EasySearch.Index
   name: 'card_index'
