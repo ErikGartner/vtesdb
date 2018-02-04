@@ -40,5 +40,17 @@ Router.route '/decks/edit/:_id',
   action: ->
     @render 'editDeck', {
       data: ->
+        return Decks.find(@params._id)
+    }
+
+Router.route '/decks/simulate/:_id',
+  name: 'deck.simulator'
+  #layoutTemplate: ''
+  waitOn: ->
+    return Meteor.subscribe 'decks'
+
+  action: ->
+    @render 'simulator', {
+      data: ->
         return Decks.findOne(@params._id)
     }

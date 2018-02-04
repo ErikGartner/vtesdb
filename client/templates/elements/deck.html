@@ -4,13 +4,15 @@
 
     <div class="twelve wide column">
       <h3 class="ui top attached header">
-          <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
           {{name}}
           {{#if active}}
             <div class="ui green horizontal label">active</div>
           {{else}}
             <div class="ui horizontal label">inactive</div>
           {{/if}}
+
+          <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
+          <a class="right align" href={{pathFor 'deck.simulator' _id}}><i class="play link icon"></i></a>
       </h3>
       <div class="ui attached segment">
         <h4>Description</h4>

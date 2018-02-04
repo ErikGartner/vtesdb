@@ -14,9 +14,9 @@ Template.card.helpers
     return rulings?.rulings
 
 Template.card.onRendered ->
-  $('.special.card .image').dimmer(on: 'hover')
   $('.inventory-button').popup(popup: '.inv.popup', on: 'click')
   $('.rulings-icon').popup(inline: true, on: 'hover')
+  $('.special.card .image').dimmer(on: 'hover')
 
 Template.card.events
   'submit .set-inv': (event) ->

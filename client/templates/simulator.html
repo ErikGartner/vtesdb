@@ -1,0 +1,59 @@
+<template name="simulator">
+
+  <div class="ui container" style="margin-top:1em;">
+
+    <div class="ui grid">
+
+      <div class="three wide column">
+        <h3><a href="{{pathFor decks.view _id}}">{{name}}</a></h3>
+        <div class="ui fluid vertical labeled icon buttons">
+          <button id="shuffleButton" class="ui button">
+            <i class="shuffle icon"></i>
+            Shuffle
+          </button>
+          <button id="addHandSize" class="ui button">
+            <i class="plus icon"></i>
+            Hand Size
+          </button>
+          <button id="addCryptSize" class="ui button">
+            <i class="plus icon"></i>
+            Crypt Size
+          </button>
+        </div>
+      </div>
+
+      <div class="ten wide column">
+
+        <h3 class="ui dividing header">Crypt</h3>
+        <div class="ui four centered cards">
+          {{#each currentCrypt}}
+            {{> simulatorCard}}
+          {{/each}}
+        </div>
+
+        <h3 class="ui dividing header">Hand</h3>
+        <div class="ui four centered cards">
+          {{#each currentLib}}
+            {{> simulatorCard}}
+          {{/each}}
+        </div>
+      </div>
+
+      <div class="three wide column">
+        <h3>Ash Heap</h3>
+        {{#each ashHeap}}
+        <p><a href="#" data-id="{{deck_id}}" class="ashCard">{{name}}</a></p>
+        {{/each}}
+      </div>
+
+    </div>
+
+  </div>
+
+</template>
+
+<template name="simulatorCard">
+  <div data-id="{{deck_id}}" class="simCard fluid ui card">
+    {{> cardImage}}
+  </div>
+</template>
