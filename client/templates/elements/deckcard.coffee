@@ -8,7 +8,7 @@ Template.cardSearch.helpers
   inputAttributes: ->
     return {id: 'card-search-input'}
 
-Template.bareCard.events
+Template.deckCard.events
 
   'submit .set-card': (event) ->
     id = event.target.id.value
@@ -17,7 +17,7 @@ Template.bareCard.events
     Meteor.call 'setDeckCard', id, deck, count
     return false
 
-Template.bareCard.helpers
+Template.deckCard.helpers
   isCryptCard: ->
     return @type == 'Vampire'
 
