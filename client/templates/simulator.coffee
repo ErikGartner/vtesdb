@@ -44,6 +44,9 @@ Template.simulator.helpers
   ashHeap: ->
     return ashHeap.get()
 
+  ashSize: ->
+    return ashHeap.get().length
+
 Template.simulatorCard.events
   'click .simCard': (event) ->
     # Clicking to remove a card
