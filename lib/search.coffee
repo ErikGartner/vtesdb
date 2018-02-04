@@ -68,10 +68,10 @@ selector_function = (searchObject, options, aggregation) ->
       {
         field: 'text',
         alias: ['text'],
-        type: 'text',
+        type: 'string',
         opts: {
           caseSensitive: false,
-          diacriticSensitive: false,
+          fuzzy: true,
         }
       },
       {

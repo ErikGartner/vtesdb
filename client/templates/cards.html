@@ -29,43 +29,43 @@
     <div class="content">
       <div class="ui info message" style="margin-bottom: 1em;">
         <p>
-          By default the search field only queries by name, however there exists a syntax.<br>
-          The simplest way is <i>keyword: value</i> or <i>keyword: "value with spaces"</i>
+          The search field uses <a href="https://github.com/ErikGartner/easy-query-dsl">EasyQuery</a>. By default the search field only queries by name.<br>
+          Using a search syntax more precise searches can be made. The easiest way to learn this syntax is to look at the examples below.
         </p>
 
         <ul>
-          <li>The basics
+          <li>Basics
             <ul>
               <li>
-                <a href='#' class="searchExample item">type: vampire</a>
+                <a href='#' class="searchExample item">type: vampire</a> or <a href='#' class="searchExample item">t: vampire</a> or                 <a href='#' class="searchExample item">type: equipment</a>
               </li>
               <li>
-                <a href='#' class="searchExample item">type: equipment</a>
+                <a href='#' class="searchExample item">clan: ventrue</a> or <a href='#' class="searchExample item">c: ventrue</a> or <a href='#' class="searchExample item">c: venture;toreador</a>
               </li>
               <li>
-                <a href='#' class="searchExample item">clan: ventrue</a>
-              </li>
-              <li>
-                <a href='#' class="searchExample item">disciplines: dom</a>
+                <a href='#' class="searchExample item">discipline: dom</a> or <a href='#' class="searchExample item">d: dom</a> <a href='#' class="searchExample item">d: DOM</a>
               </li>
               <li>
                 <a href='#' class="searchExample item">text: "2R damage each strike"</a>
               </li>
               <li>
-                <a href='#' class="searchExample item">capacity: 4</a>
+                <a href='#' class="searchExample item">capacity: 4</a> or <a href='#' class="searchExample item">cap: 4</a>
               </li>
               <li>
-                <a href='#' class="searchExample item">pool: 6</a>
+                <a href='#' class="searchExample item">pool: 6</a> or <a href='#' class="searchExample item">p: 6</a>
+              </li>
+              <li>
+                <a href='#' class="searchExample item">blood: >3</a> or <a href='#' class="searchExample item">b: >3</a>
               </li>
             </ul>
           </li>
-          <li>More advanced
+          <li>Advanced
             <ul>
-              <li>All thauma cards that prevent damage
-                <a href='#' class="searchExample item">type:combat disciplines: tha text: prevent</a>
+              <li>Weapons that cost 2 to 4 pool
+                <a href='#' class="searchExample item">type: equipment text: weapon pool: >=2 pool: &lt;=4</a>
               </li>
-              <li>Vampires with dominate and fortitude
-                <a href='#' class="searchExample item">type: vampire disciplines: dom disciplines: for</a>
+              <li>Vampires with any dominate and superior fortitude with cap less than 10
+                <a href='#' class="searchExample item">type: vampire discipline: dom;DOM discipline: FOR cap: &lt;10</a>
               </li>
             </ul>
           </li>
