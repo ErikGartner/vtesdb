@@ -1,7 +1,10 @@
 {
   "public": {
-    "analyticsSettings": {
-      "Google Analytics" : {"trackingId": "UA-68364666-1"}
-    }
+    "ga": {
+         "id": "UA-68364666-1",
+         "set": {
+           "forceSSL": true
+         }
+     }
   }
 }

@@ -2,6 +2,7 @@
 
 Router.configure
   controller: 'AppController'
+  trackPageView: true
 
 Router.route '/',
   name: 'home'

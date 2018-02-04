@@ -44,3 +44,5 @@ aldeed:delete-button
 dburles:collection-helpers
 ecmascript
 reactive-var
+
+reywood:iron-router-ga
