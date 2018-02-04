@@ -5,7 +5,7 @@
     <div class="ui grid">
 
       <div class="three wide column">
-        <h3><a href="{{pathFor decks.view _id}}">{{name}}</a></h3>
+        <h3><a href="{{pathFor 'decks.view' _id}}">{{name}}</a></h3>
         <div class="ui fluid vertical labeled icon buttons">
           <button id="shuffleButton" class="ui button">
             <i class="shuffle icon"></i>
@@ -20,6 +20,9 @@
             Crypt Size
           </button>
         </div>
+
+        <h5>Description</h5>
+        <p style="white-space: pre-wrap;">{{description}}</p>
       </div>
 
       <div class="ten wide column">
