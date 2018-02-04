@@ -40,7 +40,7 @@ Router.route '/decks/edit/:_id',
   action: ->
     @render 'editDeck', {
       data: ->
-        return Decks.find(@params._id)
+        return Decks.findOne(@params._id)
     }
 
 Router.route '/decks/simulate/:_id',

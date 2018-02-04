@@ -32,10 +32,13 @@ DeckSchema = new SimpleSchema
     label: 'Cards'
     optional: true
     blackbox: true
-    autoValue: ->
-      if @isInsert
-        return {}
+    defaultValue: ->
+      return {}
 
+  parent:
+    type: String
+    optional: true
+    label: 'Forked From'
 
 Decks.attachSchema DeckSchema
 Decks.allow(

@@ -13,8 +13,13 @@
 
           <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
           <a class="right align" href={{pathFor 'deck.simulator' _id}}><i class="play link icon"></i></a>
+          <a class="right align" id="forkButton"><i class="fork link icon"></i></a>
       </h3>
       <div class="ui attached segment">
+        {{#if parent}}
+          <h4>Origin: <a href={{pathFor 'decks.view' _id=parent}}>{{parentName}}</a></h4>
+        {{/if}}
+
         <h4>Description</h4>
         <p style="white-space: pre-wrap;">{{description}}</p>
 

@@ -87,3 +87,21 @@ Meteor.methods
       Inventories.insert {cardId: id, owner: uid, count: count}
 
     return id
+
+  forkDeck: (deckId) ->
+    uid = Meteor.userId()
+    if !uid
+      throw new Meteor.Error('not-authorized')
+
+    check deckId, String
+
+    deck = Decks.findOne(_id: deckId, owner: uid)
+    if not deck?
+      throw new Meteor.Error('invalid deck')
+
+    delete deck['_id']
+    deck.name = deck.name + ' (forked)'
+    deck.parent = deckId
+    deck.active = false
+
+    return Decks.insert(deck)

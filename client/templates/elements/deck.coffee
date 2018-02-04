@@ -26,12 +26,23 @@ Template.deck.helpers
     counts = _.map(cards, (card) -> return card.deck_count)
     return _.reduce(counts, (m, n) -> return m + n)
 
+  parentName: ->
+    p = Decks.findOne @parent
+    return p.name
+
 Template.deck.events
 
   'click a.card-name': (e) ->
     name = e.target.innerText
     $('input#card-search-input').val(name)
     ShortCardsIndex.getComponentMethods().search(name)
+
+  'click #forkButton': (e) ->
+    new_id = Meteor.call 'forkDeck', @_id, (err, res) ->
+      if err?
+        console.log err
+        return
+      Router.go 'decks.view', {_id: res}
 
 Template.editDeck.helpers
   beforeRemove: ->
