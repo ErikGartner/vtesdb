@@ -10,11 +10,9 @@ Router.route '/',
 
 Router.route '/s/:searchString',
   name: 'searchCard'
-  action: ->
-    @render 'cards', {
-      data: ->
-        return {searchString: @params.searchString}
-    }
+  template: 'cards'
+  data: ->
+    return {searchString: @params.searchString}
 
 Router.route '/import',
   name: 'import'
@@ -30,28 +28,26 @@ Router.route '/decks/add',
 
 Router.route '/decks/view/:_id',
   name: 'decks.view'
-  action: ->
-    @render 'deck', {
-      data: ->
-        return Decks.findOne(@params._id)
-    }
+  template: 'deck'
+  data: ->
+    return Decks.findOne(@params._id)
+  subscriptions: ->
+    return @subscribe 'deck', @params._id
 
 Router.route '/decks/edit/:_id',
   name: 'decks.edit'
-  action: ->
-    @render 'editDeck', {
-      data: ->
-        return Decks.findOne(@params._id)
-    }
+  template: 'editDeck'
+  data: ->
+    return Decks.findOne(@params._id)
+  subscriptions: ->
+    return @subscribe 'deck', @params._id
 
 Router.route '/decks/simulate/:_id',
   name: 'deck.simulator'
-  #layoutTemplate: ''
+  template: 'simulator'
+  data: ->
+    return Decks.findOne(@params._id)
   waitOn: ->
-    return Meteor.subscribe 'decks'
-
-  action: ->
-    @render 'simulator', {
-      data: ->
-        return Decks.findOne(@params._id)
-    }
+    # We wait on the subscription otherwise the
+    # simulator can't to setup the deck.
+    return @subscribe 'deck', @params._id

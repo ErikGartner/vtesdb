@@ -1,21 +1,19 @@
-Meteor.publish 'inventories', ->
+Meteor.publish 'inventory', ->
   Inventories.find owner: @userId
-
-Meteor.publish 'version', ->
-  Version.find()
 
 Meteor.publish 'rulings', ->
   Rulings.find()
 
-# Get all data associated with a users deck
-# To make more efficient, request only one deck at a time.
-Meteor.publishComposite 'decks', ->
+Meteor.publish 'privateDecks', ->
+  return Decks.find {owner: @userId}
+
+# Get all data associated with a public or owned deck
+Meteor.publishComposite 'deck', (deckId) ->
+  check(deckId, String)
+
   find: ->
-    user = Meteor.users.findOne _id: @userId
-    if user?
-      return Decks.find {owner: @userId}
-    else
-      return @ready()
+    return Decks.find {$and: [{_id: deckId}, {$or: [{owner:@userId},
+                                                    {public: true}]}]}
 
   children: [
     {

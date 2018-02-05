@@ -18,10 +18,17 @@
   </div>
 
   <div class="ui container">
+
     <div class="ui three doubling stackable cards">
-      {{#EasySearch.Each index=DeckIndex}}
-        {{> deckResult}}
-      {{/EasySearch.Each}}
+      {{#EasySearch.IfInputEmpty index=DeckIndex}}
+        {{#each decks}}
+          {{> deckResult}}
+        {{/each}}
+      {{else}}
+        {{#EasySearch.Each index=DeckIndex}}
+          {{> deckResult}}
+        {{/EasySearch.Each}}
+      {{/EasySearch.IfInputEmpty}}
     </div>
 
     <div class="ui two column centered grid">
@@ -40,9 +47,7 @@
         {{name}}
       </a>
       <div class="meta">
-        {{#with deckStats}}
-        Crypt: {{cryptCount}}, Library: {{libCount}}
-        {{/with}}
+        Cards: {{cardCount}}
       </div>
       <div class="description">
         <p>{{description}}</p>

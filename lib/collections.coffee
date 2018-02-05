@@ -1,7 +1,6 @@
 @Cards = new Meteor.Collection 'cards'
 @Inventories = new Meteor.Collection 'inventories'
 @Decks = new Meteor.Collection 'decks'
-@Version = new Meteor.Collection 'version'
 @Rulings = new Meteor.Collection 'rulings'
 
 # Schemas
@@ -39,6 +38,11 @@ DeckSchema = new SimpleSchema
     type: String
     optional: true
     label: 'Forked From'
+
+  public:
+    type: Boolean
+    label: 'Public'
+    defaultValue: false
 
 Decks.attachSchema DeckSchema
 Decks.allow(

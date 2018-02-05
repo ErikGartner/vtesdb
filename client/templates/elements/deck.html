@@ -5,15 +5,21 @@
     <div class="twelve wide column">
       <h3 class="ui top attached header">
           {{name}}
-          {{#if active}}
-            <div class="ui green horizontal label">active</div>
-          {{else}}
-            <div class="ui horizontal label">inactive</div>
-          {{/if}}
 
-          <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
-          <a class="right align" href={{pathFor 'deck.simulator' _id}}><i class="play link icon"></i></a>
-          <a class="right align" id="forkButton"><i class="fork link icon"></i></a>
+          <span class="ui labels">
+            {{#if active}}
+              <div class="ui green label">active</div>
+            {{else}}
+              <div class="ui label">inactive</div>
+            {{/if}}
+            {{#if public}}<div class="ui blue label">public</div>{{/if}}
+          </span>
+
+          <i class="icons">
+            <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
+            <a class="right align" href={{pathFor 'deck.simulator' _id}}><i class="play link icon"></i></a>
+            <a class="right align" id="forkButton"><i class="fork link icon"></i></a>
+          </i>
       </h3>
       <div class="ui attached segment">
         {{#if parent}}
@@ -51,7 +57,9 @@
             <h5>{{type}} ({{countCards cards}})</h5>
               {{#each cards}}
                 <div class="item">
-                  <img class="ui circular card-small image" src="/thumbnails/{{card_id}}.jpg">
+                  <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
+                    <img src="/thumbnails/{{card_id}}.jpg">
+                  </a>
                   <div class="content">
                     <div class="header">
                       {{deck_count}}x <a class="card-name">{{name}}</a>
@@ -77,6 +85,7 @@
     {{#autoForm collection="Decks" id="addDeckForm" type="insert"}}
       {{> afQuickField name='name'}}
       {{> afQuickField name='active'}}
+      {{> afQuickField name='public'}}
       {{> afQuickField name='description' rows=5}}
       <button type="submit" class="ui green button">Create</button>
     {{/autoForm}}
@@ -88,6 +97,7 @@
     {{#autoForm collection="Decks" id="addDeckForm" type="update" doc=this}}
       {{> afQuickField name='name'}}
       {{> afQuickField name='active'}}
+      {{> afQuickField name='public'}}
       {{> afQuickField name='description' rows=5}}
       <button type="submit" class="ui green button">Update</button>
       {{> quickRemoveButton collection="Decks" _id=this._id class="ui red button" beforeRemove=beforeRemove}}
