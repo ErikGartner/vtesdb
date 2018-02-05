@@ -28,16 +28,3 @@ Template.deckCard.helpers
       return count
     else
       return 0
-
-  inventoryCount: ->
-    card = Inventories.findOne(cardId: @card_id)
-    if card?
-      card_id = @card_id
-      used = Decks.find(owner: Meteor.userId, active: true).map (doc) ->
-        return if doc.cards[card_id]? then doc.cards[card_id] else 0
-      used = _.reduce(used, (memo, num) ->
-        return memo + num
-      , 0)
-      return {inv: card.count, used: used}
-    else
-      return {inv: 0, used: 0}

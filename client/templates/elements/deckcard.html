@@ -24,7 +24,9 @@
     <div class="extra content">
           <form class='set-card ui form' action="#">
             <div class="inline field">
-              <label>Used: {{inventoryCount.used}} / {{inventoryCount.inv}}</label>
+              {{#with inventoryStatus card_id}}
+              <label>Used: {{used}} / {{inv}}</label>
+              {{/with}}
               <div class="ui fluid action input">
                 <input title="Count" class="badge-input" name="count" type="text" value={{cardCount}}>
                 <button type="submit" class="ui green right icon button">
