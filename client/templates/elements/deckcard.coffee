@@ -19,7 +19,7 @@ Template.deckCard.events
 
 Template.deckCard.helpers
   isCryptCard: ->
-    return @type == 'Vampire'
+    return @type == 'Vampire' or @type == 'Imbued'
 
   cardCount: ->
     deck = Router.current().params._id

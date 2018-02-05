@@ -16,12 +16,6 @@ Template.deck.helpers
     items = deck.crypt()
     return _.sortBy(items, ['name'])
 
-  stats: ->
-    return {
-      libCount: Decks.findOne(@_id).library().length
-      cryptCount: Decks.findOne(@_id).crypt().length
-    }
-
   countCards: (cards) ->
     counts = _.map(cards, (card) -> return card.deck_count)
     return _.reduce(counts, (m, n) -> return m + n)
