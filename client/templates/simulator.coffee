@@ -77,3 +77,9 @@ Template.simulator.events
 
   'click #addCryptSize': (event) ->
     cryptSize.set(cryptSize.get() + 1)
+
+  'click #decreaseHandSize': (event) ->
+    handSize.set(handSize.get() - 1)
+
+  'click #decreaseCryptSize': (event) ->
+    cryptSize.set(cryptSize.get() - 1)
