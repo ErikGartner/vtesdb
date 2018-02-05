@@ -95,7 +95,8 @@ Meteor.methods
 
     check deckId, String
 
-    deck = Decks.findOne(_id: deckId, owner: uid)
+    deck= Decks.findOne {$and: [{_id: deckId}, {$or: [{owner: uid},
+                                                      {public: true}]}]}
     if not deck?
       throw new Meteor.Error('invalid deck')
 
@@ -103,5 +104,6 @@ Meteor.methods
     deck.name = deck.name + ' (forked)'
     deck.parent = deckId
     deck.active = false
+    deck.owner = uid
 
     return Decks.insert(deck)

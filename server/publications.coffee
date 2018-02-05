@@ -12,7 +12,7 @@ Meteor.publishComposite 'deck', (deckId) ->
   check(deckId, String)
 
   find: ->
-    return Decks.find {$and: [{_id: deckId}, {$or: [{owner:@userId},
+    return Decks.find {$and: [{_id: deckId}, {$or: [{owner: @userId},
                                                     {public: true}]}]}
 
   children: [
