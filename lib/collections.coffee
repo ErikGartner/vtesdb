@@ -1,7 +1,6 @@
 @Cards = new Meteor.Collection 'cards'
 @Inventories = new Meteor.Collection 'inventories'
 @Decks = new Meteor.Collection 'decks'
-@Rulings = new Meteor.Collection 'rulings'
 
 # Schemas
 DeckSchema = new SimpleSchema

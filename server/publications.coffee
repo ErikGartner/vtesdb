@@ -1,9 +1,6 @@
 Meteor.publish 'inventory', ->
   Inventories.find owner: @userId
 
-Meteor.publish 'rulings', ->
-  Rulings.find()
-
 Meteor.publish 'privateDecks', ->
   return Decks.find {owner: @userId}
 

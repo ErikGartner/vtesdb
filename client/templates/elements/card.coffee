@@ -9,10 +9,6 @@ Template.card.helpers
   isCryptCard: ->
     return @type == 'Vampire'
 
-  rulings: ->
-    rulings = Rulings.findOne(id: @card_id)
-    return rulings?.rulings
-
 Template.card.onRendered ->
   $('.inventory-button').popup(popup: '.inv.popup', on: 'click')
   $('.rulings-icon').popup(inline: true, on: 'hover')

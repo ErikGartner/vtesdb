@@ -95,8 +95,8 @@ Meteor.methods
 
     check deckId, String
 
-    deck= Decks.findOne {$and: [{_id: deckId}, {$or: [{owner: uid},
-                                                      {public: true}]}]}
+    deck = Decks.findOne {$and: [{_id: deckId}, {$or: [{owner: uid},
+                                                       {public: true}]}]}
     if not deck?
       throw new Meteor.Error('invalid deck')
 
