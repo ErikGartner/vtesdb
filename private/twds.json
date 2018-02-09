@@ -163,7 +163,95 @@
             "Villein": 7,
             "Wash": 1
         },
-        "name": "Semi"
+        "name": "Semi-Turbo Capuchin"
+    },
+    {
+        "cards": {
+            "abbot": 1,
+            "anarchtroublemaker": 1,
+            "barrensthe": 1,
+            "blackhorsetanner": 1,
+            "bowlofconvergence": 1,
+            "channel10": 1,
+            "conditioning": 6,
+            "daringthedawn": 2,
+            "deflection": 8,
+            "directintervention": 2,
+            "dreamsofthesphinx": 2,
+            "eyesofargus": 3,
+            "freakdrive": 2,
+            "governtheunaligned": 14,
+            "heartofnizchetus": 1,
+            "hiddenstrength": 5,
+            "indomitability": 2,
+            "informationhighway": 1,
+            "ivorybow": 1,
+            "jeffersonfoster": 3,
+            "jephtahester": 1,
+            "jessemenks": 1,
+            "katherinestoddard": 1,
+            "krcgnewsradio": 1,
+            "misdirection": 1,
+            "myenemysenemy": 1,
+            "neighborjohn": 1,
+            "onthequivive": 4,
+            "owainevansthewanderer": 2,
+            "pentextmsubversion": 1,
+            "perfectionist": 1,
+            "randelthecoward": 1,
+            "rollingwiththepunches": 2,
+            "suddenreversal": 1,
+            "telepathicmisdirection": 5,
+            "ulrikerothbart": 1,
+            "undersiege": 4,
+            "weightedwalkingstick": 4,
+            "wmrhtalkradio": 1
+        },
+        "crypt": {
+            "Blackhorse Tanner": 1,
+            "Jefferson Foster": 3,
+            "Jephta Hester": 1,
+            "Jesse Menks": 1,
+            "Katherine Stoddard": 1,
+            "Neighbor John": 1,
+            "Owain Evans, The Wanderer": 2,
+            "Randel, The Coward": 1,
+            "Ulrike Rothbart": 1
+        },
+        "description": "Powerbase: Berkeley - Cheat the Fates\nBerkeley, California\nJanuary 20th 2018\n2R+F\n12 players\nBrandon Haas\nhttp://www.vekn.net/event-calendar/event/8839\n\n\nDeck Name: !Ventrue Toolbox\nDescription:\nThe classic !Ventrue grinder, but geared towards Under Siege. Fortitude to\ndeal with the occasional nasty combat deck, bounce for bleed or blocking,\nand some permacept to wear down stealth decks. I chose to focus on using\nmore Governs over pool recursion in order to reliably get out more minions\nand also have extra bleed. The Govern chain is optimized for multiple\nGoverns at DOM per turn, situation permitting.",
+        "library": {
+            "Abbot": 1,
+            "Anarch Troublemaker": 1,
+            "Barrens, The": 1,
+            "Bowl of Convergence": 1,
+            "Channel 10": 1,
+            "Conditioning": 6,
+            "Daring the Dawn": 2,
+            "Deflection": 8,
+            "Direct Intervention": 2,
+            "Dreams of the Sphinx": 2,
+            "Eyes of Argus": 3,
+            "Freak Drive": 2,
+            "Govern the Unaligned": 14,
+            "Heart of Nizchetus": 1,
+            "Hidden Strength": 5,
+            "Indomitability": 2,
+            "Information Highway": 1,
+            "Ivory Bow": 1,
+            "KRCG News Radio": 1,
+            "Misdirection": 1,
+            "My Enemy's Enemy": 1,
+            "On the Qui Vive": 4,
+            "Pentex(TM) Subversion": 1,
+            "Perfectionist": 1,
+            "Rolling with the Punches": 2,
+            "Sudden Reversal": 1,
+            "Telepathic Misdirection": 5,
+            "Under Siege": 4,
+            "WMRH Talk Radio": 1,
+            "Weighted Walking Stick": 4
+        },
+        "name": "!Ventrue Toolbox"
     },
     {
         "cards": {
@@ -531,7 +619,7 @@
             "Target Vitals": 3,
             "Wash": 2
         },
-        "name": "Muuttuvainen"
+        "name": "Muuttuvainen: Paheksunta"
     },
     {
         "cards": {
@@ -1411,7 +1499,7 @@
             "Wash": 1,
             "Zillah's Valley": 10
         },
-        "name": "Maris"
+        "name": "Maris' Rivers of Blood (Years of Darkness)"
     },
     {
         "cards": {
@@ -1919,7 +2007,7 @@
             "Villein": 6,
             "Well-Marked": 2
         },
-        "name": "Ishtarri Need No Bounce"
+        "name": "Ishtarri Need No Bounce! (2017 version)"
     },
     {
         "cards": {
@@ -2207,7 +2295,7 @@
             "Villein": 2,
             "Wider View": 1
         },
-        "name": "German ECQ 2017 "
+        "name": "German ECQ 2017 (1st place): Matasuntha's unbound heart"
     },
     {
         "cards": {
@@ -2289,7 +2377,7 @@
             "Wider View": 2,
             "Zoo Hunting Ground": 1
         },
-        "name": "Good Old PRO"
+        "name": "Good Old PRO-DOM"
     },
     {
         "cards": {
@@ -2351,7 +2439,7 @@
             "Threats": 8,
             "Wake with Evening's Freshness": 3
         },
-        "name": "Rocket science v"
+        "name": "Rocket science v. Fadinhas"
     },
     {
         "cards": {
@@ -2833,7 +2921,7 @@
             "Vessel": 3,
             "Villein": 3
         },
-        "name": "Saulot "
+        "name": "Saulot & Friends Anarch Wall"
     },
     {
         "cards": {
@@ -2919,7 +3007,7 @@
             "Well-Marked": 1,
             "Wider View": 1
         },
-        "name": "Nana "
+        "name": "Nana & Enkidu"
     },
     {
         "cards": {
@@ -3043,7 +3131,7 @@
             "Toreador Grand Ball": 5,
             "Voter Captivation": 4
         },
-        "name": "Madame Guil"
+        "name": "Madame Guil: \"The executioner\""
     },
     {
         "cards": {
@@ -3141,7 +3229,7 @@
             "Villein": 2,
             "Wash": 1
         },
-        "name": "Wall Jack "
+        "name": "Wall Jack (Tzimisce)"
     },
     {
         "cards": {
@@ -3227,7 +3315,7 @@
             "Voter Captivation": 4,
             "Wider View": 2
         },
-        "name": "nana princes"
+        "name": "nana princes(s) - belgian ECQ Gent"
     },
     {
         "cards": {
@@ -3307,7 +3395,7 @@
             "Taste of Vitae": 3,
             "Vessel": 2
         },
-        "name": "Anson Gunz "
+        "name": "Anson Gunz #JeSuisAnthelios"
     },
     {
         "cards": {
@@ -3631,7 +3719,7 @@
             "Vessel": 1,
             "Vulnerability": 1
         },
-        "name": "Meninas Malvadas "
+        "name": "Meninas Malvadas (Mean Girls)"
     },
     {
         "cards": {
@@ -3709,7 +3797,7 @@
             "Villein": 2,
             "Wider View": 1
         },
-        "name": "Montano Purge"
+        "name": "Montano Purge/Mind Rape"
     },
     {
         "cards": {
@@ -4335,7 +4423,7 @@
             "Voices of the Castle": 3,
             "Wider View": 1
         },
-        "name": "G\u00e1rgula"
+        "name": "G\u00e1rgula, o eterno campe\u00e3o"
     },
     {
         "cards": {
@@ -4409,7 +4497,7 @@
             "Taste of Vitae": 4,
             "Vessel": 1
         },
-        "name": "Vampire"
+        "name": "Vampire-SM 2016. Field Training Bats v.3"
     },
     {
         "cards": {
@@ -4999,7 +5087,7 @@
             "Villein": 5,
             "Zoo Hunting Ground": 1
         },
-        "name": "Who loves"
+        "name": "Who loves, blocks (Quem ama, bloqueia)"
     },
     {
         "cards": {
@@ -5161,7 +5249,7 @@
             "Vessel": 4,
             "Wider View": 2
         },
-        "name": "Rose of the Devil"
+        "name": "Rose of the Devil's Garden"
     },
     {
         "cards": {
@@ -5249,7 +5337,7 @@
             "Vessel": 3,
             "Voter Captivation": 8
         },
-        "name": "The Blue Blood "
+        "name": "The Blue Blood (Os Sangue Azul)"
     },
     {
         "cards": {
@@ -5437,7 +5525,7 @@
             "Wake with Evening's Freshness": 1,
             "Wash": 1
         },
-        "name": "Arika"
+        "name": "Arika, a m\u00e3e de todos"
     },
     {
         "cards": {
@@ -5527,7 +5615,7 @@
             "Telepathic Misdirection": 6,
             "Vessel": 2
         },
-        "name": "Osebo "
+        "name": "Osebo - No Secrets"
     },
     {
         "cards": {
@@ -5853,7 +5941,7 @@
             "Terror Frenzy": 2,
             "Vessel": 1
         },
-        "name": "Weenie Animalism v1"
+        "name": "Weenie Animalism v1.2"
     },
     {
         "cards": {
@@ -5939,7 +6027,7 @@
             "Vessel": 4,
             "Wider View": 1
         },
-        "name": "New Nana "
+        "name": "New Nana (27)"
     },
     {
         "cards": {
@@ -6027,7 +6115,7 @@
             "Vessel": 4,
             "Wash": 2
         },
-        "name": "If I live"
+        "name": "If I live, I will kill you! If I die, you are forgiven."
     },
     {
         "cards": {
@@ -6107,7 +6195,7 @@
             "Taunt the Caged Beast": 3,
             "Vessel": 8
         },
-        "name": "Bruninho "
+        "name": "Bruninho (Crow)"
     },
     {
         "cards": {
@@ -6257,7 +6345,7 @@
             "Villein": 1,
             "Wash": 1
         },
-        "name": "Sex"
+        "name": "Sex, Sweat and Letters"
     },
     {
         "cards": {
@@ -6407,7 +6495,7 @@
             "Villein": 1,
             "Wash": 1
         },
-        "name": "Farra"
+        "name": "Farra, Pinga e Foguete"
     },
     {
         "cards": {
@@ -6501,7 +6589,7 @@
             "Veil the Legions": 1,
             "Vessel": 2
         },
-        "name": "\u00c1gua mole em pedra dura"
+        "name": "\u00c1gua mole em pedra dura, quem avisa amigo \u00e9."
     },
     {
         "cards": {
@@ -6585,7 +6673,7 @@
             "Taste of Vitae": 3,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Northwest Qualifier 2016"
+        "name": "Northwest Qualifier 2016: Woke"
     },
     {
         "cards": {
@@ -6945,7 +7033,7 @@
             "Wash": 1,
             "Well-Marked": 2
         },
-        "name": "Let"
+        "name": "Let's go to Gym!"
     },
     {
         "cards": {
@@ -7173,7 +7261,7 @@
             "Wake with Evening's Freshness": 2,
             "Zillah's Valley": 5
         },
-        "name": "I"
+        "name": "I'll Cast A Shadow"
     },
     {
         "cards": {
@@ -7415,7 +7503,7 @@
             "Wake with Evening's Freshness": 1,
             "Wider View": 1
         },
-        "name": "Nana anarch"
+        "name": "Nana anarch, low crypt, Portuguese version"
     },
     {
         "cards": {
@@ -7521,7 +7609,65 @@
             "Vessel": 1,
             "Wake with Evening's Freshness": 1
         },
-        "name": "N\u00e3o tem eagle"
+        "name": "N\u00e3o tem eagle, vai de second"
+    },
+    {
+        "cards": {
+            "alessandrogarcia": 1,
+            "amusementparkhuntingground": 1,
+            "anarchconvert": 5,
+            "aranthebestheimmortal": 1,
+            "axelvonanders": 1,
+            "clubillusion": 2,
+            "delayingtactics": 3,
+            "desalle": 1,
+            "fatherjuancarlos": 1,
+            "gatjilmunyarryun": 1,
+            "honestabe": 1,
+            "informationhighway": 2,
+            "leverage": 6,
+            "monkeywrench": 2,
+            "narrowminds": 1,
+            "pentextmsubversion": 2,
+            "powerbaselosangeles": 1,
+            "powerofone": 14,
+            "rodrigo": 1,
+            "smash": 1,
+            "spoilsofwar": 14,
+            "twilightcamp": 3,
+            "undueinfluence": 20,
+            "unholypenance": 6
+        },
+        "crypt": {
+            "Alessandro Garcia": 1,
+            "Anarch Convert": 5,
+            "Axel Von Anders": 1,
+            "DeSalle": 1,
+            "Father Juan Carlos": 1,
+            "Gatjil Munyarryun": 1,
+            "Honest Abe": 1,
+            "Rodrigo": 1,
+            "Smash": 1
+        },
+        "description": "Outside the Hourglass\nParis, France\nDecember 13th 2015\n3R+F\n15 players\nGuilhem Marrannes\n\n\nDeck Name: !Bru Influence\nDescription: S&B; !brujah Anarch",
+        "library": {
+            "Amusement Park Hunting Ground": 1,
+            "Aranthebes, The Immortal": 1,
+            "Club Illusion": 2,
+            "Delaying Tactics": 3,
+            "Information Highway": 2,
+            "Leverage": 6,
+            "Monkey Wrench": 2,
+            "Narrow Minds": 1,
+            "Pentex(TM) Subversion": 2,
+            "Power of One": 14,
+            "Powerbase: Los Angeles": 1,
+            "Spoils of War": 14,
+            "Twilight Camp": 3,
+            "Undue Influence": 20,
+            "Unholy Penance": 6
+        },
+        "name": "!Bru Influence"
     },
     {
         "cards": {
@@ -7859,7 +8005,7 @@
             "Villein": 7,
             "Wider View": 1
         },
-        "name": "With a little help from Giotto "
+        "name": "With a little help from Giotto (UK Nats)"
     },
     {
         "cards": {
@@ -7999,7 +8145,7 @@
             "Vessel": 3,
             "Voter Captivation": 6
         },
-        "name": "A politica do Inferno "
+        "name": "A politica do Inferno (Esquerda Caviar)"
     },
     {
         "cards": {
@@ -8185,7 +8331,7 @@
             "Walk of Flame": 2,
             "Wind Dance": 2
         },
-        "name": "The Witch"
+        "name": "The Witch's Wall of Fire"
     },
     {
         "cards": {
@@ -8497,7 +8643,7 @@
             "Wider View": 1,
             "Zillah's Valley": 4
         },
-        "name": "Girls will find"
+        "name": "Girls will find... Inner Circles"
     },
     {
         "cards": {
@@ -8622,6 +8768,84 @@
             "Wash": 1
         },
         "name": "Weenie DEM"
+    },
+    {
+        "cards": {
+            "auraabsorption": 3,
+            "blooddoll": 2,
+            "bonding": 2,
+            "conditioning": 4,
+            "coventhe": 1,
+            "damehollerton": 2,
+            "deflection": 5,
+            "delayingtactics": 1,
+            "dreamsofthesphinx": 1,
+            "earthswords": 1,
+            "faecontortion": 5,
+            "foreshadowingdestruction": 1,
+            "giantsblood": 1,
+            "governtheunaligned": 10,
+            "greatsymposium": 1,
+            "isanwayen": 2,
+            "murmurofthefalsewill": 1,
+            "ommeenberbenight": 2,
+            "onthequivive": 4,
+            "oubliette": 2,
+            "pentextmsubversion": 1,
+            "perfectionist": 1,
+            "pherydima": 2,
+            "quincythetrapper": 2,
+            "redirection": 1,
+            "roderickphillipsmarch": 2,
+            "seduction": 1,
+            "shadowplay": 3,
+            "shroudofabsence": 3,
+            "songofpan": 2,
+            "stonetravel": 5,
+            "suddenreversal": 2,
+            "wakewitheveningsfreshness": 1,
+            "wash": 1
+        },
+        "crypt": {
+            "Dame Hollerton": 2,
+            "Isanwayen": 2,
+            "Omme Enberbenight": 2,
+            "Pherydima": 2,
+            "Quincy, The Trapper": 2,
+            "Roderick Phillips March": 2
+        },
+        "description": "Dutch NC 2015 - Disco Vampire\nUtrecht, The Netherlands\nOctober 24th 2015\n3R+F\n18 players\nJonathan van der Smissen\n\nDeck Name:[KIA] Kiasyd 66 cards\n\nThe deck is just big enough to get you through the table.\n1st game: 3vp. My third vp was just when I decked out with 6 minutes left on the clock. Most of my minions were torpored, witouth cards my last one soon joined them and all 4 got eaten.\n2nd game: 0vp. Beast rush deck in my back. My deck can't cope with rush potence torn grapple blur.\n3rd game: 3vp. a crucial seduction on anneke allowed my first oust. My prey and predator were contesting a pentex for the whole game. Martin's presence bleeder got through the wakes of anneke anson after which I took the table.\n\nFinal: setite corrupt vote -> nosferatu vote -> gangrel royalty -> me kiasyd sb -> presence bleed.\nMy opening crypt at this table was perfect. I had pheridima(8 bishop) and omme (7 priscus) 4 transfers to start with and a govern.\nMe and the nosferatu had votelock over my predator which allowed me to keep the gangrel alive but severely damaged and a little threat. I got through the presence deck, at which point the table started to collapse. The nosferatu died soon after. Giving me, the stealth bleed deck votelock over the table. I went from 14 to 4 pool in a single turn, allowing myself to get parity shifted for my predators benefit, pentexing xaviar(who downgraded to prince) influencing a new minion and paying pheridima to get an untapped minion.\n\nI delayed the reckless agitation from the setites who were about to backoust me.\nThen my predator did a bleed of 1 with form of mist (3 pool left) he tried to cycle hard to find his kine resources contested , luckily he failed to find it.\nMy prey had 3 pool left, my predator 7.\nMy prey bounces the first govern, bounces the second govern. I go for a third and luckily that's all he had. Bleed for 1 with a seduction to win the game.",
+        "library": {
+            "Aura Absorption": 3,
+            "Blood Doll": 2,
+            "Bonding": 2,
+            "Conditioning": 4,
+            "Coven, The": 1,
+            "Deflection": 5,
+            "Delaying Tactics": 1,
+            "Dreams of the Sphinx": 1,
+            "Earth Swords": 1,
+            "Fae Contortion": 5,
+            "Foreshadowing Destruction": 1,
+            "Giant's Blood": 1,
+            "Govern the Unaligned": 10,
+            "Great Symposium": 1,
+            "Murmur of the False Will": 1,
+            "On the Qui Vive": 4,
+            "Oubliette": 2,
+            "Pentex(TM) Subversion": 1,
+            "Perfectionist": 1,
+            "Redirection": 1,
+            "Seduction": 1,
+            "Shadow Play": 3,
+            "Shroud of Absence": 3,
+            "Song of Pan": 2,
+            "Stone Travel": 5,
+            "Sudden Reversal": 2,
+            "Wake with Evening's Freshness": 1,
+            "Wash": 1
+        },
+        "name": "[KIA] Kiasyd 66 cards"
     },
     {
         "cards": {
@@ -8803,7 +9027,7 @@
             "Villein": 4,
             "Wash": 3
         },
-        "name": "Gangrels don"
+        "name": "Gangrels don't win, they said. =P"
     },
     {
         "cards": {
@@ -9471,7 +9695,7 @@
             "Wash": 2,
             "Wrong and Crosswise": 2
         },
-        "name": "Malk"
+        "name": "Malk&!Malk"
     },
     {
         "cards": {
@@ -9667,6 +9891,76 @@
     },
     {
         "cards": {
+            "arthurdenholm": 1,
+            "bela": 1,
+            "bloodymary": 1,
+            "conceal": 1,
+            "directintervention": 2,
+            "dreamsofthesphinx": 2,
+            "elderimpersonation": 4,
+            "eyesofchaos": 4,
+            "gemghastly": 1,
+            "giantsblood": 1,
+            "hidethemind": 3,
+            "jackie": 1,
+            "kindredspirits": 12,
+            "lostincrowds": 2,
+            "louhi": 3,
+            "madmansquill": 1,
+            "metrounderground": 1,
+            "monasteryofshadows": 1,
+            "morel": 1,
+            "myenemysenemy": 1,
+            "notrace": 6,
+            "onthequivive": 3,
+            "pentextmsubversion": 1,
+            "persephonetaranis": 1,
+            "restructure": 1,
+            "santaleous": 2,
+            "securehaven": 1,
+            "suddenreversal": 2,
+            "swallowedbythenight": 6,
+            "telepathicmisdirection": 6
+        },
+        "crypt": {
+            "Arthur Denholm": 1,
+            "Bela": 1,
+            "Bloody Mary": 1,
+            "Gem Ghastly": 1,
+            "Jackie": 1,
+            "Louhi": 3,
+            "Morel": 1,
+            "Persephone Tar-Anis": 1,
+            "Santaleous": 2
+        },
+        "description": "Campeonato Mineiro de V:TES 2015\nJuiz de Fora, Brazil\nAugust 15th 2015\n2R+F\n29 players\nPedro Paulo de Sousa Mendes\nOrganizer: Kleber Bertazzo Machado de Souza\nhttp://www.vekn.net/event-calendar/event/8151\n\n\nDeck Name : !Malks: Os Intrepidos!!!",
+        "library": {
+            "Conceal": 1,
+            "Direct Intervention": 2,
+            "Dreams of the Sphinx": 2,
+            "Elder Impersonation": 4,
+            "Eyes of Chaos": 4,
+            "Giant's Blood": 1,
+            "Hide the Mind": 3,
+            "Kindred Spirits": 12,
+            "Lost in Crowds": 2,
+            "Madman's Quill": 1,
+            "Metro Underground": 1,
+            "Monastery of Shadows": 1,
+            "My Enemy's Enemy": 1,
+            "No Trace": 6,
+            "On the Qui Vive": 3,
+            "Pentex(TM) Subversion": 1,
+            "Restructure": 1,
+            "Secure Haven": 1,
+            "Sudden Reversal": 2,
+            "Swallowed by the Night": 6,
+            "Telepathic Misdirection": 6
+        },
+        "name": "!Malks: Os Intrepidos!!!"
+    },
+    {
+        "cards": {
             "aidfrombats": 11,
             "animalism": 2,
             "archoninvestigation": 1,
@@ -9855,7 +10149,7 @@
             "Wake with Evening's Freshness": 2,
             "Wider View": 2
         },
-        "name": "Guillaume"
+        "name": "Guillaume's Surprise"
     },
     {
         "cards": {
@@ -10105,7 +10399,83 @@
             "Vessel": 4,
             "Villein": 4
         },
-        "name": "Setite Red List"
+        "name": "Setite Red List."
+    },
+    {
+        "cards": {
+            "campgroundhuntingground": 1,
+            "capitalist": 2,
+            "celerity": 3,
+            "cloakthegathering": 5,
+            "coventhe": 1,
+            "delayingtactics": 2,
+            "denettestensen": 2,
+            "earthmeld": 9,
+            "elderlibrary": 1,
+            "ennoiastheater": 1,
+            "facelessnight": 3,
+            "flurryofaction": 7,
+            "informationhighway": 1,
+            "jeffreymullins": 2,
+            "laptopcomputer": 4,
+            "leatheryhide": 3,
+            "leverage": 7,
+            "lostincrowds": 5,
+            "lukefellows": 2,
+            "markedterritory": 5,
+            "morrowthesage": 2,
+            "onthequivive": 7,
+            "pentextmlovesyou": 1,
+            "ryszard": 2,
+            "shadowcourtsatyrchangeling": 6,
+            "spyingmission": 3,
+            "swallowedbythenight": 3,
+            "synnerg": 2,
+            "tributetothemaster": 2,
+            "twistedforest": 1,
+            "unmaskingthe": 2,
+            "vessel": 3,
+            "wash": 2
+        },
+        "crypt": {
+            "Denette Stensen": 2,
+            "Jeffrey Mullins": 2,
+            "Luke Fellows": 2,
+            "Morrow the Sage": 2,
+            "Ryszard": 2,
+            "Synner-G": 2
+        },
+        "description": "Commotion\nS\u00e3o Paulo, Brazil\nJuly 19th 2015\n3R+F\n15 players\nDesso Alastor\nhttp://www.vekn.net/event-calendar/event/8141\n\n\nDeck Name: \"Loving you was like loving the dead\"",
+        "library": {
+            "Campground Hunting Ground": 1,
+            "Capitalist": 2,
+            "Celerity": 3,
+            "Cloak the Gathering": 5,
+            "Coven, The": 1,
+            "Delaying Tactics": 2,
+            "Earth Meld": 9,
+            "Elder Library": 1,
+            "Ennoia's Theater": 1,
+            "Faceless Night": 3,
+            "Flurry of Action": 7,
+            "Information Highway": 1,
+            "Laptop Computer": 4,
+            "Leathery Hide": 3,
+            "Leverage": 7,
+            "Lost in Crowds": 5,
+            "Marked Territory": 5,
+            "On the Qui Vive": 7,
+            "Pentex(TM) Loves You!": 1,
+            "Shadow Court Satyr (Changeling)": 6,
+            "Spying Mission": 3,
+            "Swallowed by the Night": 3,
+            "Tribute to the Master": 2,
+            "Twisted Forest": 1,
+            "Unmasking, The": 2,
+            "Vessel": 3,
+            "Wash": 2
+        },
+        "name": "\"Loving you was like loving the dead\""
     },
     {
         "cards": {
@@ -10211,7 +10581,7 @@
             "Villein": 7,
             "Voter Captivation": 6
         },
-        "name": "Summoning the Elders"
+        "name": "Summoning the Elders! 3.0"
     },
     {
         "cards": {
@@ -10499,7 +10869,7 @@
             "Unleash Hell's Fury": 3,
             "Veneficti (Mage)": 1
         },
-        "name": "Bibliod\u00e8que "
+        "name": "Bibliod\u00e8que [9] He-who-shall-not-be-named (Baali stealth/bleed)"
     },
     {
         "cards": {
@@ -10939,7 +11309,7 @@
             "Terror Frenzy": 4,
             "Vessel": 2
         },
-        "name": "Ahrimanes"
+        "name": "Ahrimanes, The killing machine of the Sabbat"
     },
     {
         "cards": {
@@ -11235,7 +11605,7 @@
             "Slow Withering, The": 1,
             "Veil of Darkness": 1
         },
-        "name": "Tatu Signal"
+        "name": "Tatu Signal, The Wake Effect"
     },
     {
         "cards": {
@@ -11294,6 +11664,68 @@
             "Veneficti (Mage)": 1
         },
         "name": "Baali Maleficia"
+    },
+    {
+        "cards": {
+            "anarchistuprising": 2,
+            "ancientinfluence": 1,
+            "cloakthegathering": 4,
+            "closedsession": 2,
+            "elderimpersonation": 4,
+            "facelessnight": 4,
+            "gameofmalkav": 4,
+            "giantsblood": 1,
+            "golcondainnerpeace": 3,
+            "informationhighway": 4,
+            "josefvonbauren": 3,
+            "kindredspirits": 4,
+            "kineresourcescontested": 8,
+            "lostincrowds": 4,
+            "lutzvonhohenzollern": 3,
+            "mentalmaze": 8,
+            "notrace": 4,
+            "onthequivive": 4,
+            "petraresonance": 5,
+            "politicalstranglehold": 1,
+            "reinsofpower": 1,
+            "spyingmission": 4,
+            "telepathicmisdirection": 6,
+            "tryphosa": 2,
+            "unmada": 4,
+            "villein": 8
+        },
+        "crypt": {
+            "Josef von Bauren": 3,
+            "Lutz von Hohenzollern": 3,
+            "Tryphosa": 2,
+            "Unmada": 4
+        },
+        "description": "Blood of Camarilla\nOstrava, Czech Republic\nApril 4th 2015\n3R+F\n13 players\nPavel Jung (Tuko)\nhttp://www.vekn.net/event-calendar/event/8074\n\n\nDeck Name: \"Malkavian\" Bigcaps",
+        "library": {
+            "Anarchist Uprising": 2,
+            "Ancient Influence": 1,
+            "Cloak the Gathering": 4,
+            "Closed Session": 2,
+            "Elder Impersonation": 4,
+            "Faceless Night": 4,
+            "Game of Malkav": 4,
+            "Giant's Blood": 1,
+            "Golconda: Inner Peace": 3,
+            "Information Highway": 4,
+            "Kindred Spirits": 4,
+            "Kine Resources Contested": 8,
+            "Lost in Crowds": 4,
+            "Mental Maze": 8,
+            "No Trace": 4,
+            "On the Qui Vive": 4,
+            "Petra Resonance": 5,
+            "Political Stranglehold": 1,
+            "Reins of Power": 1,
+            "Spying Mission": 4,
+            "Telepathic Misdirection": 6,
+            "Villein": 8
+        },
+        "name": "\"Malkavian\" Bigcaps"
     },
     {
         "cards": {
@@ -11379,7 +11811,7 @@
             "Wider View": 1,
             "Zephyr": 3
         },
-        "name": "Mercury"
+        "name": "Mercury's Adepts"
     },
     {
         "cards": {
@@ -11535,7 +11967,7 @@
             "Staredown": 6,
             "Two Wrongs": 1
         },
-        "name": "Mono Presence "
+        "name": "Mono Presence (Grupo 1 & 2)"
     },
     {
         "cards": {
@@ -11697,7 +12129,7 @@
             "Torn Signpost": 9,
             "Voices of the Castle": 4
         },
-        "name": "Tupdogs Combate V3"
+        "name": "Tupdogs Combate V3.0"
     },
     {
         "cards": {
@@ -11785,7 +12217,7 @@
             "Veil the Legions": 2,
             "Wider View": 2
         },
-        "name": "Tryphosa parties like it"
+        "name": "Tryphosa parties like it's '94"
     },
     {
         "cards": {
@@ -11867,7 +12299,7 @@
             "Villein": 2,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Prenda"
+        "name": "Prenda-me se for capaz."
     },
     {
         "cards": {
@@ -12639,7 +13071,7 @@
             "Wasserschloss Anif, Austria": 1,
             "Young Bloods": 1
         },
-        "name": "Winner"
+        "name": "Winner!"
     },
     {
         "cards": {
@@ -12803,7 +13235,7 @@
             "Tenebrous Form": 2,
             "Vessel": 6
         },
-        "name": "  S\u00f3 quero ca\u00e7ar "
+        "name": "S\u00f3 quero ca\u00e7ar (Just Want to Hunt)"
     },
     {
         "cards": {
@@ -12871,7 +13303,7 @@
             "Staredown": 7,
             "Uncoiling, The": 1
         },
-        "name": "Bitch i"
+        "name": "Bitch i'm fabulous"
     },
     {
         "cards": {
@@ -12945,7 +13377,7 @@
             "Swallowed by the Night": 3,
             "Telepathic Misdirection": 3
         },
-        "name": "Malkavian DEM"
+        "name": "Malkavian DEM-OBF-AUS"
     },
     {
         "cards": {
@@ -13031,7 +13463,7 @@
             "Vitae Block": 3,
             "Wider View": 1
         },
-        "name": "Pamplona Tournament"
+        "name": "Pamplona Tournament: Gon ten\u00eda raz\u00f3n..."
     },
     {
         "cards": {
@@ -13657,7 +14089,7 @@
             "Villein": 2,
             "Wider View": 4
         },
-        "name": "Crepusculo "
+        "name": "Crepusculo (Twilight) EP 2"
     },
     {
         "cards": {
@@ -13741,7 +14173,7 @@
             "Vessel": 2,
             "Wall Street Night, Financial Newspaper": 1
         },
-        "name": "Akunanse"
+        "name": "Akunanse's War"
     },
     {
         "cards": {
@@ -14201,7 +14633,7 @@
             "Villein": 4,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Saulot"
+        "name": "Saulot's Snakes"
     },
     {
         "cards": {
@@ -14367,7 +14799,7 @@
             "Shroud of Absence": 4,
             "Stone Travel": 2
         },
-        "name": "Kiasyd S "
+        "name": "Kiasyd S & B"
     },
     {
         "cards": {
@@ -14537,7 +14969,99 @@
             "White Phosphorus Grenade": 2,
             "Zip Gun": 2
         },
-        "name": "Caitiff "
+        "name": "Caitiff & Pander Bruise&Bleed;"
+    },
+    {
+        "cards": {
+            "anarchtroublemaker": 2,
+            "blackhorsetanner": 2,
+            "blooddoll": 2,
+            "bonding": 2,
+            "bowlofconvergence": 1,
+            "channel10": 1,
+            "conditioning": 5,
+            "deflection": 8,
+            "delayingtactics": 1,
+            "dreamsofthesphinx": 2,
+            "eaglessight": 1,
+            "enhancedsenses": 2,
+            "eyesofargus": 4,
+            "farmastery": 1,
+            "forcedawakening": 2,
+            "governtheunaligned": 10,
+            "hiddenstrength": 4,
+            "indomitability": 5,
+            "ivorybow": 1,
+            "jephtahester": 1,
+            "josephogrady": 1,
+            "katherinestoddard": 1,
+            "krcgnewsradio": 1,
+            "lanabutcher": 1,
+            "marielstjohn": 1,
+            "misdirection": 1,
+            "myenemysenemy": 2,
+            "neighborjohn": 2,
+            "onthequivive": 4,
+            "owainevansthewanderer": 2,
+            "pentextmsubversion": 1,
+            "powerbasemontreal": 1,
+            "rollingwiththepunches": 2,
+            "skinofsteel": 1,
+            "spiritstouch": 1,
+            "telepathicmisdirection": 2,
+            "ulrikerothbart": 1,
+            "vessel": 2,
+            "weightedwalkingstick": 5,
+            "widerview": 2,
+            "wmrhtalkradio": 1
+        },
+        "crypt": {
+            "Blackhorse Tanner": 2,
+            "Jephta Hester": 1,
+            "Joseph O'Grady": 1,
+            "Katherine Stoddard": 1,
+            "Lana Butcher": 1,
+            "Mariel St. John": 1,
+            "Neighbor John": 2,
+            "Owain Evans, The Wanderer": 2,
+            "Ulrike Rothbart": 1
+        },
+        "description": "Danish ECQ\nCopenhagen, Denmark\nAugust 24th 2014\n3R+F\n16 players\nAli Almadhi\nhttp://www.vekn.net/event-calendar/event/7605\n\nDeck Name: !Ventrue Grinder\nDescription: Nothing special. Stickmen, well known and hated :blink:",
+        "library": {
+            "Anarch Troublemaker": 2,
+            "Blood Doll": 2,
+            "Bonding": 2,
+            "Bowl of Convergence": 1,
+            "Channel 10": 1,
+            "Conditioning": 5,
+            "Deflection": 8,
+            "Delaying Tactics": 1,
+            "Dreams of the Sphinx": 2,
+            "Eagle's Sight": 1,
+            "Enhanced Senses": 2,
+            "Eyes of Argus": 4,
+            "Far Mastery": 1,
+            "Forced Awakening": 2,
+            "Govern the Unaligned": 10,
+            "Hidden Strength": 4,
+            "Indomitability": 5,
+            "Ivory Bow": 1,
+            "KRCG News Radio": 1,
+            "Misdirection": 1,
+            "My Enemy's Enemy": 2,
+            "On the Qui Vive": 4,
+            "Pentex(TM) Subversion": 1,
+            "Powerbase: Montreal": 1,
+            "Rolling with the Punches": 2,
+            "Skin of Steel": 1,
+            "Spirit's Touch": 1,
+            "Telepathic Misdirection": 2,
+            "Vessel": 2,
+            "WMRH Talk Radio": 1,
+            "Weighted Walking Stick": 5,
+            "Wider View": 2
+        },
+        "name": "!Ventrue Grinder"
     },
     {
         "cards": {
@@ -14611,7 +15135,7 @@
             "Villein": 5,
             "Wider View": 1
         },
-        "name": "Malkavian Bleed"
+        "name": "Malkavian Bleed/Vote"
     },
     {
         "cards": {
@@ -14797,7 +15321,7 @@
             "Wider View": 4,
             "Wise Spider": 1
         },
-        "name": "CREP\u00daSCULO "
+        "name": "CREP\u00daSCULO (Twilight)"
     },
     {
         "cards": {
@@ -14889,7 +15413,7 @@
             "Week of Nightmares": 1,
             "Will-o'-the-Wisp": 2
         },
-        "name": "Ravnos"
+        "name": "Ravnos-Ivan Dominador"
     },
     {
         "cards": {
@@ -14969,7 +15493,7 @@
             "Tension in the Ranks": 1,
             "Wash": 1
         },
-        "name": "anarch for"
+        "name": "anarch for-cel rush"
     },
     {
         "cards": {
@@ -15475,7 +15999,7 @@
             "Telepathic Misdirection": 6,
             "Villein": 2
         },
-        "name": "toreador anneke"
+        "name": "toreador anneke: trimmed 1.1"
     },
     {
         "cards": {
@@ -15609,7 +16133,7 @@
             "Vessel": 3,
             "Vicissitude": 3
         },
-        "name": "Meshenka"
+        "name": "Meshenka/dragos horridform wall"
     },
     {
         "cards": {
@@ -16059,7 +16583,7 @@
             "Veil the Legions": 3,
             "Vessel": 4
         },
-        "name": "  419 forms of corruption"
+        "name": "419 forms of corruption"
     },
     {
         "cards": {
@@ -16151,7 +16675,7 @@
             "Well-Marked": 3,
             "Wider View": 2
         },
-        "name": "Nana Buruki "
+        "name": "Nana Buruki & Friends Ani/Pot Combat"
     },
     {
         "cards": {
@@ -16217,7 +16741,7 @@
             "Public Trust": 10,
             "Staredown": 6
         },
-        "name": "Don"
+        "name": "Don't look back"
     },
     {
         "cards": {
@@ -16369,7 +16893,7 @@
             "Taste of Vitae": 3,
             "Vessel": 4
         },
-        "name": "Lasombra"
+        "name": "Lasombra's Angry Dragon"
     },
     {
         "cards": {
@@ -16461,7 +16985,7 @@
             "Vessel": 2,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Lorrie"
+        "name": "Lorrie's 1st armored division"
     },
     {
         "cards": {
@@ -16567,7 +17091,7 @@
             "Villein": 7,
             "Well-Marked": 2
         },
-        "name": "Week of Nightmares Event 5"
+        "name": "Week of Nightmares Event 5: Ishtarri Need No Bounce!"
     },
     {
         "cards": {
@@ -16943,7 +17467,7 @@
             "Weighted Walking Stick": 2,
             "Zip Gun": 1
         },
-        "name": "Yes"
+        "name": "Yes."
     },
     {
         "cards": {
@@ -17041,7 +17565,7 @@
             "Veil the Legions": 2,
             "WMRH Talk Radio": 1
         },
-        "name": "When I was young"
+        "name": "When I was young, it seemed that life was so wonderful, a miracle, oh it was beautiful, magical..."
     },
     {
         "cards": {
@@ -17145,7 +17669,7 @@
             "Wider View": 1,
             "Zillah's Valley": 6
         },
-        "name": "Ayo "
+        "name": "Ayo & Undele choose your suffering"
     },
     {
         "cards": {
@@ -17221,7 +17745,7 @@
             "Voter Captivation": 5,
             "Wider View": 2
         },
-        "name": "It"
+        "name": "It's a friendly deck, don't trust the setites"
     },
     {
         "cards": {
@@ -17519,7 +18043,7 @@
             "Vessel": 4,
             "Wash": 2
         },
-        "name": "MalkOldies"
+        "name": "MalkOldies&Friends;"
     },
     {
         "cards": {
@@ -17605,7 +18129,7 @@
             "Villein": 4,
             "Wash": 4
         },
-        "name": "Stanislava "
+        "name": "Stanislava & Lazverinus"
     },
     {
         "cards": {
@@ -17679,7 +18203,7 @@
             "Villein": 6,
             "Wider View": 2
         },
-        "name": "Dmitra"
+        "name": "Dmitra's Show of Force"
     },
     {
         "cards": {
@@ -18021,7 +18545,7 @@
             "Praxis Seizure: Washington, D.C.": 1,
             "Sudden Reversal": 4
         },
-        "name": "knave"
+        "name": "knave's revenge"
     },
     {
         "cards": {
@@ -18093,7 +18617,7 @@
             "Vessel": 3,
             "Wake with Evening's Freshness": 2
         },
-        "name": "No"
+        "name": "No...we're never gonna survive, unless...we are a little...CRAZY!!!"
     },
     {
         "cards": {
@@ -18969,7 +19493,7 @@
             "Zaire River Ferry": 1,
             "Zillah's Valley": 4
         },
-        "name": "Memantine Therapy "
+        "name": "Memantine Therapy (2014)"
     },
     {
         "cards": {
@@ -19065,7 +19589,7 @@
             "Vessel": 5,
             "Visit from the Capuchin": 1
         },
-        "name": "Ventrue"
+        "name": "Ventrue! PowerStreet"
     },
     {
         "cards": {
@@ -19139,7 +19663,7 @@
             "Weighted Walking Stick": 4,
             "Wider View": 2
         },
-        "name": "Big strong man like you"
+        "name": "Big strong man like you..."
     },
     {
         "cards": {
@@ -19239,7 +19763,71 @@
             "Villein": 7,
             "Zillah's Valley": 7
         },
-        "name": "Stanislava and some strange friends"
+        "name": "Stanislava and some strange friends.."
+    },
+    {
+        "cards": {
+            "archoninvestigation": 1,
+            "aristotledelaurent": 2,
+            "artemis": 1,
+            "blooddoll": 3,
+            "boytoy": 2,
+            "cloakthegathering": 5,
+            "confusion": 5,
+            "dolphinblack": 2,
+            "eyesofchaos": 14,
+            "facelessnight": 6,
+            "forcedawakening": 1,
+            "gilliankrader": 1,
+            "hannibal": 1,
+            "imogen": 1,
+            "institutionhuntingground": 1,
+            "kindredspirits": 15,
+            "kite": 1,
+            "lostincrowds": 12,
+            "obfuscate": 1,
+            "spyingmission": 2,
+            "suddenreversal": 1,
+            "telepathiccounter": 6,
+            "telepathicmisdirection": 3,
+            "virgil": 1,
+            "voiceofmadness": 4,
+            "wakewitheveningsfreshness": 8,
+            "zillahsvalley": 2
+        },
+        "crypt": {
+            "Aristotle de Laurent": 2,
+            "Artemis": 1,
+            "Boy Toy": 2,
+            "Dolphin Black": 2,
+            "Gillian Krader": 1,
+            "Hannibal": 1,
+            "Imogen": 1,
+            "Kite": 1,
+            "Virgil": 1
+        },
+        "description": "Anarch Manifesto\nFortaleza, Brazil\nFebruary 9th 2014\n3R+F\n17 players\nRyan Verissimo Oliveira (Ryan was 11 years old when he won this event.)\nhttp://www.vekn.net/event-calendar/event/7491\n\n\nDeck Name: !Malkavian\nDescription: Bleed In Anarchs",
+        "library": {
+            "Archon Investigation": 1,
+            "Blood Doll": 3,
+            "Cloak the Gathering": 5,
+            "Confusion": 5,
+            "Eyes of Chaos": 14,
+            "Faceless Night": 6,
+            "Forced Awakening": 1,
+            "Institution Hunting Ground": 1,
+            "Kindred Spirits": 15,
+            "Lost in Crowds": 12,
+            "Obfuscate": 1,
+            "Spying Mission": 2,
+            "Sudden Reversal": 1,
+            "Telepathic Counter": 6,
+            "Telepathic Misdirection": 3,
+            "Voice of Madness": 4,
+            "Wake with Evening's Freshness": 8,
+            "Zillah's Valley": 2
+        },
+        "name": "!Malkavian"
     },
     {
         "cards": {
@@ -19399,7 +19987,7 @@
             "Villein": 6,
             "Zillah's Valley": 6
         },
-        "name": "Geezers will find"
+        "name": "Geezers will find..."
     },
     {
         "cards": {
@@ -19567,7 +20155,7 @@
             "Visit from the Capuchin": 1,
             "Wake with Evening's Freshness": 3
         },
-        "name": "Nihil est novum sub sole"
+        "name": "Nihil est novum sub sole, Hastur's version"
     },
     {
         "cards": {
@@ -19891,7 +20479,7 @@
             "Voter Captivation": 2,
             "Wider View": 1
         },
-        "name": "With a little help from Giotto "
+        "name": "With a little help from Giotto (2014)"
     },
     {
         "cards": {
@@ -20035,7 +20623,7 @@
             "Wider View": 1,
             "Zillah's Valley": 3
         },
-        "name": "Santaleous"
+        "name": "Santaleous' Master Ban"
     },
     {
         "cards": {
@@ -20191,7 +20779,7 @@
             "Vessel": 2,
             "Vicissitude Poisoning": 1
         },
-        "name": "Baali "
+        "name": "Baali - for the horde"
     },
     {
         "cards": {
@@ -20261,7 +20849,7 @@
             "Stone Travel": 2,
             "Wash": 2
         },
-        "name": "Nocturn"
+        "name": "Nocturn-bleed"
     },
     {
         "cards": {
@@ -20411,7 +20999,7 @@
             "Swallowed by the Night": 3,
             "Wash": 3
         },
-        "name": "Jag vill ha en bleedlek med mycket stealth"
+        "name": "Jag vill ha en bleedlek med mycket stealth..."
     },
     {
         "cards": {
@@ -20567,7 +21155,7 @@
             "Villein": 7,
             "Zillah's Valley": 8
         },
-        "name": "Ban Giant"
+        "name": "Ban Giant's Blood"
     },
     {
         "cards": {
@@ -20661,7 +21249,7 @@
             "Wake with Evening's Freshness": 2,
             "Wider View": 2
         },
-        "name": "Sabbat Politics feat"
+        "name": "Sabbat Politics feat. Kisha Bhimji"
     },
     {
         "cards": {
@@ -20740,6 +21328,88 @@
             "War Ghoul": 9
         },
         "name": "Tzimisce Warghouls"
+    },
+    {
+        "cards": {
+            "44magnum": 6,
+            "abbot": 2,
+            "aranthebestheimmortal": 1,
+            "blackhorsetanner": 2,
+            "bowlofconvergence": 1,
+            "channel10": 1,
+            "concealedweapon": 6,
+            "conditioning": 6,
+            "corporatehuntingground": 1,
+            "deflection": 6,
+            "demonstration": 1,
+            "edwardneally": 1,
+            "governtheunaligned": 10,
+            "hiddenstrength": 6,
+            "indomitability": 6,
+            "ivorybow": 1,
+            "jephtahester": 1,
+            "josephogrady": 1,
+            "krcgnewsradio": 1,
+            "louisdemaisonneuve": 1,
+            "marielstjohn": 1,
+            "myenemysenemy": 2,
+            "neighborjohn": 2,
+            "onthequivive": 8,
+            "owainevansthewanderer": 2,
+            "pentextmsubversion": 1,
+            "powerbasemontreal": 1,
+            "revelations": 1,
+            "rollingwiththepunches": 6,
+            "rumormilltabloidnewspaperthe": 1,
+            "telepathicmisdirection": 6,
+            "therboldrealty": 1,
+            "ulrikerothbart": 1,
+            "vessel": 6,
+            "wallstreetnightfinancialnewspaper": 1,
+            "wmrhtalkradio": 1
+        },
+        "crypt": {
+            "Blackhorse Tanner": 2,
+            "Edward Neally": 1,
+            "Jephta Hester": 1,
+            "Joseph O'Grady": 1,
+            "Louis de Maisonneuve": 1,
+            "Mariel St. John": 1,
+            "Neighbor John": 2,
+            "Owain Evans, The Wanderer": 2,
+            "Ulrike Rothbart": 1
+        },
+        "description": "Fee Stake III: Fortaleza\nFortaleza, Brazil\nNovember 23rd 2013\n2R+F\n12 players\nPablo Andrade\nhttp://www.vekn.net/event-calendar/event/7398\n\n\nDeck Name: !Ventrue",
+        "library": {
+            ".44 Magnum": 6,
+            "Abbot": 2,
+            "Aranthebes, The Immortal": 1,
+            "Bowl of Convergence": 1,
+            "Channel 10": 1,
+            "Concealed Weapon": 6,
+            "Conditioning": 6,
+            "Corporate Hunting Ground": 1,
+            "Deflection": 6,
+            "Demonstration": 1,
+            "Govern the Unaligned": 10,
+            "Hidden Strength": 6,
+            "Indomitability": 6,
+            "Ivory Bow": 1,
+            "KRCG News Radio": 1,
+            "My Enemy's Enemy": 2,
+            "On the Qui Vive": 8,
+            "Pentex(TM) Subversion": 1,
+            "Powerbase: Montreal": 1,
+            "Revelations": 1,
+            "Rolling with the Punches": 6,
+            "Rumor Mill, Tabloid Newspaper, The": 1,
+            "Telepathic Misdirection": 6,
+            "Therbold Realty": 1,
+            "Vessel": 6,
+            "WMRH Talk Radio": 1,
+            "Wall Street Night, Financial Newspaper": 1
+        },
+        "name": "!Ventrue"
     },
     {
         "cards": {
@@ -21021,7 +21691,7 @@
             "Wake with Evening's Freshness": 1,
             "Week of Nightmares": 1
         },
-        "name": "Ravnos"
+        "name": "Ravnos-Maionese"
     },
     {
         "cards": {
@@ -21353,7 +22023,7 @@
             "Veil the Legions": 3,
             "Villein": 4
         },
-        "name": "Black Hand "
+        "name": "Black Hand + Thuggees & Anu"
     },
     {
         "cards": {
@@ -21441,7 +22111,7 @@
             "Telepathic Misdirection": 6,
             "Vessel": 4
         },
-        "name": "TZI "
+        "name": "TZI - Guerra Santa"
     },
     {
         "cards": {
@@ -21873,7 +22543,7 @@
             "Voter Captivation": 4,
             "Wash": 2
         },
-        "name": "Hmm"
+        "name": "Hmm, a werewolf I can has!"
     },
     {
         "cards": {
@@ -21947,7 +22617,7 @@
             "Telepathic Misdirection": 4,
             "Will-o'-the-Wisp": 11
         },
-        "name": "Sha"
+        "name": "Sha-Ennu bleed"
     },
     {
         "cards": {
@@ -22023,7 +22693,7 @@
             "Villein": 7,
             "Zillah's Valley": 5
         },
-        "name": "EC 2013 Day 1"
+        "name": "EC 2013 Day 1: Stanislava & Friends Dom/For Bleed/Vote"
     },
     {
         "cards": {
@@ -22675,7 +23345,7 @@
             "Vessel": 1,
             "Wash": 2
         },
-        "name": "Lasombra S"
+        "name": "Lasombra S&B;"
     },
     {
         "cards": {
@@ -22775,7 +23445,7 @@
             "Wash": 1,
             "Wind Dance": 1
         },
-        "name": "Malgorzata"
+        "name": "Malgorzata's Little Shop of Horror"
     },
     {
         "cards": {
@@ -23221,7 +23891,7 @@
             "Torn Signpost": 8,
             "Vessel": 4
         },
-        "name": "Ignazio "
+        "name": "Ignazio & Friends"
     },
     {
         "cards": {
@@ -23469,7 +24139,7 @@
             "Veil the Legions": 1,
             "Villein": 1
         },
-        "name": "Saulot Kakarot"
+        "name": "Saulot Kakarot's Style"
     },
     {
         "cards": {
@@ -23627,7 +24297,7 @@
             "Tenebrous Form": 3,
             "Vessel": 1
         },
-        "name": "Lasombra S"
+        "name": "Lasombra S&B;"
     },
     {
         "cards": {
@@ -23777,7 +24447,7 @@
             "Tension in the Ranks": 1,
             "Vessel": 3
         },
-        "name": "Dragos"
+        "name": "Dragos' Hidden Strength Exposed"
     },
     {
         "cards": {
@@ -24035,7 +24705,7 @@
             "Wake with Evening's Freshness": 3,
             "Weighted Walking Stick": 5
         },
-        "name": "  Gents on the town"
+        "name": "Gents on the town, twirling their canes v7 2013"
     },
     {
         "cards": {
@@ -24343,7 +25013,7 @@
             "Weighted Walking Stick": 6,
             "Wider View": 2
         },
-        "name": "Owain"
+        "name": "Owain's Grindhouse"
     },
     {
         "cards": {
@@ -24417,7 +25087,7 @@
             "Uncoiling, The": 1,
             "Wash": 7
         },
-        "name": "DOM"
+        "name": "DOM, +1 stealth, what else?"
     },
     {
         "cards": {
@@ -24501,7 +25171,7 @@
             "Villein": 3,
             "Wider View": 1
         },
-        "name": "Cybele"
+        "name": "Cybele's Curse v2"
     },
     {
         "cards": {
@@ -24929,7 +25599,7 @@
             "Villein": 3,
             "Wider View": 1
         },
-        "name": "Cybele"
+        "name": "Cybele's Curse"
     },
     {
         "cards": {
@@ -25039,6 +25709,90 @@
     },
     {
         "cards": {
+            "abbot": 2,
+            "aireofelation": 4,
+            "artofpainthe": 1,
+            "artscam": 7,
+            "blooddoll": 2,
+            "bowlofconvergence": 1,
+            "carter": 1,
+            "celerity": 1,
+            "dreamsofthesphinx": 2,
+            "eaglessight": 2,
+            "eyesofargus": 2,
+            "fetishclubhuntingground": 1,
+            "fleetness": 12,
+            "gretakircher": 2,
+            "hungrycoyotethe": 1,
+            "ianwallingford": 1,
+            "ivorybow": 1,
+            "krcgnewsradio": 1,
+            "mercyknightinquisitor": 1,
+            "millerdelmardiganteacherofbahari": 4,
+            "myenemysenemy": 2,
+            "onthequivive": 4,
+            "pallagrande": 4,
+            "patronage": 4,
+            "pentextmsubversion": 1,
+            "perfectionist": 2,
+            "pursuit": 6,
+            "quickensight": 1,
+            "resistearthsgrasp": 3,
+            "sheilamezarin": 2,
+            "sideslip": 4,
+            "sidestrike": 4,
+            "tasteofvitae": 5,
+            "telepathicmisdirection": 1,
+            "vessel": 3,
+            "victorrevellloyalist": 1,
+            "weightedwalkingstick": 6
+        },
+        "crypt": {
+            "Carter": 1,
+            "Greta Kircher": 2,
+            "Ian Wallingford": 1,
+            "Mercy, Knight Inquisitor": 1,
+            "Miller Delmardigan, Teacher of Bahari": 4,
+            "Sheila Mezarin": 2,
+            "Victor Revell, Loyalist": 1
+        },
+        "description": "German ECQ\nLudwigshafen, Germany\nJune 22nd 2013\n3R+F\n16 players\nAndreas Nusser\n\nDeck Name: \"Tai Chi Walking Stick Form\" by Miller & his students\nDescription:\nWinner of the German ECQ 2013. So far I have played this deck for 6 games.\n3 Game Wins and some VPs in the other games. Seems pretty solid deck\nconstruction to me and the cards are very balanced. Miller is important\nbut not a key vampire that you have to rely uopn.\n\nFleetness are great in combination with Palla Grande. Always had enough\nforward pressure. Art Scams were extremelly important for blood gain and\nsaved me a lot of times.",
+        "library": {
+            "Abbot": 2,
+            "Aire of Elation": 4,
+            "Art Scam": 7,
+            "Art of Pain, The": 1,
+            "Blood Doll": 2,
+            "Bowl of Convergence": 1,
+            "Celerity": 1,
+            "Dreams of the Sphinx": 2,
+            "Eagle's Sight": 2,
+            "Eyes of Argus": 2,
+            "Fetish Club Hunting Ground": 1,
+            "Fleetness": 12,
+            "Hungry Coyote, The": 1,
+            "Ivory Bow": 1,
+            "KRCG News Radio": 1,
+            "My Enemy's Enemy": 2,
+            "On the Qui Vive": 4,
+            "Palla Grande": 4,
+            "Patronage": 4,
+            "Pentex(TM) Subversion": 1,
+            "Perfectionist": 2,
+            "Pursuit": 6,
+            "Quicken Sight": 1,
+            "Resist Earth's Grasp": 3,
+            "Side Strike": 4,
+            "Sideslip": 4,
+            "Taste of Vitae": 5,
+            "Telepathic Misdirection": 1,
+            "Vessel": 3,
+            "Weighted Walking Stick": 6
+        },
+        "name": "\"Tai Chi Walking Stick Form\" by Miller & his students"
+    },
+    {
+        "cards": {
             "annazir": 2,
             "arishat": 2,
             "dreamsofthesphinx": 3,
@@ -25107,7 +25861,7 @@
             "Villein": 4,
             "Wider View": 2
         },
-        "name": "Kym Alishahi"
+        "name": "Kym Alishahi's Drace IS The unnamed"
     },
     {
         "cards": {
@@ -25415,7 +26169,7 @@
             "Taste of Vitae": 3,
             "Villein": 4
         },
-        "name": "Girls in the Pentex"
+        "name": "Girls in the Pentex(TM) boardroom"
     },
     {
         "cards": {
@@ -25895,7 +26649,7 @@
             "Villein": 4,
             "Voter Captivation": 3
         },
-        "name": "Lilith ain"
+        "name": "Lilith ain't blessing anymore, but Dmitra can give you a kiss"
     },
     {
         "cards": {
@@ -26243,7 +26997,7 @@
             "Weighted Walking Stick": 4,
             "Zoo Hunting Ground": 1
         },
-        "name": "Dr"
+        "name": "Dr. Randall rendel"
     },
     {
         "cards": {
@@ -26581,7 +27335,7 @@
             "Villein": 3,
             "Wash": 4
         },
-        "name": "Stanislava "
+        "name": "Stanislava & Lazverinus"
     },
     {
         "cards": {
@@ -26687,7 +27441,7 @@
             "Voter Captivation": 5,
             "Wash": 2
         },
-        "name": "Goodbye Lilith"
+        "name": "Goodbye Lilith's Blessings"
     },
     {
         "cards": {
@@ -26787,7 +27541,7 @@
             "Wake with Evening's Freshness": 2,
             "Weighted Walking Stick": 5
         },
-        "name": "Sennadurek "
+        "name": "Sennadurek - and friends v3"
     },
     {
         "cards": {
@@ -26959,7 +27713,7 @@
             "Wake with Evening's Freshness": 2,
             "Wash": 2
         },
-        "name": "We hare not the "
+        "name": "We hare not the \"Winx\""
     },
     {
         "cards": {
@@ -27339,7 +28093,7 @@
             "Telepathic Misdirection": 5,
             "Uncoiling, The": 1
         },
-        "name": "Das deutsche Paar"
+        "name": "Das deutsche Paar, ihrer Herrin, und der Rest der Familie."
     },
     {
         "cards": {
@@ -27771,7 +28525,7 @@
             "Touch of Clarity": 4,
             "Wrong and Crosswise": 2
         },
-        "name": "Malk "
+        "name": "Malk / !Malk"
     },
     {
         "cards": {
@@ -27865,7 +28619,7 @@
             "Vessel": 5,
             "Wind Dance": 2
         },
-        "name": "Jovens Bruxas "
+        "name": "Jovens Bruxas (Alguns Feiticeiros)"
     },
     {
         "cards": {
@@ -27929,7 +28683,7 @@
             "Pentex(TM) Subversion": 1,
             "Telepathic Misdirection": 6
         },
-        "name": "Toreador"
+        "name": "Toreador! Palla Grande"
     },
     {
         "cards": {
@@ -28097,7 +28851,7 @@
             "Villein": 5,
             "Wider View": 1
         },
-        "name": "Anson Cel"
+        "name": "Anson Cel-Gun ver.2.0"
     },
     {
         "cards": {
@@ -28767,7 +29521,7 @@
             "Whispers from the Dead": 4,
             "Will-o'-the-Wisp": 13
         },
-        "name": "Captain"
+        "name": "Captain, oh my captain!"
     },
     {
         "cards": {
@@ -28867,7 +29621,7 @@
             "Wake with Evening's Freshness": 2,
             "Zillah's Valley": 4
         },
-        "name": "Spider"
+        "name": "Spider, the best"
     },
     {
         "cards": {
@@ -29339,6 +30093,98 @@
     },
     {
         "cards": {
+            "aislingsturbridge": 1,
+            "anarchtroublemaker": 1,
+            "blooddoll": 2,
+            "blythecandeleria": 1,
+            "brooke": 1,
+            "burstofsunlight": 1,
+            "conditioning": 5,
+            "crypticmission": 21,
+            "deflection": 4,
+            "delayingtactics": 2,
+            "dominatekine": 1,
+            "drjohncasey": 1,
+            "effectivemanagement": 1,
+            "forcedawakening": 2,
+            "gregorywinter": 1,
+            "hannigan": 1,
+            "heinrickschlempt": 1,
+            "ignatius": 1,
+            "jingwei": 1,
+            "magdelenaschaefer": 1,
+            "mirrorwalk": 5,
+            "movementofthemind": 3,
+            "myenemysenemy": 1,
+            "onthequivive": 4,
+            "perfectclarity": 1,
+            "richardtauberayeleaspuppet": 1,
+            "rorecaquaid": 1,
+            "sarahcobbler": 1,
+            "societyofleopold": 1,
+            "suddenreversal": 1,
+            "telepathiccounter": 5,
+            "thadiuszhomage": 1,
+            "thaumaturgy": 1,
+            "theftofvitae": 6,
+            "tremereconvocation": 1,
+            "tributetothemaster": 3,
+            "unnaturaldisaster": 1,
+            "visitfromthecapuchin": 1,
+            "wakewitheveningsfreshness": 3,
+            "weathercontrol": 5,
+            "winddance": 1
+        },
+        "crypt": {
+            "Aisling Sturbridge": 1,
+            "Blythe Candeleria": 1,
+            "Brooke": 1,
+            "Dr. John Casey": 1,
+            "Hannigan": 1,
+            "Heinrick Schlempt": 1,
+            "Ignatius": 1,
+            "Jing Wei": 1,
+            "Magdelena Schaefer": 1,
+            "Richard Tauber, Ayelea's Puppet": 1,
+            "Roreca Quaid": 1,
+            "Sarah Cobbler": 1
+        },
+        "description": "Dissolution\nParramatta, Australia\nFebruary 23rd 2013\n3R+F\n10 players\nJon Darbro\n\n\nDeck Name: \"I Have to Get This Cheese to Washington Immediately!\"\nDescription:\nWhittle down prey's vampires with Cryptic Missions, then bleed them out.\nStep 5: profit!",
+        "library": {
+            "Anarch Troublemaker": 1,
+            "Blood Doll": 2,
+            "Burst of Sunlight": 1,
+            "Conditioning": 5,
+            "Cryptic Mission": 21,
+            "Deflection": 4,
+            "Delaying Tactics": 2,
+            "Dominate Kine": 1,
+            "Effective Management": 1,
+            "Forced Awakening": 2,
+            "Gregory Winter": 1,
+            "Mirror Walk": 5,
+            "Movement of the Mind": 3,
+            "My Enemy's Enemy": 1,
+            "On the Qui Vive": 4,
+            "Perfect Clarity": 1,
+            "Society of Leopold": 1,
+            "Sudden Reversal": 1,
+            "Telepathic Counter": 5,
+            "Thadius Zho, Mage": 1,
+            "Thaumaturgy": 1,
+            "Theft of Vitae": 6,
+            "Tremere Convocation": 1,
+            "Tribute to the Master": 3,
+            "Unnatural Disaster": 1,
+            "Visit from the Capuchin": 1,
+            "Wake with Evening's Freshness": 3,
+            "Weather Control": 5,
+            "Wind Dance": 1
+        },
+        "name": "\"I Have to Get This Cheese to Washington Immediately!\""
+    },
+    {
+        "cards": {
             "antheliostheredstar": 1,
             "arika": 3,
             "ashurtablets": 6,
@@ -29527,7 +30373,7 @@
             "Well-Marked": 1,
             "Wider View": 1
         },
-        "name": "Take it Eze"
+        "name": "Take it Eze!"
     },
     {
         "cards": {
@@ -29809,7 +30655,7 @@
             "Tourette's Voice": 1,
             "Wake with Evening's Freshness": 8
         },
-        "name": "Asylum Inmates Say "
+        "name": "Asylum Inmates Say \"No Bueno\""
     },
     {
         "cards": {
@@ -30251,7 +31097,7 @@
             "Vessel": 3,
             "Wash": 1
         },
-        "name": "Ur"
+        "name": "Ur-Shulgi - Gonna tear you down!!!"
     },
     {
         "cards": {
@@ -30481,7 +31327,7 @@
             "Soak": 3,
             "Taste of Vitae": 4
         },
-        "name": "Challenge accepted "
+        "name": "Challenge accepted - Anarch Ravnos Multirush"
     },
     {
         "cards": {
@@ -30559,7 +31405,7 @@
             "Wash": 1,
             "Wider View": 2
         },
-        "name": "This Isn"
+        "name": "This Isn't That Kind of a Deck, Honest!"
     },
     {
         "cards": {
@@ -30957,7 +31803,7 @@
             "Song of Pan": 1,
             "Stone Travel": 2
         },
-        "name": "Don"
+        "name": "Don't stop me now"
     },
     {
         "cards": {
@@ -31137,7 +31983,7 @@
             "Vessel": 2,
             "Wider View": 1
         },
-        "name": "Angry Lorrie v"
+        "name": "Angry Lorrie v.1.2 featuring Ignazio."
     },
     {
         "cards": {
@@ -31257,7 +32103,7 @@
             "Vessel": 2,
             "Wash": 1
         },
-        "name": "Beefcake"
+        "name": "Beefcake's Toolbox"
     },
     {
         "cards": {
@@ -31481,7 +32327,7 @@
             "Waste Management Operation": 1,
             "Wider View": 1
         },
-        "name": "Bronwen"
+        "name": "Bronwen's Fanclub"
     },
     {
         "cards": {
@@ -31665,7 +32511,7 @@
             "WMRH Talk Radio": 1,
             "Wake with Evening's Freshness": 1
         },
-        "name": "Pascek"
+        "name": "Pascek's Hounds"
     },
     {
         "cards": {
@@ -31819,7 +32665,7 @@
             "Villein": 7,
             "Zillah's Valley": 7
         },
-        "name": "Girls Will Find Out Quotes "
+        "name": "Girls Will Find Out Quotes (version 2)"
     },
     {
         "cards": {
@@ -31911,7 +32757,7 @@
             "Villein": 7,
             "Zillah's Valley": 6
         },
-        "name": "EC 2012 Day 2"
+        "name": "EC 2012 Day 2: Girls Will Find Inner Sleaze"
     },
     {
         "cards": {
@@ -31991,7 +32837,7 @@
             "Voter Captivation": 1,
             "Zillah's Valley": 12
         },
-        "name": "EC 2012 Day 1"
+        "name": "EC 2012 Day 1: Unmada and Lutz"
     },
     {
         "cards": {
@@ -32061,7 +32907,7 @@
             "Voter Captivation": 8,
             "Zillah's Valley": 2
         },
-        "name": "EC 2012 Silence of Death"
+        "name": "EC 2012 Silence of Death: Toreador Aching Beauty"
     },
     {
         "cards": {
@@ -32171,7 +33017,7 @@
             "Voter Captivation": 6,
             "Zillah's Valley": 4
         },
-        "name": "EC 2012 LCQ"
+        "name": "EC 2012 LCQ: Toreador Triple-A"
     },
     {
         "cards": {
@@ -32329,7 +33175,7 @@
             "Voter Captivation": 3,
             "Wider View": 1
         },
-        "name": "Group 1"
+        "name": "Group 1-2 Ventrue"
     },
     {
         "cards": {
@@ -32407,7 +33253,7 @@
             "Voter Captivation": 5,
             "Zillah's Valley": 5
         },
-        "name": "No Bounce"
+        "name": "No Bounce?"
     },
     {
         "cards": {
@@ -32547,7 +33393,7 @@
             "Villein": 7,
             "Young Bloods": 1
         },
-        "name": "the nephandus experimental v3"
+        "name": "the nephandus experimental v3.0"
     },
     {
         "cards": {
@@ -32717,7 +33563,7 @@
             "Vessel": 2,
             "Wake with Evening's Freshness": 2
         },
-        "name": "Shane Grimald Deck "
+        "name": "Shane Grimald Deck #4"
     },
     {
         "cards": {
@@ -32781,7 +33627,7 @@
             "Undue Influence": 20,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Ein Ritter"
+        "name": "Ein Ritter, ein Kreuzfahrer und ein K\u00fcnstler"
     },
     {
         "cards": {
@@ -32947,7 +33793,7 @@
             "Wider View": 2,
             "Zillah's Valley": 6
         },
-        "name": "Undele"
+        "name": "Undele's Bag of Dicks"
     },
     {
         "cards": {
@@ -33195,7 +34041,7 @@
             "Wall Street Night, Financial Newspaper": 1,
             "Weighted Walking Stick": 4
         },
-        "name": "Anti"
+        "name": "Anti-Ventrue-Grinder"
     },
     {
         "cards": {
@@ -33443,7 +34289,7 @@
             "Telepathic Misdirection": 6,
             "Vessel": 5
         },
-        "name": "Czech ECQ 2012 "
+        "name": "Czech ECQ 2012 - Guns N' Roses"
     },
     {
         "cards": {
@@ -33693,7 +34539,7 @@
             "Vessel": 5,
             "Wider View": 1
         },
-        "name": "You shall not pass"
+        "name": "You shall not pass!!!"
     },
     {
         "cards": {
@@ -33777,7 +34623,7 @@
             "Wider View": 1,
             "Zillah's Valley": 4
         },
-        "name": "Gabrielle Righetti "
+        "name": "Gabrielle Righetti & Alonso Petrodon"
     },
     {
         "cards": {
@@ -34017,7 +34863,7 @@
             "Wider View": 2,
             "Zillah's Valley": 4
         },
-        "name": "US Nats"
+        "name": "US Nats. 2012 Dragon Con"
     },
     {
         "cards": {
@@ -34385,7 +35231,7 @@
             "Villein": 6,
             "Voter Captivation": 6
         },
-        "name": "James "
+        "name": "James \"The Knife\" Angry Dragon"
     },
     {
         "cards": {
@@ -34457,7 +35303,7 @@
             "Theft of Vitae": 10,
             "Walk of Flame": 3
         },
-        "name": "Tremere politics 0"
+        "name": "Tremere politics 0.79"
     },
     {
         "cards": {
@@ -34515,7 +35361,7 @@
             "Torn Signpost": 10,
             "Undead Strength": 10
         },
-        "name": "The Nosferatu Hate You"
+        "name": "The Nosferatu Hate You! (version 6.0.0.1)"
     },
     {
         "cards": {
@@ -35033,7 +35879,7 @@
             "Unflinching Persistence": 2,
             "Vessel": 5
         },
-        "name": "lazve"
+        "name": "lazve's prot\u00e9g\u00e9s"
     },
     {
         "cards": {
@@ -35151,7 +35997,7 @@
             "Vessel": 2,
             "Wider View": 1
         },
-        "name": "Gabrielle"
+        "name": "Gabrielle's Angry Dragon(bound)"
     },
     {
         "cards": {
@@ -35237,7 +36083,7 @@
             "Vessel": 3,
             "Villein": 1
         },
-        "name": "Bankia "
+        "name": "Bankia (@@todoloquepuedas.com)"
     },
     {
         "cards": {
@@ -35313,7 +36159,7 @@
             "Vessel": 2,
             "Wake with Evening's Freshness": 2
         },
-        "name": "KIA01 "
+        "name": "KIA01 - Stealthing Faeries"
     },
     {
         "cards": {
@@ -35471,7 +36317,7 @@
             "Terror Frenzy": 3,
             "Villein": 2
         },
-        "name": "So"
+        "name": "So, it's a Girl, a bat and a crow..."
     },
     {
         "cards": {
@@ -35901,7 +36747,7 @@
             "Telepathic Misdirection": 7,
             "Villein": 4
         },
-        "name": "Dmitri"
+        "name": "Dmitri's Eyes"
     },
     {
         "cards": {
@@ -35973,7 +36819,7 @@
             "Tenebrous Form": 1,
             "Watchtower: Four Ride Forth": 1
         },
-        "name": "So long"
+        "name": "So long, and thanks for all the governs"
     },
     {
         "cards": {
@@ -36077,7 +36923,7 @@
             "Villein": 1,
             "War Party": 1
         },
-        "name": "Una "
+        "name": "Una + 1's"
     },
     {
         "cards": {
@@ -36341,7 +37187,7 @@
             "Wash": 1,
             "Zaire River Ferry": 1
         },
-        "name": "If You Can"
+        "name": "If You Can't Beat Ashur, Play Them"
     },
     {
         "cards": {
@@ -36967,6 +37813,72 @@
     },
     {
         "cards": {
+            "anarchtroublemaker": 1,
+            "apachejones": 1,
+            "bitterandsweetstorythe": 1,
+            "bleedingthevine": 1,
+            "cassandralangelythewaif": 1,
+            "confusion": 10,
+            "dementation": 2,
+            "deny": 5,
+            "diveintomadness": 4,
+            "dreamsofthesphinx": 2,
+            "eddiegaines": 1,
+            "eyesofchaos": 10,
+            "fabriziacontreraz": 1,
+            "informationhighway": 1,
+            "jackie": 2,
+            "kindredspirits": 19,
+            "marta": 1,
+            "midget": 2,
+            "mindtricks": 5,
+            "misdirection": 2,
+            "morel": 1,
+            "parthenonthe": 2,
+            "pentextmsubversion": 3,
+            "persiathebeautifulstatue": 1,
+            "restructure": 3,
+            "seanrycek": 1,
+            "veilthelegions": 2,
+            "wash": 2
+        },
+        "crypt": {
+            "Apache Jones": 1,
+            "Cassandra Langely, The Waif": 1,
+            "Eddie Gaines": 1,
+            "Fabrizia Contreraz": 1,
+            "Jackie": 2,
+            "Marta": 1,
+            "Midget": 2,
+            "Morel": 1,
+            "Persia, The Beautiful Statue": 1,
+            "Sean Rycek": 1
+        },
+        "description": "Cruzada: Badalona\nBadalona, Spain\nMay 27th 2012\n3R+F\n12 players\nSoufiane Bouzouf (Shinjin)\n\n\nDeck Name: \u00bfO_O? Madness \u00bfO_O?...\nDescription: 1(1) + 2(4) + 3(4) = 2GW9 Final= 4",
+        "library": {
+            "Anarch Troublemaker": 1,
+            "Bitter and Sweet Story, The": 1,
+            "Bleeding the Vine": 1,
+            "Confusion": 10,
+            "Dementation": 2,
+            "Deny": 5,
+            "Dive into Madness": 4,
+            "Dreams of the Sphinx": 2,
+            "Eyes of Chaos": 10,
+            "Information Highway": 1,
+            "Kindred Spirits": 19,
+            "Mind Tricks": 5,
+            "Misdirection": 2,
+            "Parthenon, The": 2,
+            "Pentex(TM) Subversion": 3,
+            "Restructure": 3,
+            "Veil the legions": 2,
+            "Wash": 2
+        },
+        "name": "\u00bfO_O? Madness \u00bfO_O?..."
+    },
+    {
+        "cards": {
             "abactor": 1,
             "alvarothescionofangelica": 1,
             "ambrosioluismoncadaplenipotentiary": 3,
@@ -37083,7 +37995,7 @@
             "Wash": 1,
             "Zaire River Ferry": 1
         },
-        "name": "St"
+        "name": "St. Anger"
     },
     {
         "cards": {
@@ -37161,7 +38073,7 @@
             "Torn Signpost": 8,
             "Wake with Evening's Freshness": 3
         },
-        "name": "\tEuro Brujah"
+        "name": "Euro Brujah"
     },
     {
         "cards": {
@@ -37611,7 +38523,7 @@
             "Vessel": 3,
             "Wash": 1
         },
-        "name": "Cats and Dogs"
+        "name": "Cats and Dogs...and Mages"
     },
     {
         "cards": {
@@ -37771,7 +38683,7 @@
             "Unleash Hell's Fury": 1,
             "Villein": 8
         },
-        "name": "politics "
+        "name": "politics (girls like)"
     },
     {
         "cards": {
@@ -37847,7 +38759,7 @@
             "Wider View": 1,
             "Zillah's Valley": 6
         },
-        "name": "Gun Control "
+        "name": "Gun Control (Means Hitting the Target)"
     },
     {
         "cards": {
@@ -37893,7 +38805,7 @@
             "Vessel": 9,
             "Wider View": 1
         },
-        "name": "Las bichas bola"
+        "name": "Las bichas bola: el fin de VTES"
     },
     {
         "cards": {
@@ -37977,7 +38889,7 @@
             "Terror Frenzy": 4,
             "Wider View": 1
         },
-        "name": "N"
+        "name": "N.W.A v1.2"
     },
     {
         "cards": {
@@ -38321,7 +39233,7 @@
             "Wash": 1,
             "Wider View": 1
         },
-        "name": "Inter"
+        "name": "Inter-Galactic Slime Belt"
     },
     {
         "cards": {
@@ -38797,7 +39709,7 @@
             "Uncoiling, The": 1,
             "Week of Nightmares": 1
         },
-        "name": "Embrace moi si tu peux "
+        "name": "Embrace moi si tu peux !!"
     },
     {
         "cards": {
@@ -38891,7 +39803,7 @@
             "Well-Marked": 2,
             "Wise Spider": 1
         },
-        "name": "Gehenna"
+        "name": "Gehenna: Matata Wall"
     },
     {
         "cards": {
@@ -38989,7 +39901,7 @@
             "Tenebrous Form": 5,
             "Vessel": 5
         },
-        "name": "Kern"
+        "name": "Kern's Angry Dragon"
     },
     {
         "cards": {
@@ -39267,7 +40179,7 @@
             "Threats": 3,
             "Veil the Legions": 1
         },
-        "name": "Govern down"
+        "name": "Govern down..."
     },
     {
         "cards": {
@@ -39349,7 +40261,7 @@
             "Villein": 7,
             "Zillah's Valley": 5
         },
-        "name": "Girls will find "
+        "name": "Girls will find ..."
     },
     {
         "cards": {
@@ -39751,7 +40663,7 @@
             "Unflinching Persistence": 2,
             "Vessel": 5
         },
-        "name": "lazve"
+        "name": "lazve's prot\u00e9g\u00e9s"
     },
     {
         "cards": {
@@ -39791,7 +40703,7 @@
             "Scrounging": 2,
             "Sense the Sin": 3
         },
-        "name": "Nergal 2"
+        "name": "Nergal 2.0 GT Turbo Beast"
     },
     {
         "cards": {
@@ -39873,7 +40785,7 @@
             "Terror Frenzy": 4,
             "Wider View": 1
         },
-        "name": "N"
+        "name": "N.W.A v1.1"
     },
     {
         "cards": {
@@ -40147,7 +41059,7 @@
             "Villein": 7,
             "Zillah's Valley": 5
         },
-        "name": "Don Cruez"
+        "name": "Don Cruez's Resurrection"
     },
     {
         "cards": {
@@ -40233,7 +41145,7 @@
             "Wake with Evening's Freshness": 4,
             "Walk of Flame": 2
         },
-        "name": "Tremere "
+        "name": "Tremere \"Last minute\" toolbox"
     },
     {
         "cards": {
@@ -40501,7 +41413,7 @@
             "Waste Management Operation": 1,
             "Week of Nightmares": 1
         },
-        "name": "Hakuna Mata"
+        "name": "Hakuna Mata-Tas"
     },
     {
         "cards": {
@@ -40747,7 +41659,7 @@
             "Villein": 5,
             "Well-Marked": 1
         },
-        "name": "\tLucian the Lecturer"
+        "name": "Lucian the Lecturer"
     },
     {
         "cards": {
@@ -40863,7 +41775,7 @@
             "Wolf Claws": 1,
             "Zoo Hunting Ground": 1
         },
-        "name": "What the"
+        "name": "What the... Ravnos?"
     },
     {
         "cards": {
@@ -40957,7 +41869,7 @@
             "Wash": 1,
             "Wider View": 2
         },
-        "name": "\tThe Shalmath Limb Donor Foundation"
+        "name": "The Shalmath Limb Donor Foundation"
     },
     {
         "cards": {
@@ -41019,7 +41931,7 @@
             "Veneficti (Mage)": 1,
             "Wash": 2
         },
-        "name": "Unnamed_maleficia v1"
+        "name": "Unnamed_maleficia v1.1"
     },
     {
         "cards": {
@@ -41165,7 +42077,7 @@
             "Vagabond Mystic": 2,
             "War Ghoul": 8
         },
-        "name": "Gothenburg"
+        "name": "Gothenburg: Drog\u00f6gon mitt i ansiktet - Wall Ghoul"
     },
     {
         "cards": {
@@ -41235,7 +42147,7 @@
             "Uncoiling, The": 1,
             "Waste Management Operation": 2
         },
-        "name": "The Terrible Two"
+        "name": "The Terrible Two's"
     },
     {
         "cards": {
@@ -41629,7 +42541,7 @@
             "Swallowed by the Night": 4,
             "Veil the Legions": 2
         },
-        "name": "Arika and Friends Tap "
+        "name": "Arika and Friends Tap & Bleed"
     },
     {
         "cards": {
@@ -42011,7 +42923,7 @@
             "Voter Captivation": 5,
             "Waste Management Operation": 1
         },
-        "name": "1"
+        "name": "1...2...Skip a Few (turns)"
     },
     {
         "cards": {
@@ -42199,7 +43111,7 @@
             "Wash": 2,
             "Wider View": 2
         },
-        "name": "Triple B "
+        "name": "Triple B (Bleed, Bruise & Block)"
     },
     {
         "cards": {
@@ -42359,7 +43271,7 @@
             "Terror Frenzy": 3,
             "Wider View": 1
         },
-        "name": "N"
+        "name": "N.W.A"
     },
     {
         "cards": {
@@ -42549,7 +43461,7 @@
             "Villein": 7,
             "Zillah's Valley": 5
         },
-        "name": "Brian"
+        "name": "Brian's Bitches go wild! (Brian being Prince of Seattle)"
     },
     {
         "cards": {
@@ -42685,7 +43597,7 @@
             "Unflinching Persistence": 3,
             "Vessel": 2
         },
-        "name": "Mordechai Ben Nun "
+        "name": "Mordechai Ben Nun & Friends HATE THE IMBUED!"
     },
     {
         "cards": {
@@ -42939,7 +43851,7 @@
             "Terror Frenzy": 2,
             "Vessel": 4
         },
-        "name": "Nana Buruku "
+        "name": "Nana Buruku & Friends Ani Rush"
     },
     {
         "cards": {
@@ -43031,7 +43943,7 @@
             "Villein": 6,
             "Voter Captivation": 4
         },
-        "name": "Judgment Columbus"
+        "name": "Judgment Columbus: Blocking is Pain"
     },
     {
         "cards": {
@@ -43377,7 +44289,7 @@
             "Two Wrongs": 3,
             "Victim of Habit": 2
         },
-        "name": "Aksinya"
+        "name": "Aksinya's aggro poke gang"
     },
     {
         "cards": {
@@ -43641,7 +44553,7 @@
             "Those Who Endure Judge": 2,
             "Vessel": 4
         },
-        "name": "Nicole"
+        "name": "Nicole's Angry Dragon"
     },
     {
         "cards": {
@@ -44021,7 +44933,7 @@
             "Voter Captivation": 3,
             "Wake with Evening's Freshness": 1
         },
-        "name": "Istharrirabien "
+        "name": "Istharrirabien ..."
     },
     {
         "cards": {
@@ -44701,7 +45613,7 @@
             "Taste of Vitae": 6,
             "Villein": 2
         },
-        "name": "Dmitra Alastor v"
+        "name": "Dmitra Alastor v. 3 - Always Bring a Gun to a Bloodfeud"
     },
     {
         "cards": {
@@ -44975,7 +45887,7 @@
             "Scrounging": 3,
             "Swallowed by the Night": 2
         },
-        "name": "Nergal"
+        "name": "Nergal's a Beast"
     },
     {
         "cards": {
@@ -45155,7 +46067,7 @@
             "Wake with Evening's Freshness": 6,
             "Year of Fortune": 2
         },
-        "name": "I would have gotten away with it if it weren"
+        "name": "I would have gotten away with it if it weren't for those meddling Toreador!"
     },
     {
         "cards": {
@@ -45523,7 +46435,7 @@
             "Villein": 6,
             "Warzone Hunting Ground": 1
         },
-        "name": "Viktor"
+        "name": "Viktor's Brujahs"
     },
     {
         "cards": {
@@ -45971,7 +46883,7 @@
             "Vessel": 5,
             "Wider View": 2
         },
-        "name": "Andre"
+        "name": "Andre's ANI combat"
     },
     {
         "cards": {
@@ -46061,7 +46973,7 @@
             "Villein": 6,
             "Voter Captivation": 5
         },
-        "name": "Masters of the Grand Ball vol 2"
+        "name": "Masters of the Grand Ball vol 2.0"
     },
     {
         "cards": {
@@ -46605,7 +47517,7 @@
             "WMRH Talk Radio": 1,
             "Wider View": 2
         },
-        "name": "Been there"
+        "name": "Been there, done that"
     },
     {
         "cards": {
@@ -46693,7 +47605,7 @@
             "Wash": 2,
             "Wider View": 2
         },
-        "name": "rety rety rolety"
+        "name": "rety rety rolety!"
     },
     {
         "cards": {
@@ -46955,7 +47867,7 @@
             "Zaire River Ferry": 1,
             "Zillah's Tears": 3
         },
-        "name": "Bishops"
+        "name": "Bishops' Revenge"
     },
     {
         "cards": {
@@ -47125,7 +48037,7 @@
             "Temptation of Greater Power": 1,
             "Third Tradition: Progeny": 1
         },
-        "name": "Pure Nos "
+        "name": "Pure Nos '94"
     },
     {
         "cards": {
@@ -47203,7 +48115,7 @@
             "Wake with Evening's Freshness": 4,
             "Zoo Hunting Ground": 1
         },
-        "name": "Proteolicious"
+        "name": "Proteolicious: In Loving Memory of Trey Morita"
     },
     {
         "cards": {
@@ -47297,7 +48209,7 @@
             "Vessel": 3,
             "War Ghoul": 2
         },
-        "name": "Faust"
+        "name": "Faust's Game"
     },
     {
         "cards": {
@@ -47375,7 +48287,7 @@
             "Raven Spy": 5,
             "Tasha Morgan": 1
         },
-        "name": "Singing in the ground v2"
+        "name": "Singing in the ground v2.0"
     },
     {
         "cards": {
@@ -47759,7 +48671,7 @@
             "Wider View": 3,
             "Young Bloods": 1
         },
-        "name": "He Has To Run Out Sometime"
+        "name": "He Has To Run Out Sometime... v 1.3"
     },
     {
         "cards": {
@@ -48237,7 +49149,7 @@
             "Wash": 2,
             "Weighted Walking Stick": 5
         },
-        "name": "Dutch ECQ 2011"
+        "name": "Dutch ECQ 2011: Vendetta: !Ventrue Grinder"
     },
     {
         "cards": {
@@ -48523,7 +49435,7 @@
             "Wider View": 2,
             "Zillah's Valley": 5
         },
-        "name": "Girls on Tour"
+        "name": "Girls on Tour: Girls give Aids to Norway"
     },
     {
         "cards": {
@@ -48759,7 +49671,7 @@
             "Villein": 4,
             "Wider View": 1
         },
-        "name": "There"
+        "name": "There's No Nation Like Vaticination"
     },
     {
         "cards": {
@@ -48891,7 +49803,7 @@
             "Venenation": 3,
             "Voter Captivation": 6
         },
-        "name": "Time is an illusion"
+        "name": "Time is an illusion, politics a sin."
     },
     {
         "cards": {
@@ -49285,7 +50197,7 @@
             "Telepathic Misdirection": 5,
             "Wake with Evening's Freshness": 1
         },
-        "name": "Great Googly"
+        "name": "Great Googly-Moogly"
     },
     {
         "cards": {
@@ -49455,7 +50367,7 @@
             "Wake with Evening's Freshness": 1,
             "Zillah's Valley": 5
         },
-        "name": "\tAlicia Burrows Vote "
+        "name": "Alicia Burrows Vote (This is not a Lutz deck)"
     },
     {
         "cards": {
@@ -49711,7 +50623,7 @@
             "Theft of Vitae": 10,
             "Walk of Flame": 2
         },
-        "name": "Tremere bruise "
+        "name": "Tremere bruise & bleed"
     },
     {
         "cards": {
@@ -49883,7 +50795,7 @@
             "Wider View": 2,
             "Year of Fortune": 1
         },
-        "name": "Smells like Torbjorn v 2"
+        "name": "Smells like Torbjorn v 2.1"
     },
     {
         "cards": {
@@ -50099,7 +51011,7 @@
             "Second Tradition: Domain": 7,
             "Staredown": 5
         },
-        "name": "Pride"
+        "name": "Pride, Presence, Princes and Prejudice"
     },
     {
         "cards": {
@@ -50487,7 +51399,7 @@
             "Wider View": 1,
             "Yawp Court": 1
         },
-        "name": "Tup Dogs bum bum "
+        "name": "Tup Dogs bum bum /w Ashur Tablets v2"
     },
     {
         "cards": {
@@ -50741,7 +51653,7 @@
             "Weighted Walking Stick": 2,
             "Zip Gun": 1
         },
-        "name": "Bell"
+        "name": "Bell. Pain. Shoe."
     },
     {
         "cards": {
@@ -50819,7 +51731,7 @@
             "Threats": 2,
             "Vessel": 4
         },
-        "name": "LittleBob"
+        "name": "LittleBob's Angry Dragon"
     },
     {
         "cards": {
@@ -50925,7 +51837,7 @@
             "Walk of Flame": 1,
             "Wasserschloss Anif, Austria": 1
         },
-        "name": "Cardano "
+        "name": "Cardano !!"
     },
     {
         "cards": {
@@ -51083,7 +51995,7 @@
             "Telepathic Misdirection": 6,
             "Vessel": 4
         },
-        "name": "Rich Rod"
+        "name": "Rich Rod's Angry Dragon"
     },
     {
         "cards": {
@@ -51222,6 +52134,90 @@
             "Wake with Evening's Freshness": 5
         },
         "name": "Sudden Reversal Monstrosity"
+    },
+    {
+        "cards": {
+            "anarchtroublemaker": 2,
+            "armorofvitality": 2,
+            "blackhorsetanner": 1,
+            "blooddoll": 2,
+            "bonding": 3,
+            "conditioning": 3,
+            "daringthedawn": 3,
+            "deflection": 5,
+            "delayingtactics": 2,
+            "edwardneally": 1,
+            "esoara": 1,
+            "eyesofargus": 4,
+            "foreshadowingdestruction": 2,
+            "governtheunaligned": 10,
+            "indomitability": 2,
+            "jeffersonfoster": 1,
+            "jephtahester": 1,
+            "joaobile": 1,
+            "katherinestoddard": 1,
+            "kissofrathe": 1,
+            "lanabutcher": 1,
+            "misdirection": 1,
+            "murmurofthefalsewill": 2,
+            "myenemysenemy": 2,
+            "neighborjohn": 1,
+            "onthequivive": 3,
+            "owainevansthewanderer": 2,
+            "pentextmsubversion": 1,
+            "rollingwiththepunches": 2,
+            "scoutingmission": 4,
+            "slaughteringtheherd": 2,
+            "soak": 4,
+            "targetvitals": 5,
+            "telepathicmisdirection": 3,
+            "ulrikerothbart": 1,
+            "vessel": 3,
+            "wash": 2
+        },
+        "crypt": {
+            "Blackhorse Tanner": 1,
+            "Edward Neally": 1,
+            "Esoara": 1,
+            "Jefferson Foster": 1,
+            "Jephta Hester": 1,
+            "Jo\u00e3o Bil\u00e9": 1,
+            "Katherine Stoddard": 1,
+            "Lana Butcher": 1,
+            "Neighbor John": 1,
+            "Owain Evans, The Wanderer": 2,
+            "Ulrike Rothbart": 1
+        },
+        "description": "Chill of Oblivion\nPalma de Mallorca, Spain\nFebruary 20th 2011\n3R+F\n15 players\nDaniel Padrol\n\nDeck Name: * DOM / for bruise & BLEED",
+        "library": {
+            "Anarch Troublemaker": 2,
+            "Armor of Vitality": 2,
+            "Blood Doll": 2,
+            "Bonding": 3,
+            "Conditioning": 3,
+            "Daring the Dawn": 3,
+            "Deflection": 5,
+            "Delaying Tactics": 2,
+            "Eyes of Argus": 4,
+            "Foreshadowing Destruction": 2,
+            "Govern the Unaligned": 10,
+            "Indomitability": 2,
+            "Kiss of Ra, The": 1,
+            "Misdirection": 1,
+            "Murmur of the False Will": 2,
+            "My Enemy's Enemy": 2,
+            "On the Qui Vive": 3,
+            "Pentex(TM) Subversion": 1,
+            "Rolling with the Punches": 2,
+            "Scouting Mission": 4,
+            "Slaughtering the Herd": 2,
+            "Soak": 4,
+            "Target Vitals": 5,
+            "Telepathic Misdirection": 3,
+            "Vessel": 3,
+            "Wash": 2
+        },
+        "name": "* DOM / for bruise & BLEED"
     },
     {
         "cards": {
@@ -51463,7 +52459,7 @@
             "Wash": 2,
             "Zillah's Valley": 4
         },
-        "name": "Malkavian"
+        "name": "Malkavian.ver.1.3"
     },
     {
         "cards": {
@@ -51521,7 +52517,7 @@
             "Torn Signpost": 6,
             "Vessel": 4
         },
-        "name": "Death comes "
+        "name": "Death comes (at) every turn"
     },
     {
         "cards": {
@@ -51783,7 +52779,7 @@
             "Vessel": 2,
             "WMRH Talk Radio": 1
         },
-        "name": "DI Why "
+        "name": "DI Why ?"
     },
     {
         "cards": {
@@ -51891,7 +52887,7 @@
             "Wider View": 2,
             "Zillah's Valley": 5
         },
-        "name": "Swedish girls come to town"
+        "name": "Swedish girls come to town..."
     },
     {
         "cards": {
@@ -51977,7 +52973,7 @@
             "Villein": 4,
             "Well-Marked": 2
         },
-        "name": "  15 Wakes"
+        "name": "15 Wakes"
     },
     {
         "cards": {
@@ -52297,7 +53293,7 @@
             "Wash": 1,
             "Weather Control": 2
         },
-        "name": "Tremere politics 0"
+        "name": "Tremere politics 0.2"
     },
     {
         "cards": {
@@ -52459,7 +53455,7 @@
             "Wall Street Night, Financial Newspaper": 1,
             "Weighted Walking Stick": 5
         },
-        "name": "\t"
+        "name": "!Ventrue Grinder"
     },
     {
         "cards": {
@@ -52617,7 +53613,7 @@
             "Wider View": 2,
             "Young Bloods": 1
         },
-        "name": "To the Death"
+        "name": "To the Death! No! To the Pain."
     },
     {
         "cards": {
@@ -52755,7 +53751,7 @@
             "Unflinching Persistence": 7,
             "Vessel": 2
         },
-        "name": "The Iggy "
+        "name": "The Iggy & Laz Tag Team (with Groupies!)"
     },
     {
         "cards": {
@@ -53045,7 +54041,7 @@
             "Voter Captivation": 10,
             "Zillah's Valley": 5
         },
-        "name": "Lutz"
+        "name": "Lutz's Chain Lightning"
     },
     {
         "cards": {
@@ -53123,7 +54119,7 @@
             "Threats": 3,
             "Wash": 1
         },
-        "name": "Uta"
+        "name": "Uta's Gang"
     },
     {
         "cards": {
@@ -53303,7 +54299,7 @@
             "Wash": 1,
             "Zillah's Valley": 5
         },
-        "name": "EC 2010 Day 1"
+        "name": "EC 2010 Day 1: Girls will find Inner Peace"
     },
     {
         "cards": {
@@ -53405,7 +54401,7 @@
             "Wash": 1,
             "Zillah's Valley": 5
         },
-        "name": "EC 2010 Legendary Vampire"
+        "name": "EC 2010 Legendary Vampire: Girls will find Inner Peace"
     },
     {
         "cards": {
@@ -53477,7 +54473,7 @@
             "Touch of Clarity": 2,
             "Wider View": 3
         },
-        "name": "EC 2010 LCQ"
+        "name": "EC 2010 LCQ: Rising Dementia"
     },
     {
         "cards": {
@@ -53577,7 +54573,7 @@
             "Villein": 5,
             "Voter Captivation": 2
         },
-        "name": "Hardestadt "
+        "name": "Hardestadt & Cia"
     },
     {
         "cards": {
@@ -53787,7 +54783,7 @@
             "Uncoiling, The": 2,
             "Wider View": 1
         },
-        "name": "SalinenCon 2010"
+        "name": "SalinenCon 2010: Rollin' Rollin' Rollin' (Reprise)"
     },
     {
         "cards": {
@@ -54219,7 +55215,7 @@
             "Wash": 1,
             "Zillah's Valley": 5
         },
-        "name": "Girls will find"
+        "name": "Girls will find..."
     },
     {
         "cards": {
@@ -54429,7 +55425,7 @@
             "Tumnimos": 10,
             "Week of Nightmares": 2
         },
-        "name": "  Attack of the Tumnimos"
+        "name": "Attack of the Tumnimos"
     },
     {
         "cards": {
@@ -54495,7 +55491,7 @@
             "Wake with Evening's Freshness": 2,
             "Wider View": 1
         },
-        "name": "Evil Genius 2"
+        "name": "Evil Genius 2.0"
     },
     {
         "cards": {
@@ -54567,7 +55563,7 @@
             "Swallowed by the Night": 4,
             "Veil the Legions": 2
         },
-        "name": "  Arika and Friends Tap "
+        "name": "Arika and Friends Tap & Bleed"
     },
     {
         "cards": {
@@ -55027,7 +56023,7 @@
             "Villein": 4,
             "Voter Captivation": 6
         },
-        "name": "  Seasons in the Abyss"
+        "name": "Seasons in the Abyss"
     },
     {
         "cards": {
@@ -55097,7 +56093,7 @@
             "Wake with Evening's Freshness": 2,
             "Wash": 1
         },
-        "name": "You have to kill it before it kills you"
+        "name": "You have to kill it before it kills you!"
     },
     {
         "cards": {
@@ -55181,7 +56177,7 @@
             "Voter Captivation": 1,
             "Zillah's Valley": 5
         },
-        "name": "Nihil Sine Deo"
+        "name": "Nihil Sine Deo!"
     },
     {
         "cards": {
@@ -55555,7 +56551,7 @@
             "Tension in the Ranks": 1,
             "Villein": 7
         },
-        "name": "Prevent "
+        "name": "Prevent & Press V01"
     },
     {
         "cards": {
@@ -55629,7 +56625,7 @@
             "Ventrue Investment": 1,
             "Wake with Evening's Freshness": 8
         },
-        "name": "The Geeks"
+        "name": "The Geeks' Revenge"
     },
     {
         "cards": {
@@ -55721,7 +56717,7 @@
             "Wider View": 2,
             "Zillah's Valley": 3
         },
-        "name": "AD"
+        "name": "AD&D; (Advanced Derange & Dementia)"
     },
     {
         "cards": {
@@ -55979,7 +56975,7 @@
             "Vessel": 2,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Game"
+        "name": "Game, Set, Match"
     },
     {
         "cards": {
@@ -56209,7 +57205,7 @@
             "Wider View": 1,
             "Zip Gun": 4
         },
-        "name": "Aim "
+        "name": "Aim & Chain"
     },
     {
         "cards": {
@@ -56301,7 +57297,7 @@
             "Wash": 1,
             "Well-Marked": 1
         },
-        "name": " Cese"
+        "name": "Cese-AWESOME-o"
     },
     {
         "cards": {
@@ -56517,7 +57513,7 @@
             "Vox Domini": 1,
             "Wash": 2
         },
-        "name": "Rafinha"
+        "name": "Rafinha's Sith School"
     },
     {
         "cards": {
@@ -56673,7 +57669,7 @@
             "Voter Captivation": 5,
             "Zillah's Valley": 2
         },
-        "name": "The Beautiful People 2"
+        "name": "The Beautiful People 2.0"
     },
     {
         "cards": {
@@ -56749,7 +57745,7 @@
             "Sudden Reversal": 3,
             "Taste of Vitae": 3
         },
-        "name": "Nana"
+        "name": "Nana's Box of Firecrackers"
     },
     {
         "cards": {
@@ -56827,7 +57823,7 @@
             "Walk of Flame": 3,
             "Wash": 2
         },
-        "name": "  FOR Tremere"
+        "name": "FOR Tremere"
     },
     {
         "cards": {
@@ -56907,7 +57903,7 @@
             "Veil the Legions": 1,
             "Wake with Evening's Freshness": 2
         },
-        "name": " Malk 94"
+        "name": "Malk 94"
     },
     {
         "cards": {
@@ -57191,7 +58187,7 @@
             "Stone Travel": 5,
             "Sudden Reversal": 4
         },
-        "name": "Suddenly "
+        "name": "Suddenly - vampires and faeries, oh my!"
     },
     {
         "cards": {
@@ -57287,7 +58283,7 @@
             "Villein": 4,
             "Wake with Evening's Freshness": 2
         },
-        "name": "Baker"
+        "name": "Baker's Late Night Express"
     },
     {
         "cards": {
@@ -57379,7 +58375,7 @@
             "Voter Captivation": 6,
             "Wash": 2
         },
-        "name": "  Lutz Be Friends"
+        "name": "Lutz Be Friends"
     },
     {
         "cards": {
@@ -57523,7 +58519,7 @@
             "Wider View": 3,
             "Zoo Hunting Ground": 1
         },
-        "name": " il Fakiro d"
+        "name": "il Fakiro d'Alessio"
     },
     {
         "cards": {
@@ -57633,6 +58629,112 @@
     },
     {
         "cards": {
+            "abbot": 2,
+            "absorbthemind": 4,
+            "blackhorsetanner": 1,
+            "blooddoll": 3,
+            "bonding": 3,
+            "bowlofconvergence": 1,
+            "charicefontaigne": 1,
+            "cooler": 3,
+            "corporatehuntingground": 1,
+            "daringthedawn": 1,
+            "deflection": 2,
+            "dominatekine": 2,
+            "dreamsofthesphinx": 1,
+            "dummycorporation": 1,
+            "eaglessight": 5,
+            "enhancedsenses": 3,
+            "eyesofargus": 4,
+            "forcedawakening": 4,
+            "foreshadowingdestruction": 1,
+            "framinganancientgrudge": 1,
+            "governtheunaligned": 2,
+            "graverobbing": 1,
+            "hungrycoyotethe": 1,
+            "jeffersonfoster": 1,
+            "jephtahester": 1,
+            "jessemenks": 1,
+            "konradfleischer": 1,
+            "krcgnewsradio": 1,
+            "marielstjohn": 1,
+            "murmurofthefalsewill": 4,
+            "neighborjohn": 2,
+            "owainevansthewanderer": 2,
+            "pentextmsubversion": 1,
+            "phasedmotiondetector": 2,
+            "precognition": 3,
+            "psychicassault": 4,
+            "rollingwiththepunches": 4,
+            "rumormilltabloidnewspaperthe": 1,
+            "scoutingmission": 4,
+            "soak": 5,
+            "superiormettle": 1,
+            "telepathicmisdirection": 4,
+            "threats": 3,
+            "tituscamille": 1,
+            "ventrueinvestment": 1,
+            "wakewitheveningsfreshness": 4,
+            "wallstreetnightfinancialnewspaper": 1,
+            "wmrhtalkradio": 1
+        },
+        "crypt": {
+            "Blackhorse Tanner": 1,
+            "Charice Fontaigne": 1,
+            "Jefferson Foster": 1,
+            "Jephta Hester": 1,
+            "Jesse Menks": 1,
+            "Konrad Fleischer": 1,
+            "Mariel St. John": 1,
+            "Neighbor John": 2,
+            "Owain Evans, The Wanderer": 2,
+            "Titus Camille": 1
+        },
+        "description": "The Unnamed\nCape Town, South Africa\nApril 11th 2010\n13 players\nMarc Pittermann\n\nDeck Name: !Ventrue Block and Bleed\nDescription: Block important actions, bounce big bleeds and wait\nfor the right moment to put three or four solid bleeds through.",
+        "library": {
+            "Abbot": 2,
+            "Absorb the Mind": 4,
+            "Blood Doll": 3,
+            "Bonding": 3,
+            "Bowl of Convergence": 1,
+            "Cooler": 3,
+            "Corporate Hunting Ground": 1,
+            "Daring the Dawn": 1,
+            "Deflection": 2,
+            "Dominate Kine": 2,
+            "Dreams of the Sphinx": 1,
+            "Dummy Corporation": 1,
+            "Eagle's Sight": 5,
+            "Enhanced Senses": 3,
+            "Eyes of Argus": 4,
+            "Forced Awakening": 4,
+            "Foreshadowing Destruction": 1,
+            "Framing an Ancient Grudge": 1,
+            "Govern the Unaligned": 2,
+            "Graverobbing": 1,
+            "Hungry Coyote, The": 1,
+            "KRCG News Radio": 1,
+            "Murmur of the False Will": 4,
+            "Pentex(TM) Subversion": 1,
+            "Phased Motion Detector": 2,
+            "Precognition": 3,
+            "Psychic Assault": 4,
+            "Rolling with the Punches": 4,
+            "Rumor Mill, Tabloid Newspaper, The": 1,
+            "Scouting Mission": 4,
+            "Soak": 5,
+            "Superior Mettle": 1,
+            "Telepathic Misdirection": 4,
+            "Threats": 3,
+            "Ventrue Investment": 1,
+            "WMRH Talk Radio": 1,
+            "Wake with Evening's Freshness": 4,
+            "Wall Street Night, Financial Newspaper": 1
+        },
+        "name": "!Ventrue Block and Bleed"
+    },
+    {
+        "cards": {
             "adanadesforza": 2,
             "anarchistuprising": 1,
             "ancientinfluence": 1,
@@ -57729,7 +58831,7 @@
             "Villein": 7,
             "Zillah's Valley": 4
         },
-        "name": "X"
+        "name": "X.Y.U"
     },
     {
         "cards": {
@@ -57837,7 +58939,7 @@
             "Wash": 1,
             "Zillah's Valley": 5
         },
-        "name": "Girls"
+        "name": "Girls!"
     },
     {
         "cards": {
@@ -57915,7 +59017,7 @@
             "Wash": 2,
             "Wider View": 1
         },
-        "name": "MM"
+        "name": "MM.tha&for.ver.1.5;"
     },
     {
         "cards": {
@@ -58141,7 +59243,7 @@
             "Wider View": 3,
             "Will-o'-the-Wisp": 1
         },
-        "name": "Kaikki on parempaa dominatella"
+        "name": "Kaikki on parempaa dominatella, paitsi eiv\u00e4t Ravnokset."
     },
     {
         "cards": {
@@ -58565,7 +59667,7 @@
             "Vessel": 2,
             "Yawp Court": 1
         },
-        "name": "New Days"
+        "name": "New Days, Old School"
     },
     {
         "cards": {
@@ -58723,7 +59825,7 @@
             "Sudden Reversal": 2,
             "Tye Cooper": 1
         },
-        "name": "An Offer You Can"
+        "name": "An Offer You Can't Refuse"
     },
     {
         "cards": {
@@ -59077,7 +60179,7 @@
             "WMRH Talk Radio": 1,
             "Wake with Evening's Freshness": 3
         },
-        "name": "  Greyskull"
+        "name": "Greyskull"
     },
     {
         "cards": {
@@ -59835,7 +60937,7 @@
             "Stone Travel": 1,
             "Wake with Evening's Freshness": 2
         },
-        "name": "Look"
+        "name": "Look, I'm playing Lasombra"
     },
     {
         "cards": {
@@ -60005,7 +61107,7 @@
             "Vessel": 1,
             "Weighted Walking Stick": 3
         },
-        "name": " Gang of Wanderers"
+        "name": "Gang of Wanderers"
     },
     {
         "cards": {
@@ -60147,7 +61249,7 @@
             "Thaumaturgy": 2,
             "Theft of Vitae": 14
         },
-        "name": "Guns "
+        "name": "Guns + CEL + THA"
     },
     {
         "cards": {
@@ -60235,7 +61337,7 @@
             "Wake with Evening's Freshness": 2,
             "Zip Gun": 4
         },
-        "name": "Aim "
+        "name": "Aim & Chain"
     },
     {
         "cards": {
@@ -60433,7 +61535,7 @@
             "WMRH Talk Radio": 1,
             "Wake with Evening's Freshness": 3
         },
-        "name": "  The Baobhan"
+        "name": "The Baobhan-sith, Kyasid bleed deck"
     },
     {
         "cards": {
@@ -60809,7 +61911,7 @@
             "Wall Street Night, Financial Newspaper": 1,
             "Well-Marked": 2
         },
-        "name": "  Laibon Rule the World"
+        "name": "Laibon Rule the World"
     },
     {
         "cards": {
@@ -61167,7 +62269,7 @@
             "Swallowed by the Night": 3,
             "Telepathic Misdirection": 2
         },
-        "name": "Cholinesterase Inhibition "
+        "name": "Cholinesterase Inhibition (Redux)"
     },
     {
         "cards": {
@@ -61242,6 +62344,64 @@
             "Wake with Evening's Freshness": 3
         },
         "name": "Consume the Dead"
+    },
+    {
+        "cards": {
+            "ancientinfluence": 1,
+            "arika": 6,
+            "blanchehill": 4,
+            "blitheacceptance": 2,
+            "cloakthegathering": 4,
+            "conditioning": 5,
+            "daringthedawn": 3,
+            "elderimpersonation": 4,
+            "enkilcog": 1,
+            "facelessnight": 3,
+            "freakdrive": 11,
+            "giantsblood": 1,
+            "governtheunaligned": 6,
+            "heidelbergcastlegermany": 2,
+            "lostincrowds": 4,
+            "matthias": 2,
+            "mindrape": 5,
+            "miniontap": 8,
+            "murmurofthefalsewill": 3,
+            "reinsofpower": 1,
+            "renewedvigor": 6,
+            "repulsion": 4,
+            "spiritmarionette": 3,
+            "veilthelegions": 3
+        },
+        "crypt": {
+            "Arika": 6,
+            "Blanche Hill": 4,
+            "Matthias": 2
+        },
+        "description": "Reindoctrination\nAtlanta, Georgia\nSeptember 29th 2009\n2R+F\n12 players\nDarby Keeney\n\n\nDeck name: \"Hey Mike\"\nComments: ased on Mike Courtois' deck running a similar Vigorous Tapping\nengine, assembled following some newsgroup discussion that there were\nno competitive decks in which Minion Tap would not be best replaced by\nVillein.",
+        "library": {
+            "Ancient Influence": 1,
+            "Blithe Acceptance": 2,
+            "Cloak the Gathering": 4,
+            "Conditioning": 5,
+            "Daring the Dawn": 3,
+            "Elder Impersonation": 4,
+            "Enkil Cog": 1,
+            "Faceless Night": 3,
+            "Freak Drive": 11,
+            "Giant's Blood": 1,
+            "Govern the Unaligned": 6,
+            "Heidelberg Castle, Germany": 2,
+            "Lost in Crowds": 4,
+            "Mind Rape": 5,
+            "Minion Tap": 8,
+            "Murmur of the False Will": 3,
+            "Reins of Power": 1,
+            "Renewed Vigor": 6,
+            "Repulsion": 4,
+            "Spirit Marionette": 3,
+            "Veil the Legions": 3
+        },
+        "name": "\"Hey Mike\""
     },
     {
         "cards": {
@@ -61403,7 +62563,7 @@
             "Vessel": 3,
             "Yawp Court": 1
         },
-        "name": "Adana "
+        "name": "Adana & Enkidu"
     },
     {
         "cards": {
@@ -61483,7 +62643,7 @@
             "Watchtower: Four Ride Forth": 1,
             "Zaire River Ferry": 1
         },
-        "name": "Take Banjoko"
+        "name": "Take Banjoko's Hand"
     },
     {
         "cards": {
@@ -61709,7 +62869,7 @@
             "Touch of Pain": 2,
             "Undead Strength": 3
         },
-        "name": "  Potence rush"
+        "name": "Potence rush"
     },
     {
         "cards": {
@@ -62077,7 +63237,7 @@
             "Villein": 3,
             "Yawp Court": 1
         },
-        "name": "Enkidu"
+        "name": "Enkidu's Dallas-LA Connection"
     },
     {
         "cards": {
@@ -62249,7 +63409,7 @@
             "Vessel": 3,
             "Wash": 1
         },
-        "name": "Owain is everybody"
+        "name": "Owain is everybody's friend"
     },
     {
         "cards": {
@@ -62545,7 +63705,7 @@
             "Twilight Camp": 2,
             "Undue Influence": 20
         },
-        "name": "  The Art of Undue Influence"
+        "name": "The Art of Undue Influence"
     },
     {
         "cards": {
@@ -62873,7 +64033,7 @@
             "Wake with Evening's Freshness": 3,
             "Well-Marked": 1
         },
-        "name": "It"
+        "name": "It's Pronounced \"HUG-huh\""
     },
     {
         "cards": {
@@ -62973,7 +64133,7 @@
             "Vessel": 1,
             "Wake with Evening's Freshness": 1
         },
-        "name": "  Fortitude Anarchs"
+        "name": "Fortitude Anarchs"
     },
     {
         "cards": {
@@ -63039,7 +64199,7 @@
             "Unmasking, The": 2,
             "Vessel": 2
         },
-        "name": "tupdogs"
+        "name": "tupdogs+nephandi"
     },
     {
         "cards": {
@@ -63133,7 +64293,7 @@
             "Vessel": 2,
             "Wake with Evening's Freshness": 3
         },
-        "name": "  Goratix Jailhouse"
+        "name": "Goratix Jailhouse"
     },
     {
         "cards": {
@@ -63297,7 +64457,7 @@
             "Waste Management Operation": 1,
             "White Phosphorus Grenade": 6
         },
-        "name": "     Pander Equipments "
+        "name": "Pander Equipments & Bleed"
     },
     {
         "cards": {
@@ -63373,7 +64533,7 @@
             "Veil the Legions": 4,
             "Visit from the Capuchin": 1
         },
-        "name": " Samedi "
+        "name": "Samedi !!!"
     },
     {
         "cards": {
@@ -63463,7 +64623,7 @@
             "Wall Street Night, Financial Newspaper": 1,
             "Weighted Walking Stick": 5
         },
-        "name": "Gents on the town"
+        "name": "Gents on the town, twirling their canes v3"
     },
     {
         "cards": {
@@ -63525,7 +64685,7 @@
             "Tension in the Ranks": 1,
             "Vessel": 2
         },
-        "name": "Anson "
+        "name": "Anson - Volker Ashur ver 1.2"
     },
     {
         "cards": {
@@ -63605,6 +64765,160 @@
     },
     {
         "cards": {
+            "aireofelation": 2,
+            "anarchtroublemaker": 1,
+            "aranthebestheimmortal": 3,
+            "artscam": 14,
+            "autarkispersecution": 2,
+            "carter": 1,
+            "consanguineousboon": 2,
+            "creamyjade": 1,
+            "cristosmantigo": 1,
+            "delayingtactics": 3,
+            "directintervention": 3,
+            "dodge": 3,
+            "effectivemanagement": 2,
+            "embracethe": 9,
+            "entrancement": 4,
+            "fakeout": 3,
+            "fearofmekhet": 1,
+            "foundationexhibit": 1,
+            "gretakircher": 2,
+            "heartofnizchetus": 1,
+            "informationhighway": 2,
+            "jostwerner": 2,
+            "lolita": 1,
+            "majesty": 6,
+            "mercyknightinquisitor": 1,
+            "nicholaschang": 1,
+            "onthequivive": 4,
+            "pallagrande": 4,
+            "pentextmsubversion": 1,
+            "poisonpill": 3,
+            "remilliarddevoutcrusader": 1,
+            "sabrina": 1,
+            "sheilamezarin": 2,
+            "sunsetstriphollywood": 1,
+            "telepathicmisdirection": 7,
+            "tributetothemaster": 2,
+            "uncoilingthe": 1,
+            "victorrevellloyalist": 1,
+            "wakewitheveningsfreshness": 4
+        },
+        "crypt": {
+            "Carter": 1,
+            "Creamy Jade": 1,
+            "Cristos Mantigo": 1,
+            "Greta Kircher": 2,
+            "Jost Werner": 2,
+            "Lolita": 1,
+            "Mercy, Knight Inquisitor": 1,
+            "Nicholas Chang": 1,
+            "Remilliard, Devout Crusader": 1,
+            "Sabrina": 1,
+            "Sheila Mezarin": 2,
+            "Victor Revell, Loyalist": 1
+        },
+        "description": "Italian NC 2009\nRome, Italy\nMay 31st 2009\n3R+F\n27 players\nSimone Bianchi (Levy)\n\nDeck Name: !Toreadors\nDescription: Classic swarm/embraces/palla grande/bleed !toreador deck",
+        "library": {
+            "Aire of Elation": 2,
+            "Anarch Troublemaker": 1,
+            "Aranthebes, The Immortal": 3,
+            "Art Scam": 14,
+            "Autarkis Persecution": 2,
+            "Consanguineous Boon": 2,
+            "Delaying Tactics": 3,
+            "Direct Intervention": 3,
+            "Dodge": 3,
+            "Effective Management": 2,
+            "Embrace, The": 9,
+            "Entrancement": 4,
+            "Fake Out": 3,
+            "Fear of Mekhet": 1,
+            "Foundation Exhibit": 1,
+            "Heart of Nizchetus": 1,
+            "Information Highway": 2,
+            "Majesty": 6,
+            "On the Qui Vive": 4,
+            "Palla Grande": 4,
+            "Pentex(TM) Subversion": 1,
+            "Poison Pill": 3,
+            "Sunset Strip, Hollywood": 1,
+            "Telepathic Misdirection": 7,
+            "Tribute to the Master": 2,
+            "Uncoiling, The": 1,
+            "Wake with Evening's Freshness": 4
+        },
+        "name": "!Toreadors"
+    },
+    {
+        "cards": {
+            "blooddoll": 2,
+            "catsguidance": 4,
+            "cynthiaingold": 2,
+            "dreamsofthesphinx": 2,
+            "enchantkindred": 5,
+            "englingfury": 5,
+            "falconseye": 3,
+            "heartofthecity": 2,
+            "howler": 4,
+            "juanitasantiago": 2,
+            "keepitsimple": 5,
+            "leapfrog": 2,
+            "murderofcrows": 5,
+            "muriciascall": 5,
+            "nettiehale": 2,
+            "noseofthehound": 4,
+            "onthequivive": 3,
+            "packalpha": 4,
+            "perfectionist": 1,
+            "powerbasemontreal": 1,
+            "rackthe": 1,
+            "ravenspy": 3,
+            "siamesethe": 2,
+            "staredown": 3,
+            "swiftnessofthestag": 7,
+            "terrorfrenzy": 2,
+            "vessel": 2,
+            "yawpcourt": 1
+        },
+        "crypt": {
+            "Cynthia Ingold": 2,
+            "Howler": 4,
+            "Juanita Santiago": 2,
+            "Nettie Hale": 2,
+            "Siamese, The": 2
+        },
+        "description": "Texas Qualifier 2009\nDallas, Texas\nMay 30th 2009\n3R+F\n12 players\nAndy Smith\n\nDeck Name: (Still) Crazy Bird Lady",
+        "library": {
+            "Blood Doll": 2,
+            "Cats' Guidance": 4,
+            "Dreams of the Sphinx": 2,
+            "Enchant Kindred": 5,
+            "Engling Fury": 5,
+            "Falcon's Eye": 3,
+            "Heart of the City": 2,
+            "Keep it Simple": 5,
+            "Leapfrog": 2,
+            "Murder of Crows": 5,
+            "Muricia's Call": 5,
+            "Nose of the Hound": 4,
+            "On the Qui Vive": 3,
+            "Pack Alpha": 4,
+            "Perfectionist": 1,
+            "Powerbase: Montreal": 1,
+            "Rack, The": 1,
+            "Raven Spy": 3,
+            "Staredown": 3,
+            "Swiftness of the Stag": 7,
+            "Terror Frenzy": 2,
+            "Vessel": 2,
+            "Yawp Court": 1
+        },
+        "name": "(Still) Crazy Bird Lady"
+    },
+    {
+        "cards": {
             "apachejones": 1,
             "arthurdenholm": 1,
             "ashurtablets": 6,
@@ -63665,7 +64979,7 @@
             "Touch of Clarity": 4,
             "Wrong and Crosswise": 4
         },
-        "name": "S"
+        "name": "S&B; Dem Tavolette 4"
     },
     {
         "cards": {
@@ -63753,7 +65067,7 @@
             "Voice of Madness": 2,
             "Voter Captivation": 5
         },
-        "name": " Locos en la Corte"
+        "name": "Locos en la Corte"
     },
     {
         "cards": {
@@ -63835,7 +65149,7 @@
             "Police Department": 1,
             "Sudden Reversal": 2
         },
-        "name": "Jay"
+        "name": "Jay's Angry Dragon"
     },
     {
         "cards": {
@@ -64001,7 +65315,7 @@
             "Villein": 3,
             "Voter Captivation": 4
         },
-        "name": "  Chaos "
+        "name": "Chaos & Confusion ver 02"
     },
     {
         "cards": {
@@ -64087,7 +65401,7 @@
             "Wake with Evening's Freshness": 2,
             "Year of Fortune": 1
         },
-        "name": "  Lutz All Out"
+        "name": "Lutz All Out"
     },
     {
         "cards": {
@@ -64165,7 +65479,7 @@
             "Vessel": 2,
             "Villein": 3
         },
-        "name": "FoS Mind Rape ver 1"
+        "name": "FoS Mind Rape ver 1.3"
     },
     {
         "cards": {
@@ -64299,7 +65613,7 @@
             "Vermin Channel": 12,
             "Wake with Evening's Freshness": 4
         },
-        "name": "  Weenie Obfuscate S"
+        "name": "Weenie Obfuscate S&B; Deck"
     },
     {
         "cards": {
@@ -64583,7 +65897,7 @@
             "Swallowed by the Night": 3,
             "Wake with Evening's Freshness": 2
         },
-        "name": "V\u00e4in\u00f6"
+        "name": "V\u00e4in\u00f6-Klementti"
     },
     {
         "cards": {
@@ -64655,7 +65969,7 @@
             "Vessel": 3,
             "Visit from the Capuchin": 1
         },
-        "name": "  Necr\u00f2sBleed"
+        "name": "Necr\u00f2sBleed"
     },
     {
         "cards": {
@@ -64747,7 +66061,7 @@
             "Torn Signpost": 8,
             "Vessel": 2
         },
-        "name": "  Rafinha Osebo Wall"
+        "name": "Rafinha Osebo Wall"
     },
     {
         "cards": {
@@ -64993,7 +66307,7 @@
             "Sudden Reversal": 1,
             "Wash": 1
         },
-        "name": "Hotellet "
+        "name": "Hotellet (Chelsea Hotel #3)"
     },
     {
         "cards": {
@@ -65511,7 +66825,7 @@
             "Wash": 1,
             "Zillah's Valley": 5
         },
-        "name": "girls will find"
+        "name": "girls will find..."
     },
     {
         "cards": {
@@ -65585,7 +66899,7 @@
             "Swallowed by the Night": 3,
             "Truth of a Thousand Lies": 7
         },
-        "name": "Johannes"
+        "name": "Johannes' Apocalypse,13,4"
     },
     {
         "cards": {
@@ -65725,7 +67039,7 @@
             "Vessel": 3,
             "Voter Captivation": 2
         },
-        "name": "Neo"
+        "name": "Neo-Lawfirm"
     },
     {
         "cards": {
@@ -65953,7 +67267,7 @@
             "Veil the Legions": 5,
             "WMRH Talk Radio": 1
         },
-        "name": "  Lincoln"
+        "name": "Lincoln's setite deck"
     },
     {
         "cards": {
@@ -66035,7 +67349,7 @@
             "Vessel": 2,
             "Wash": 2
         },
-        "name": "Bara en Eagle"
+        "name": "Bara en Eagle's Sight"
     },
     {
         "cards": {
@@ -66205,7 +67519,7 @@
             "Visit from the Capuchin": 1,
             "Voter Captivation": 2
         },
-        "name": "AAA"
+        "name": "AAA-Cog"
     },
     {
         "cards": {
@@ -66293,7 +67607,7 @@
             "Vessel": 2,
             "Victim of Habit": 2
         },
-        "name": "Law Firm says "
+        "name": "Law Firm says \"Get off my lawn!\" II"
     },
     {
         "cards": {
@@ -66881,7 +68195,7 @@
             "Taste of Vitae": 5,
             "Telepathic Misdirection": 6
         },
-        "name": "Masika"
+        "name": "Masika, Prince of Lisbon"
     },
     {
         "cards": {
@@ -66961,7 +68275,7 @@
             "Vagabond Mystic": 1,
             "Wash": 2
         },
-        "name": "Another nephandus deck"
+        "name": "Another nephandus deck..."
     },
     {
         "cards": {
@@ -67027,7 +68341,7 @@
             "Web of Knives Recruit": 6,
             "Yoruba Shrine": 1
         },
-        "name": "  Assamite Breed "
+        "name": "Assamite Breed & Boon"
     },
     {
         "cards": {
@@ -67119,7 +68433,7 @@
             "Sudden Reversal": 1,
             "Superior Mettle": 2
         },
-        "name": "  Ventrue At control "
+        "name": "Ventrue At control & Bleed"
     },
     {
         "cards": {
@@ -67371,7 +68685,7 @@
             "Wake with Evening's Freshness": 4,
             "Wash": 2
         },
-        "name": "Snakes with a Chain "
+        "name": "Snakes with a Chain (v3.1)"
     },
     {
         "cards": {
@@ -67593,7 +68907,7 @@
             "Ventrue Headquarters": 2,
             "Voter Captivation": 8
         },
-        "name": "\tVentrue Camarilla Political"
+        "name": "Ventrue Camarilla Political"
     },
     {
         "cards": {
@@ -67689,7 +69003,7 @@
             "Ventrue Justicar": 2,
             "Wake with Evening's Freshness": 2
         },
-        "name": "Buckets O"
+        "name": "Buckets O' Money 2008"
     },
     {
         "cards": {
@@ -68047,7 +69361,7 @@
             "Unmasking, The": 1,
             "Veil the Legions": 3
         },
-        "name": "Me Doctor"
+        "name": "Me Doctor, you Patient ver. 2.0"
     },
     {
         "cards": {
@@ -68223,7 +69537,7 @@
             "Vessel": 2,
             "Wash": 1
         },
-        "name": "Chelsea Hotel "
+        "name": "Chelsea Hotel #2"
     },
     {
         "cards": {
@@ -68493,7 +69807,7 @@
             "Tension in the Ranks": 1,
             "Vessel": 3
         },
-        "name": "  Dragos"
+        "name": "Dragos' hidden strength exposed"
     },
     {
         "cards": {
@@ -68637,7 +69951,7 @@
             "Taste of Vitae": 4,
             "Tier of Souls": 3
         },
-        "name": "  Lord Ashton"
+        "name": "Lord Ashton's Animalism"
     },
     {
         "cards": {
@@ -68737,7 +70051,7 @@
             "Web of Knives Recruit": 4,
             "Yoruba Shrine": 1
         },
-        "name": "  Assamite Council"
+        "name": "Assamite Council"
     },
     {
         "cards": {
@@ -69017,7 +70331,7 @@
             "Vessel": 2,
             "Voter Captivation": 6
         },
-        "name": "Omnipresent "
+        "name": "Omnipresent !Gangrel"
     },
     {
         "cards": {
@@ -69181,7 +70495,7 @@
             "Tribute to the Master": 5,
             "Twilight Camp": 4
         },
-        "name": "where did that anarch go"
+        "name": "where did that anarch go?"
     },
     {
         "cards": {
@@ -69345,7 +70659,7 @@
             "Telepathic Misdirection": 8,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Malk"
+        "name": "Malk! bleeder"
     },
     {
         "cards": {
@@ -69501,7 +70815,7 @@
             "Wash": 1,
             "Waters of Duat": 1
         },
-        "name": " Nakhthorheb Power"
+        "name": "Nakhthorheb Power"
     },
     {
         "cards": {
@@ -69589,7 +70903,7 @@
             "Voter Captivation": 5,
             "Wash": 1
         },
-        "name": " Ayo Igoli"
+        "name": "Ayo Igoli"
     },
     {
         "cards": {
@@ -69673,7 +70987,7 @@
             "Vessel": 5,
             "WMRH Talk Radio": 1
         },
-        "name": "ANI"
+        "name": "ANI+PRO Earth Meld Wall"
     },
     {
         "cards": {
@@ -69905,7 +71219,7 @@
             "Wake with Evening's Freshness": 2,
             "Wash": 1
         },
-        "name": "\t"
+        "name": "!Ventrue"
     },
     {
         "cards": {
@@ -70045,7 +71359,93 @@
             "Web of Knives Recruit": 6,
             "Yoruba Shrine": 2
         },
-        "name": "  Assamite Breed "
+        "name": "Assamite Breed & Bloat"
+    },
+    {
+        "cards": {
+            "44magnum": 5,
+            "ambush": 2,
+            "blooddoll": 2,
+            "blur": 5,
+            "bowlofconvergence": 1,
+            "concealedweapon": 5,
+            "directintervention": 2,
+            "eaglessight": 2,
+            "elderimpersonation": 2,
+            "fame": 1,
+            "fetishclubhuntingground": 1,
+            "flash": 3,
+            "forcedawakening": 3,
+            "gabrieldecambrai": 3,
+            "glaserrounds": 2,
+            "havenuncovered": 1,
+            "isoudadeblaise": 3,
+            "klauskonrecht": 3,
+            "legalmanipulations": 6,
+            "lostincrowds": 2,
+            "majesty": 2,
+            "manstopperrounds": 2,
+            "marthedizier": 3,
+            "miniontap": 2,
+            "onthequivive": 3,
+            "palatialestate": 1,
+            "preternaturalevasion": 2,
+            "psyche": 5,
+            "pursuit": 3,
+            "quickensight": 2,
+            "rackthe": 1,
+            "rumble": 2,
+            "spiritstouch": 2,
+            "suddenreversal": 1,
+            "tasteofvitae": 6,
+            "telepathicmisdirection": 8,
+            "tensionintheranks": 1,
+            "vessel": 2
+        },
+        "crypt": {
+            "Gabriel de Cambrai": 3,
+            "Isouda de Blaise": 3,
+            "Klaus Konrecht": 3,
+            "Marthe Dizier": 3
+        },
+        "description": "Fall of the Camarilla\nSantiago, Chile\nJune 14th 2008\n3R+F\n12 players\nJackson Iribarren (Kansho)\n\n\nDeck Name: !Toreador Pistolero",
+        "library": {
+            ".44 Magnum": 5,
+            "Ambush": 2,
+            "Blood Doll": 2,
+            "Blur": 5,
+            "Bowl of Convergence": 1,
+            "Concealed Weapon": 5,
+            "Direct Intervention": 2,
+            "Eagle's Sight": 2,
+            "Elder Impersonation": 2,
+            "Fame": 1,
+            "Fetish Club Hunting Ground": 1,
+            "Flash": 3,
+            "Forced Awakening": 3,
+            "Glaser Rounds": 2,
+            "Haven Uncovered": 1,
+            "Legal Manipulations": 6,
+            "Lost in Crowds": 2,
+            "Majesty": 2,
+            "Manstopper Rounds": 2,
+            "Minion Tap": 2,
+            "On the Qui Vive": 3,
+            "Palatial Estate": 1,
+            "Preternatural Evasion": 2,
+            "Psyche!": 5,
+            "Pursuit": 3,
+            "Quicken Sight": 2,
+            "Rack, The": 1,
+            "Rumble": 2,
+            "Spirit's Touch": 2,
+            "Sudden Reversal": 1,
+            "Taste of Vitae": 6,
+            "Telepathic Misdirection": 8,
+            "Tension in the Ranks": 1,
+            "Vessel": 2
+        },
+        "name": "!Toreador Pistolero"
     },
     {
         "cards": {
@@ -70313,7 +71713,7 @@
             "Ventrue Investment": 2,
             "Wake with Evening's Freshness": 1
         },
-        "name": "  Forced Vigilance"
+        "name": "Forced Vigilance"
     },
     {
         "cards": {
@@ -70395,7 +71795,7 @@
             "Ventrue Justicar": 1,
             "Voter Captivation": 6
         },
-        "name": "\tVentrue 3"
+        "name": "Ventrue 3.0"
     },
     {
         "cards": {
@@ -70479,7 +71879,7 @@
             "Vessel": 4,
             "Watchtower: Four Ride Forth": 1
         },
-        "name": "Teresita"
+        "name": "Teresita's toolbox"
     },
     {
         "cards": {
@@ -70643,7 +72043,7 @@
             "Wash": 2,
             "Weighted Walking Stick": 1
         },
-        "name": "Shape and Gnaw 3"
+        "name": "Shape and Gnaw 3.0 (Post-LotN)"
     },
     {
         "cards": {
@@ -70927,7 +72327,7 @@
             "Wake with Evening's Freshness": 1,
             "Zillah's Valley": 2
         },
-        "name": "\tGuruhi Votos Combate"
+        "name": "Guruhi Votos Combate"
     },
     {
         "cards": {
@@ -71361,7 +72761,7 @@
             "Vessel": 2,
             "Wash": 1
         },
-        "name": "Victor"
+        "name": "Victor's Deck of Dominate"
     },
     {
         "cards": {
@@ -71437,7 +72837,7 @@
             "Vessel": 2,
             "Yawp Court": 1
         },
-        "name": "  Enkidu "
+        "name": "Enkidu & Friends"
     },
     {
         "cards": {
@@ -71527,7 +72927,7 @@
             "Ventrue Headquarters": 1,
             "Web of Knives Recruit": 10
         },
-        "name": "  Amarvati"
+        "name": "Amarvati+Mata_Hari"
     },
     {
         "cards": {
@@ -71589,7 +72989,7 @@
             "Vessel": 8,
             "Wake with Evening's Freshness": 4
         },
-        "name": "  Big Malkavian Deck"
+        "name": "Big Malkavian Deck"
     },
     {
         "cards": {
@@ -72031,7 +73431,7 @@
             "Voter Captivation": 6,
             "Wake with Evening's Freshness": 2
         },
-        "name": "  Lasombra vote bleed"
+        "name": "Lasombra vote bleed"
     },
     {
         "cards": {
@@ -72767,7 +74167,7 @@
             "Veil the Legions": 3,
             "Wake with Evening's Freshness": 6
         },
-        "name": "manse 07 "
+        "name": "manse 07 - Beware of your gpredator"
     },
     {
         "cards": {
@@ -73101,7 +74501,7 @@
             "Wake with Evening's Freshness": 5,
             "War Ghoul": 10
         },
-        "name": "  What Ghoul"
+        "name": "What Ghoul?"
     },
     {
         "cards": {
@@ -73191,7 +74591,7 @@
             "Vicissitude": 1,
             "War Ghoul": 2
         },
-        "name": "Chuck de bigode sinistro "
+        "name": "Chuck de bigode sinistro (Sinister Chuck with mustache)"
     },
     {
         "cards": {
@@ -73257,7 +74657,7 @@
             "Reins of Power": 1,
             "Secure Haven": 2
         },
-        "name": "  Stanislava rapes the world"
+        "name": "Stanislava rapes the world"
     },
     {
         "cards": {
@@ -73339,7 +74739,7 @@
             "Voice of Madness": 6,
             "Wake with Evening's Freshness": 5
         },
-        "name": "  Loony Bin"
+        "name": "Loony Bin"
     },
     {
         "cards": {
@@ -73635,7 +75035,7 @@
             "Voter Captivation": 5,
             "Wake with Evening's Freshness": 4
         },
-        "name": "EC day2 "
+        "name": "EC day2 - 1st place"
     },
     {
         "cards": {
@@ -73721,7 +75121,7 @@
             "Voter Captivation": 6,
             "Zillah's Valley": 2
         },
-        "name": "God"
+        "name": "God, not her again"
     },
     {
         "cards": {
@@ -73859,7 +75259,7 @@
             "Seduction": 3,
             "Slaughtering the Herd": 3
         },
-        "name": "EC Day 1 "
+        "name": "EC Day 1 - 1st place"
     },
     {
         "cards": {
@@ -74053,7 +75453,7 @@
             "Wolf Claws": 2,
             "Zoo Hunting Ground": 1
         },
-        "name": "  Welcome to Valhalla"
+        "name": "Welcome to Valhalla"
     },
     {
         "cards": {
@@ -74119,7 +75519,7 @@
             "Squirrel Balance": 5,
             "Swiftness of the Stag": 10
         },
-        "name": "Cheap"
+        "name": "Cheap, unimaginative Ahrimanes wall"
     },
     {
         "cards": {
@@ -74203,7 +75603,7 @@
             "Taste of Vitae": 5,
             "Unexpected Coalition": 6
         },
-        "name": "l"
+        "name": "l'\u00e9quipe de Rigby"
     },
     {
         "cards": {
@@ -74261,7 +75661,7 @@
             "Secure Haven": 1,
             "Unmasking, The": 2
         },
-        "name": "The Alchemists "
+        "name": "The Alchemists (aka. the octarine killing machine)"
     },
     {
         "cards": {
@@ -74393,7 +75793,7 @@
             "Swallowed by the Night": 5,
             "Truth of a Thousand Lies": 11
         },
-        "name": "  Cybelotron"
+        "name": "Cybelotron"
     },
     {
         "cards": {
@@ -74473,7 +75873,7 @@
             "Ventrue Headquarters": 1,
             "Voter Captivation": 7
         },
-        "name": "Arika"
+        "name": "Arika's Stranglehold"
     },
     {
         "cards": {
@@ -74533,7 +75933,7 @@
             "Siren's Lure": 10,
             "Soak": 8
         },
-        "name": "  Angellore"
+        "name": "Angellore"
     },
     {
         "cards": {
@@ -74619,7 +76019,7 @@
             "Wake with Evening's Freshness": 6,
             "Zaire River Ferry": 2
         },
-        "name": "  The P"
+        "name": "The P.O.D. People"
     },
     {
         "cards": {
@@ -74717,7 +76117,7 @@
             "Undead Strength": 2,
             "Wake with Evening's Freshness": 2
         },
-        "name": "  B"
+        "name": "B.A. DeSalle and the B-Team"
     },
     {
         "cards": {
@@ -74807,7 +76207,7 @@
             "Vox Domini": 1,
             "Wake with Evening's Freshness": 3
         },
-        "name": "  One Nergal To Rule Them All "
+        "name": "One Nergal To Rule Them All (American Style)"
     },
     {
         "cards": {
@@ -74945,7 +76345,7 @@
             "Voter Captivation": 4,
             "Wake with Evening's Freshness": 3
         },
-        "name": " IC s"
+        "name": "IC s!! Run for cover!"
     },
     {
         "cards": {
@@ -75033,7 +76433,7 @@
             "Wash": 2,
             "Watchtower: The Wolves Feed": 2
         },
-        "name": "  Black Hand Arts v1"
+        "name": "Black Hand Arts v1.0"
     },
     {
         "cards": {
@@ -75213,7 +76613,7 @@
             "Tribute to the Master": 2,
             "Wash": 1
         },
-        "name": "  Puppies in Our Pants"
+        "name": "Puppies in Our Pants"
     },
     {
         "cards": {
@@ -75421,7 +76821,7 @@
             "WMRH Talk Radio": 1,
             "Wake with Evening's Freshness": 3
         },
-        "name": "Myrddin"
+        "name": "Myrddin's Magicians"
     },
     {
         "cards": {
@@ -75491,7 +76891,7 @@
             "Wake with Evening's Freshness": 5,
             "Web of Knives Recruit": 9
         },
-        "name": "Amaravati "
+        "name": "Amaravati & Co."
     },
     {
         "cards": {
@@ -75955,7 +77355,7 @@
             "Spiritual Intervention": 8,
             "Visit from the Capuchin": 1
         },
-        "name": "  Necr\u00f2sBleed"
+        "name": "Necr\u00f2sBleed"
     },
     {
         "cards": {
@@ -76019,7 +77419,7 @@
             "Taste of Vitae": 6,
             "Tension in the Ranks": 1
         },
-        "name": "  CEL Guns"
+        "name": "CEL Guns"
     },
     {
         "cards": {
@@ -76321,7 +77721,7 @@
             "Soul Gem of Etrius": 6,
             "Vast Wealth": 3
         },
-        "name": "  "
+        "name": "[Lasombra] Turbo Lucita"
     },
     {
         "cards": {
@@ -76609,7 +78009,7 @@
             "Raven Spy": 5,
             "Wake with Evening's Freshness": 11
         },
-        "name": "  Bats Cats and Yuri"
+        "name": "Bats Cats and Yuri's mustache"
     },
     {
         "cards": {
@@ -76911,7 +78311,7 @@
             "True Love's Face": 2,
             "Wash": 3
         },
-        "name": "Pornstars"
+        "name": "Pornstars, Inc."
     },
     {
         "cards": {
@@ -76995,7 +78395,7 @@
             "Wake with Evening's Freshness": 9,
             "Wash": 2
         },
-        "name": "  Got Confusion"
+        "name": "Got Confusion?"
     },
     {
         "cards": {
@@ -77351,7 +78751,7 @@
             "Voter Captivation": 6,
             "Wake with Evening's Freshness": 2
         },
-        "name": "Ayo"
+        "name": "Ayo's Crew"
     },
     {
         "cards": {
@@ -77535,7 +78935,7 @@
             "Thrown Gate": 5,
             "Thrown Sewer Lid": 11
         },
-        "name": "  Massassi"
+        "name": "Massassi's Horror"
     },
     {
         "cards": {
@@ -77615,7 +79015,7 @@
             "Swallowed by the Night": 4,
             "Wake with Evening's Freshness": 8
         },
-        "name": "  Lasombra Creation Boon"
+        "name": "Lasombra Creation Boon"
     },
     {
         "cards": {
@@ -78441,7 +79841,7 @@
             "Tumnimos": 8,
             "Week of Nightmares": 1
         },
-        "name": "Matthew 7"
+        "name": "Matthew 7:15"
     },
     {
         "cards": {
@@ -78505,7 +79905,7 @@
             "Undead Strength": 8,
             "Wake with Evening's Freshness": 6
         },
-        "name": "Bouncin"
+        "name": "Bouncin' Beast"
     },
     {
         "cards": {
@@ -78923,7 +80323,7 @@
             "Thoughts Betrayed": 3,
             "Visit from the Capuchin": 1
         },
-        "name": "Cardano"
+        "name": "Cardano's Kinda Freak"
     },
     {
         "cards": {
@@ -78983,7 +80383,87 @@
             "Torn Signpost": 10,
             "Undead Strength": 10
         },
-        "name": "Put your hands up in the air "
+        "name": "Put your hands up in the air (Anarch Revolt Edit)"
+    },
+    {
+        "cards": {
+            "agrippina": 1,
+            "archoninvestigation": 2,
+            "calebrosthemartyr": 1,
+            "cloakthegathering": 8,
+            "computerhacking": 14,
+            "concealedweapon": 6,
+            "daliyah": 1,
+            "destructivesecrets": 6,
+            "dimple": 1,
+            "directintervention": 2,
+            "duck": 1,
+            "dummycorporation": 2,
+            "embracethe": 8,
+            "flashgrenade": 8,
+            "forgottenlabyrinth": 6,
+            "grendelthewormeaten": 1,
+            "jssimmonsesq": 1,
+            "labyrinththe": 1,
+            "laptopcomputer": 6,
+            "laurentdevalois": 1,
+            "markedpath": 2,
+            "momentumsedge": 1,
+            "murat": 1,
+            "poisonpill": 2,
+            "regiliotheseekerofakhenaten": 1,
+            "retribution": 1,
+            "sammy": 1,
+            "slumhuntingground": 1,
+            "suddenreversal": 3,
+            "swallowedbythenight": 2,
+            "tashamorgan": 1,
+            "tributetothemaster": 3,
+            "tuskthetalebearer": 1,
+            "tuskthetalebeareradv": 1,
+            "wakewitheveningsfreshness": 4
+        },
+        "crypt": {
+            "Agrippina": 1,
+            "Calebros, The Martyr": 1,
+            "Daliyah": 1,
+            "Dimple": 1,
+            "Duck": 1,
+            "Grendel the Worm-Eaten": 1,
+            "Laurent de Valois": 1,
+            "Murat": 1,
+            "Regilio, The Seeker of Akhenaten": 1,
+            "Sammy": 1,
+            "Tusk, The Talebearer": 1,
+            "Tusk, The Talebearer (ADV)": 1
+        },
+        "description": "Texas CCQ\nAustin, Texas\nFebruary 4th 2006\n3R+F\n27 players\nEric Leal\n\nDeck Name: ... Like bunnies\nDescription: hmmmm...... If i need to explain this you need a new game.",
+        "library": {
+            "Archon Investigation": 2,
+            "Cloak the Gathering": 8,
+            "Computer Hacking": 14,
+            "Concealed Weapon": 6,
+            "Destructive Secrets": 6,
+            "Direct Intervention": 2,
+            "Dummy Corporation": 2,
+            "Embrace, The": 8,
+            "Flash Grenade": 8,
+            "Forgotten Labyrinth": 6,
+            "J. S. Simmons, Esq.": 1,
+            "Labyrinth, The": 1,
+            "Laptop Computer": 6,
+            "Marked Path": 2,
+            "Momentum's Edge": 1,
+            "Poison Pill": 2,
+            "Retribution": 1,
+            "Slum Hunting Ground": 1,
+            "Sudden Reversal": 3,
+            "Swallowed by the Night": 2,
+            "Tasha Morgan": 1,
+            "Tribute to the Master": 3,
+            "Wake with Evening's Freshness": 4
+        },
+        "name": "... Like bunnies"
     },
     {
         "cards": {
@@ -79157,6 +80637,80 @@
     },
     {
         "cards": {
+            "banishment": 2,
+            "blooddoll": 4,
+            "bonding": 4,
+            "cardinalbenediction": 2,
+            "conditioning": 3,
+            "corporatehuntingground": 1,
+            "daringthedawn": 2,
+            "deflection": 6,
+            "demonstration": 1,
+            "dominatekine": 1,
+            "freakdrive": 9,
+            "giantsblood": 1,
+            "governtheunaligned": 12,
+            "gustavmallenhous": 2,
+            "jessemenks": 2,
+            "kineresourcescontested": 7,
+            "kylestrathconacardinalofcanada": 2,
+            "lazverinusthralloflambach": 2,
+            "myenemysenemy": 2,
+            "mylanhorseedgoblin": 2,
+            "owainevansthewanderer": 2,
+            "perfectionist": 4,
+            "powerbasemadrid": 1,
+            "quentin": 2,
+            "rollingwiththepunches": 2,
+            "securehaven": 1,
+            "skinofsteel": 1,
+            "soak": 6,
+            "superiormettle": 3,
+            "telepathicmisdirection": 3,
+            "wakewitheveningsfreshness": 8,
+            "zillahstears": 2
+        },
+        "crypt": {
+            "Gustav Mallenhous": 2,
+            "Jesse Menks": 2,
+            "Kyle Strathcona, Cardinal of Canada": 2,
+            "Lazverinus, Thrall of Lambach": 2,
+            "Owain Evans, The Wanderer": 2,
+            "Quentin": 2
+        },
+        "description": "Qu\u00e9bec NCQ\nMontreal, Quebec\nOctober 15th 2005\n3R+F\n27 players\nMichel-\u00c9tienne Fortin (MiF)\n\nDeck Name: !ventrue multi-action\nDescription: Standard !ventrue bleed & vote deck. Bring out\nthe biggest vamp in your crypt, then use him to influence out\nthe others with govern the unaligned. Bloat with blood dolls,\nOwain and perfectionist until you can launch a big attack.\nHas trouble against intercept, but can usually do enough\nactions in a single turn to slip a couple votes or bleeds through.",
+        "library": {
+            "Banishment": 2,
+            "Blood Doll": 4,
+            "Bonding": 4,
+            "Cardinal Benediction": 2,
+            "Conditioning": 3,
+            "Corporate Hunting Ground": 1,
+            "Daring the Dawn": 2,
+            "Deflection": 6,
+            "Demonstration": 1,
+            "Dominate Kine": 1,
+            "Freak Drive": 9,
+            "Giant's Blood": 1,
+            "Govern the Unaligned": 12,
+            "Kine Resources Contested": 7,
+            "My Enemy's Enemy": 2,
+            "Mylan Horseed (Goblin)": 2,
+            "Perfectionist": 4,
+            "Powerbase: Madrid": 1,
+            "Rolling with the Punches": 2,
+            "Secure Haven": 1,
+            "Skin of Steel": 1,
+            "Soak": 6,
+            "Superior Mettle": 3,
+            "Telepathic Misdirection": 3,
+            "Wake with Evening's Freshness": 8,
+            "Zillah's Tears": 2
+        },
+        "name": "!ventrue multi-action"
+    },
+    {
+        "cards": {
             "badralbudur": 2,
             "carversmeatpackingandstorage": 1,
             "clandestinecontract": 7,
@@ -79315,7 +80869,7 @@
             "Wake with Evening's Freshness": 4,
             "Warzone Hunting Ground": 1
         },
-        "name": "Brujah"
+        "name": "Brujah!!"
     },
     {
         "cards": {
@@ -79681,7 +81235,7 @@
             "Week of Nightmares": 1,
             "Weighted Walking Stick": 2
         },
-        "name": "Fauberge"
+        "name": "Fauberge's Eggs"
     },
     {
         "cards": {
@@ -80023,7 +81577,7 @@
             "Voter Captivation": 13,
             "Year of Fortune": 1
         },
-        "name": "Old school Weenie vote Pre 2"
+        "name": "Old school Weenie vote Pre 2.0"
     },
     {
         "cards": {
@@ -80101,7 +81655,7 @@
             "Voice of Madness": 4,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Na foto"
+        "name": "Na foto, a srta. Davis em momento de descontra\u00e7\u00e3o com os amigos"
     },
     {
         "cards": {
@@ -80173,7 +81727,7 @@
             "Stone Travel": 5,
             "Wake with Evening's Freshness": 7
         },
-        "name": "  Four Hours Ago"
+        "name": "Four Hours Ago"
     },
     {
         "cards": {
@@ -80607,7 +82161,7 @@
             "Thrown Gate": 2,
             "Thrown Sewer Lid": 2
         },
-        "name": "Cailean "
+        "name": "Cailean & Beast Alliance"
     },
     {
         "cards": {
@@ -80685,7 +82239,7 @@
             "Telepathic Counter": 16,
             "Telepathic Misdirection": 4
         },
-        "name": "  Bleed Like Me"
+        "name": "Bleed Like Me, Responsibly"
     },
     {
         "cards": {
@@ -80743,7 +82297,7 @@
             "Swiftness of the Stag": 8,
             "Taste of Vitae": 4
         },
-        "name": "  Birds of Prey"
+        "name": "Birds of Prey"
     },
     {
         "cards": {
@@ -81247,7 +82801,7 @@
             "Tension in the Ranks": 1,
             "Underworld Hunting Ground": 1
         },
-        "name": "Tegyrius "
+        "name": "Tegyrius & Tariq - wall deck"
     },
     {
         "cards": {
@@ -81301,7 +82855,7 @@
             "Telepathic Tracking": 10,
             "Terror Frenzy": 10
         },
-        "name": "     30 Millions d"
+        "name": "30 Millions d'amis Dragos"
     },
     {
         "cards": {
@@ -81547,7 +83101,81 @@
             "Wake with Evening's Freshness": 7,
             "Winchester Mansion": 1
         },
-        "name": "mALK_"
+        "name": "mALK_!mALK protean party"
+    },
+    {
+        "cards": {
+            "archoninvestigation": 1,
+            "aurareading": 4,
+            "billy": 1,
+            "blackhorsetanner": 2,
+            "bonding": 8,
+            "charicefontaigne": 1,
+            "conditioning": 4,
+            "deflection": 5,
+            "directintervention": 1,
+            "edwardneally": 1,
+            "enhancedsenses": 4,
+            "forcedawakening": 10,
+            "freakdrive": 2,
+            "governtheunaligned": 4,
+            "hiddenstrength": 4,
+            "humanitas": 1,
+            "ingridrusso": 2,
+            "kissofrathe": 2,
+            "krcgnewsradio": 1,
+            "owainevansthewanderer": 3,
+            "redirection": 5,
+            "revelations": 1,
+            "rollingwiththepunches": 6,
+            "samson": 1,
+            "scoutingmission": 4,
+            "seduction": 4,
+            "skinofnight": 4,
+            "sleepingmindthe": 3,
+            "soak": 4,
+            "stealthritus": 4,
+            "telepathicmisdirection": 4,
+            "vanessa": 1
+        },
+        "crypt": {
+            "Billy": 1,
+            "Blackhorse Tanner": 2,
+            "Charice Fontaigne": 1,
+            "Edward Neally": 1,
+            "Ingrid Russo": 2,
+            "Owain Evans, The Wanderer": 3,
+            "Samson": 1,
+            "Vanessa": 1
+        },
+        "description": "Brazilan NCQ\nBelo Horizonte, Brazil\nOctober 16th 2004\n2R+F\n14 players\nPatrick Costa\n\nDeck Name: !Ventrue",
+        "library": {
+            "Archon Investigation": 1,
+            "Aura Reading": 4,
+            "Bonding": 8,
+            "Conditioning": 4,
+            "Deflection": 5,
+            "Direct Intervention": 1,
+            "Enhanced Senses": 4,
+            "Forced Awakening": 10,
+            "Freak Drive": 2,
+            "Govern the Unaligned": 4,
+            "Hidden Strength": 4,
+            "Humanitas": 1,
+            "KRCG News Radio": 1,
+            "Kiss of Ra, The": 2,
+            "Redirection": 5,
+            "Revelations": 1,
+            "Rolling with the Punches": 6,
+            "Scouting Mission": 4,
+            "Seduction": 4,
+            "Skin of Night": 4,
+            "Sleeping Mind, The": 3,
+            "Soak": 4,
+            "Stealth Ritus": 4,
+            "Telepathic Misdirection": 4
+        },
+        "name": "!Ventrue"
     },
     {
         "cards": {
@@ -81617,7 +83245,7 @@
             "Praxis Seizure: Miami": 1,
             "Specialization": 2
         },
-        "name": "  We Shall"
+        "name": "We Shall, We Shall Overcome"
     },
     {
         "cards": {
@@ -81703,7 +83331,7 @@
             "Voter Captivation": 4,
             "Wake with Evening's Freshness": 4
         },
-        "name": "All in Favor"
+        "name": "All in Favor, Howl \"Yea\""
     },
     {
         "cards": {
@@ -81783,7 +83411,7 @@
             "Sudden Reversal": 6,
             "Wake with Evening's Freshness": 8
         },
-        "name": "  A Sudden Anarch Troublemaker"
+        "name": "A Sudden Anarch Troublemaker"
     },
     {
         "cards": {
@@ -81871,7 +83499,7 @@
             "Unflinching Persistence": 2,
             "Wake with Evening's Freshness": 3
         },
-        "name": "Tariq "
+        "name": "Tariq + Egottha"
     },
     {
         "cards": {
@@ -82025,7 +83653,7 @@
             "Tribute to the Master": 6,
             "Wake with Evening's Freshness": 7
         },
-        "name": "Weenie"
+        "name": "Weenie-Cel-DesertEagle"
     },
     {
         "cards": {
@@ -82231,7 +83859,7 @@
             "Wake with Evening's Freshness": 4,
             "Wormwood": 1
         },
-        "name": "  the Trickstars"
+        "name": "the Trickstars"
     },
     {
         "cards": {
@@ -82369,7 +83997,7 @@
             "Telepathic Misdirection": 4,
             "Wake with Evening's Freshness": 6
         },
-        "name": "  smooth ride"
+        "name": "smooth ride"
     },
     {
         "cards": {
@@ -82441,7 +84069,7 @@
             "Waste Management Operation": 1,
             "Zip Gun": 4
         },
-        "name": "Thrown Junk "
+        "name": "Thrown Junk & Sexy Tricks (TM)"
     },
     {
         "cards": {
@@ -82537,7 +84165,7 @@
             "Walk of Flame": 3,
             "Wind Dance": 2
         },
-        "name": "The Warlocks"
+        "name": "The Warlocks' Revenge."
     },
     {
         "cards": {
@@ -82609,7 +84237,7 @@
             "Thrown Gate": 4,
             "Voter Captivation": 2
         },
-        "name": "  Moncada"
+        "name": "Moncada's Army"
     },
     {
         "cards": {
@@ -82777,7 +84405,7 @@
             "Undead Strength": 10,
             "Wake with Evening's Freshness": 3
         },
-        "name": "  Serial Killer "
+        "name": "Serial Killer (VNV)"
     },
     {
         "cards": {
@@ -82853,7 +84481,7 @@
             "Wake with Evening's Freshness": 4,
             "Watchtower: Four Ride Forth": 2
         },
-        "name": "  Winner Cup of Paris 4th edition"
+        "name": "Winner Cup of Paris 4th edition"
     },
     {
         "cards": {
@@ -82999,7 +84627,7 @@
             "Telepathic Misdirection": 8,
             "Wake with Evening's Freshness": 6
         },
-        "name": "  You ARE My Baby"
+        "name": "You ARE My Baby's Daddy!"
     },
     {
         "cards": {
@@ -83087,6 +84715,90 @@
     },
     {
         "cards": {
+            "ancientinfluence": 1,
+            "arika": 5,
+            "baltimorepurge": 9,
+            "banjoko": 1,
+            "barrensthe": 1,
+            "cameron": 1,
+            "cloakthegathering": 5,
+            "coventhe": 1,
+            "distraction": 2,
+            "dramaticupheaval": 3,
+            "dreamsofthesphinx": 2,
+            "elderimpersonation": 1,
+            "facelessnight": 1,
+            "forgottenlabyrinth": 5,
+            "fortitude": 1,
+            "freakdrive": 13,
+            "giantsblood": 1,
+            "golcondainnerpeace": 1,
+            "governtheunaligned": 6,
+            "gratiano": 2,
+            "graverobbing": 9,
+            "guidolucciano": 2,
+            "hiddenstrength": 6,
+            "ignaciotheblackpriest": 1,
+            "lostincrowds": 3,
+            "miniontap": 3,
+            "obfuscate": 1,
+            "politicalhuntingground": 1,
+            "politicalstranglehold": 1,
+            "protectthineown": 3,
+            "reinsofpower": 1,
+            "scoutingmission": 2,
+            "seduction": 2,
+            "spyingmission": 1,
+            "swallowedbythenight": 1,
+            "uptownhuntingground": 1,
+            "visitfromthecapuchin": 2
+        },
+        "crypt": {
+            "Arika": 5,
+            "Banjoko": 1,
+            "Cameron": 1,
+            "Gratiano": 2,
+            "Guido Lucciano": 2,
+            "Ignacio, The Black Priest": 1
+        },
+        "description": "Bloodwork\nUmea, Sweden\nJanuary 18th 2004\n21 players\nErik Torstensson\n\nDeck Name: (she's got the) east side blues\nDescription: Doesn't like weenies or rushes, but when Arika performs\n4+ actions on her first turn, the table swings to your advantage.\nHidden strength is good vs Aid/Carrion, Trap, Grapple and can even be\nused offensivly in late game. Cloaks are good for stolen minions. PTO\nworked fine, but wasn't gamewinning. You can get votes by robbing\nother titles, if needed.",
+        "library": {
+            "Ancient Influence": 1,
+            "Baltimore Purge": 9,
+            "Barrens, The": 1,
+            "Cloak the Gathering": 5,
+            "Coven, The": 1,
+            "Distraction": 2,
+            "Dramatic Upheaval": 3,
+            "Dreams of the Sphinx": 2,
+            "Elder Impersonation": 1,
+            "Faceless Night": 1,
+            "Forgotten Labyrinth": 5,
+            "Fortitude": 1,
+            "Freak Drive": 13,
+            "Giant's Blood": 1,
+            "Golconda: Inner Peace": 1,
+            "Govern the Unaligned": 6,
+            "Graverobbing": 9,
+            "Hidden Strength": 6,
+            "Lost in Crowds": 3,
+            "Minion Tap": 3,
+            "Obfuscate": 1,
+            "Political Hunting Ground": 1,
+            "Political Stranglehold": 1,
+            "Protect Thine Own": 3,
+            "Reins of Power": 1,
+            "Scouting Mission": 2,
+            "Seduction": 2,
+            "Spying Mission": 1,
+            "Swallowed by the Night": 1,
+            "Uptown Hunting Ground": 1,
+            "Visit from the Capuchin": 2
+        },
+        "name": "(she's got the) east side blues"
+    },
+    {
+        "cards": {
             "armsoftheabyss": 8,
             "ayeleathemanipulator": 4,
             "blooddoll": 6,
@@ -83137,7 +84849,7 @@
             "University Hunting Ground": 1,
             "Zillah's Valley": 3
         },
-        "name": "  "
+        "name": "!Tremere with Obtenebration"
     },
     {
         "cards": {
@@ -83303,7 +85015,7 @@
             "Unflinching Persistence": 6,
             "Wake with Evening's Freshness": 6
         },
-        "name": "  Fortitude weenies of the world unite"
+        "name": "Fortitude weenies of the world unite"
     },
     {
         "cards": {
@@ -83373,7 +85085,7 @@
             "Scorn of Adonis": 3,
             "Toreador Justicar": 1
         },
-        "name": "  Cheesy Cheese"
+        "name": "Cheesy Cheese"
     },
     {
         "cards": {
@@ -83453,7 +85165,7 @@
             "Telepathic Misdirection": 4,
             "Wake with Evening's Freshness": 5
         },
-        "name": "  Hmmm"
+        "name": "Hmmm, Yeah, I'll Block That"
     },
     {
         "cards": {
@@ -83527,7 +85239,7 @@
             "Wake with Evening's Freshness": 5,
             "Zillah's Valley": 4
         },
-        "name": "  Might of the Camarilla"
+        "name": "Might of the Camarilla"
     },
     {
         "cards": {
@@ -83705,7 +85417,7 @@
             "Taste of Vitae": 6,
             "Telepathic Misdirection": 6
         },
-        "name": "  Anatole joins the Force"
+        "name": "Anatole joins the Force"
     },
     {
         "cards": {
@@ -83781,7 +85493,7 @@
             "Weighted Walking Stick": 5,
             "Zoo Hunting Ground": 1
         },
-        "name": "  Setites can kiss my ra"
+        "name": "Setites can kiss my ra"
     },
     {
         "cards": {
@@ -83869,7 +85581,7 @@
             "Walk of Flame": 1,
             "Wind Dance": 1
         },
-        "name": "Created Dominion v1"
+        "name": "Created Dominion v1.1"
     },
     {
         "cards": {
@@ -84299,7 +86011,7 @@
             "Swallowed by the Night": 1,
             "Wake with Evening's Freshness": 2
         },
-        "name": "The Lentil"
+        "name": "The Lentil-Eaters"
     },
     {
         "cards": {
@@ -84527,7 +86239,7 @@
             "Tribute to the Master": 6,
             "Undead Strength": 7
         },
-        "name": "  Brick in a sock"
+        "name": "Brick in a sock"
     },
     {
         "cards": {
@@ -84595,7 +86307,105 @@
             "Sudden Reversal": 5,
             "Wake with Evening's Freshness": 6
         },
-        "name": "Anarch Revolt "
+        "name": "Anarch Revolt (Mixed Clans)"
+    },
+    {
+        "cards": {
+            "abandoningtheflesh": 1,
+            "blessingofchaos": 1,
+            "blooddoll": 4,
+            "callthe": 2,
+            "changeoftarget": 2,
+            "confusion": 3,
+            "deny": 3,
+            "dolphinblack": 2,
+            "dreamsofthesphinx": 1,
+            "effectivemanagement": 1,
+            "elderimpersonation": 2,
+            "enchantedmarionette": 2,
+            "enhancedsenses": 3,
+            "eyesofchaos": 5,
+            "facelessnight": 2,
+            "forgottenlabyrinth": 1,
+            "hannibal": 1,
+            "hauntingthe": 1,
+            "hungrycoyotethe": 1,
+            "informationhighway": 1,
+            "institutionhuntingground": 1,
+            "kindredspirits": 8,
+            "kite": 3,
+            "korah": 2,
+            "lostincrowds": 4,
+            "madmansquill": 2,
+            "markedpath": 2,
+            "maskofathousandfaces": 2,
+            "melange": 1,
+            "miniontap": 3,
+            "obfuscate": 1,
+            "passion": 1,
+            "precognition": 1,
+            "realitymirror": 1,
+            "sacrificiallamb": 1,
+            "securehaven": 1,
+            "suddenreversal": 2,
+            "telepathicmisdirection": 5,
+            "theron": 1,
+            "totalinsanity": 2,
+            "unclegeorge": 1,
+            "vasantasena": 2,
+            "voiceofmadness": 9,
+            "wakewitheveningsfreshness": 7
+        },
+        "crypt": {
+            "Dolphin Black": 2,
+            "Hannibal": 1,
+            "Kite": 3,
+            "Korah": 2,
+            "Theron": 1,
+            "Uncle George": 1,
+            "Vasantasena": 2
+        },
+        "description": "On Hostile Ground\nBergen, Norway\nMay 3rd 2003\n12 players\n\u00d8yvind Monsen\n\nDeck Name: !Malkavian bleeders\nDescription: Stealth bleed with Wake/Voice of Madness defence.\nWinning deck in \"On hostile ground\"- tournament 2-3. May 2003\nhttp://home.no.net/oymo/decks/!Malkavian_Bleeders.html",
+        "library": {
+            "Abandoning the Flesh": 1,
+            "Blessing of Chaos": 1,
+            "Blood Doll": 4,
+            "Call, The": 2,
+            "Change of Target": 2,
+            "Confusion": 3,
+            "Deny": 3,
+            "Dreams of the Sphinx": 1,
+            "Effective Management": 1,
+            "Elder Impersonation": 2,
+            "Enchanted Marionette": 2,
+            "Enhanced Senses": 3,
+            "Eyes of Chaos": 5,
+            "Faceless Night": 2,
+            "Forgotten Labyrinth": 1,
+            "Haunting, The": 1,
+            "Hungry Coyote, The": 1,
+            "Information Highway": 1,
+            "Institution Hunting Ground": 1,
+            "Kindred Spirits": 8,
+            "Lost in Crowds": 4,
+            "Madman's Quill": 2,
+            "Marked Path": 2,
+            "Mask of a Thousand Faces": 2,
+            "Melange": 1,
+            "Minion Tap": 3,
+            "Obfuscate": 1,
+            "Passion": 1,
+            "Precognition": 1,
+            "Reality Mirror": 1,
+            "Sacrificial Lamb": 1,
+            "Secure Haven": 1,
+            "Sudden Reversal": 2,
+            "Telepathic Misdirection": 5,
+            "Total Insanity": 2,
+            "Voice of Madness": 9,
+            "Wake with Evening's Freshness": 7
+        },
+        "name": "!Malkavian bleeders"
     },
     {
         "cards": {
@@ -84829,7 +86639,7 @@
             "Swallowed by the Night": 4,
             "Voter Captivation": 11
         },
-        "name": "Lies and Obfuscations "
+        "name": "Lies and Obfuscations (aka Your Government)"
     },
     {
         "cards": {
@@ -84947,7 +86757,7 @@
             "Telepathic Misdirection": 2,
             "Wake with Evening's Freshness": 7
         },
-        "name": "  For Those About to Die"
+        "name": "For Those About to Die, We Salubri"
     },
     {
         "cards": {
@@ -85019,7 +86829,7 @@
             "Vengeance of Samiel": 11,
             "Wake with Evening's Freshness": 5
         },
-        "name": "Wakes with Righteous Vengeance"
+        "name": "Wakes with Righteous Vengeance!"
     },
     {
         "cards": {
@@ -85093,7 +86903,7 @@
             "Sudden Reversal": 6,
             "Wake with Evening's Freshness": 6
         },
-        "name": "Bleeding Me "
+        "name": "Bleeding Me - 1st Place Newark OH 3-15-03"
     },
     {
         "cards": {
@@ -85167,7 +86977,7 @@
             "Vagabond Mystic": 2,
             "Wake with Evening's Freshness": 4
         },
-        "name": "  Kitties"
+        "name": "Kitties"
     },
     {
         "cards": {
@@ -85347,7 +87157,7 @@
             "Tribute to the Master": 1,
             "Wake with Evening's Freshness": 5
         },
-        "name": "Lasombra evil shit"
+        "name": "Lasombra evil shit."
     },
     {
         "cards": {
@@ -85761,7 +87571,7 @@
             "Torn Signpost": 1,
             "Wake with Evening's Freshness": 5
         },
-        "name": "  Gratiano"
+        "name": "Gratiano's Egg Basket"
     },
     {
         "cards": {
@@ -85823,7 +87633,7 @@
             "Unwholesome Bond": 3,
             "Walk of Caine": 4
         },
-        "name": "  The Fratmen"
+        "name": "The Fratmen"
     },
     {
         "cards": {
@@ -85879,7 +87689,7 @@
             "Side Strike": 5,
             "Taste of Vitae": 5
         },
-        "name": "  Guns and Butter"
+        "name": "Guns and Butter"
     },
     {
         "cards": {
@@ -85945,7 +87755,7 @@
             "Swiftness of the Stag": 10,
             "Taste of Vitae": 4
         },
-        "name": "  Birds of Prey"
+        "name": "Birds of Prey"
     },
     {
         "cards": {
@@ -86047,7 +87857,7 @@
             "Telepathic Misdirection": 4,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Misty"
+        "name": "Misty's Malkavians"
     },
     {
         "cards": {
@@ -86127,7 +87937,7 @@
             "Venetian Conference": 4,
             "Wake with Evening's Freshness": 7
         },
-        "name": "  Yer Mom Don"
+        "name": "Yer Mom Don't Block"
     },
     {
         "cards": {
@@ -86253,7 +88063,7 @@
             "Thrown Gate": 6,
             "Undead Strength": 12
         },
-        "name": " Precognition Torrance deck"
+        "name": "Precognition Torrance deck"
     },
     {
         "cards": {
@@ -86365,7 +88175,7 @@
             "Wolf Claws": 4,
             "Zoo Hunting Ground": 1
         },
-        "name": "  15 Minutes of Fame"
+        "name": "15 Minutes of Fame"
     },
     {
         "cards": {
@@ -86447,7 +88257,7 @@
             "Temptation": 5,
             "Wake with Evening's Freshness": 6
         },
-        "name": "Settite Legal V3"
+        "name": "Settite Legal V3.0"
     },
     {
         "cards": {
@@ -86519,7 +88329,7 @@
             "Unflinching Persistence": 10,
             "Wake with Evening's Freshness": 5
         },
-        "name": "Tariq and his little brother Juan Cali goes out eating"
+        "name": "Tariq and his little brother Juan Cali goes out eating!"
     },
     {
         "cards": {
@@ -87071,7 +88881,7 @@
             "Threats": 2,
             "Wake with Evening's Freshness": 5
         },
-        "name": "Pekka"
+        "name": "Pekka-Giovanni"
     },
     {
         "cards": {
@@ -87183,7 +88993,7 @@
             "Week of Nightmares": 1,
             "Zip Gun": 4
         },
-        "name": "Of Ghastly Dreams "
+        "name": "Of Ghastly Dreams (best safety lies in fear)"
     },
     {
         "cards": {
@@ -87283,7 +89093,7 @@
             "Stone Travel": 1,
             "Sudden Reversal": 1
         },
-        "name": "Lots for Me"
+        "name": "Lots for Me, None for you!"
     },
     {
         "cards": {
@@ -87473,7 +89283,7 @@
             "Swallowed by the Night": 4,
             "Wake with Evening's Freshness": 2
         },
-        "name": "  Laurent the wannabe"
+        "name": "Laurent the wannabe-malk n his crew"
     },
     {
         "cards": {
@@ -87559,7 +89369,77 @@
             "War Ghoul": 1,
             "Wendell Delburton (Hunter)": 1
         },
-        "name": "  Omaya"
+        "name": "Omaya"
+    },
+    {
+        "cards": {
+            "aleph": 1,
+            "catacombs": 1,
+            "changeoftarget": 10,
+            "conditioning": 2,
+            "courtlandleighton": 1,
+            "deflection": 8,
+            "dominate": 9,
+            "embracethe": 4,
+            "fakeout": 8,
+            "foreshadowingdestruction": 1,
+            "francescagiovanni": 1,
+            "governtheunaligned": 12,
+            "humanitas": 1,
+            "ignaciotheblackpriest": 1,
+            "ignatius": 1,
+            "informationhighway": 4,
+            "laurentdevalois": 1,
+            "ohanna": 1,
+            "parthenonthe": 2,
+            "peterblaine": 1,
+            "ramiro": 1,
+            "rolandbishop": 1,
+            "royce": 1,
+            "sarahcobbler": 1,
+            "shanegrimald": 1,
+            "suddenreversal": 2,
+            "thelonius": 1,
+            "tributetothemaster": 4,
+            "violetteprentiss": 1,
+            "wakewitheveningsfreshness": 6
+        },
+        "crypt": {
+            "Aleph": 1,
+            "Courtland Leighton": 1,
+            "Francesca Giovanni": 1,
+            "Ignacio, The Black Priest": 1,
+            "Ignatius": 1,
+            "Laurent de Valois": 1,
+            "Ohanna": 1,
+            "Peter Blaine": 1,
+            "Ramiro": 1,
+            "Roland Bishop": 1,
+            "Royce": 1,
+            "Sarah Cobbler": 1,
+            "Shane Grimald": 1,
+            "Thelonius": 1,
+            "Violette Prentiss": 1
+        },
+        "description": "Tournament\nPortsmouth, England\nDecember 5th 2001\nRob Treasure\n\nDeck name: \"The smell of victory\"",
+        "library": {
+            "Catacombs": 1,
+            "Change of Target": 10,
+            "Conditioning": 2,
+            "Deflection": 8,
+            "Dominate": 9,
+            "Embrace, The": 4,
+            "Fake Out": 8,
+            "Foreshadowing Destruction": 1,
+            "Govern the Unaligned": 12,
+            "Humanitas": 1,
+            "Information Highway": 4,
+            "Parthenon, The": 2,
+            "Sudden Reversal": 2,
+            "Tribute to the Master": 4,
+            "Wake with Evening's Freshness": 6
+        },
+        "name": "\"The smell of victory\""
     },
     {
         "cards": {
@@ -87639,7 +89519,7 @@
             "Threats": 3,
             "Wake with Evening's Freshness": 7
         },
-        "name": "  Giovanni Power Bleed"
+        "name": "Giovanni Power Bleed"
     },
     {
         "cards": {
@@ -87973,7 +89853,7 @@
             "Vicissitude Poisoning": 1,
             "Violation of Trust": 1
         },
-        "name": "Jost"
+        "name": "Jost's Surprise"
     },
     {
         "cards": {
@@ -88067,7 +89947,7 @@
             "Telepathic Misdirection": 6,
             "Wake with Evening's Freshness": 6
         },
-        "name": "Pulse of the Canaille "
+        "name": "Pulse of the Canaille (!Malkavian)"
     },
     {
         "cards": {
@@ -88157,7 +90037,7 @@
             "Wake with Evening's Freshness": 6,
             "Wolf Claws": 2
         },
-        "name": "The pretentious art fags tear you a new one"
+        "name": "The pretentious art fags tear you a new one!"
     },
     {
         "cards": {
@@ -88333,7 +90213,7 @@
             "Vicissitude": 2,
             "War Ghoul": 1
         },
-        "name": " "
+        "name": "' I'll be your dog !'"
     },
     {
         "cards": {
@@ -88417,7 +90297,7 @@
             "Tribute to the Master": 4,
             "Wake with Evening's Freshness": 4
         },
-        "name": "Night Moves"
+        "name": "Night Moves, Spying Missions and Little Old Threats"
     },
     {
         "cards": {

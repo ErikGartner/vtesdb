@@ -104,13 +104,14 @@ def extract_deck(text, carddb):
         description += '%s\n' % line
 
         # Search for deck name
-        name_search = re.search(r'deck name\s?:\s([\w \t]*)', line, re.IGNORECASE)
+        name_search = re.search(r'deck name\s?:\s*([^\n]*)', line, re.IGNORECASE)
         if name_search:
             deck_name = name_search.group(1)
 
         line = lines.pop()
     description = description.strip()
 
+    deck_name = deck_name.strip()
 
     if deck_name == '':
         raise Exception("Deck name not found")
