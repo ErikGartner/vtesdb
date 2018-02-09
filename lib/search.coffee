@@ -108,4 +108,8 @@ selector_function = (searchObject, options, aggregation) ->
 @DeckIndex = new EasySearch.Index
   collection: Decks
   fields: ['name', 'description']
-  engine: new EasySearch.Minimongo()
+  engine: new EasySearch.MongoDB
+    selector: (searchObject, options, aggregation) ->
+      # Only return public decks or own decks
+      selector = @defaultConfiguration().selector searchObject, options, aggregation
+      return {$and: [{$or: [{public: true}, {owner: Meteor.userId()}]}, selector]}
