@@ -16,3 +16,9 @@ Template.deckResult.helpers
     return _.reduce(_.map(@cards, (v, k) -> return v), (v, m) ->
       return v + m
     , 0)
+
+  deckId: ->
+    if @__originalId?
+      return @__originalId
+    else
+      return @_id
