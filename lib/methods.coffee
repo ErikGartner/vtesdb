@@ -20,7 +20,7 @@ Meteor.methods
 
     if count > 0
       Inventories.upsert {
-        cardid: id
+        card_id: id
         owner: uid
       },
         count: count
