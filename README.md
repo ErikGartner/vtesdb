@@ -2,7 +2,7 @@ VTES Database
 =========
 *A meteor app that allows for searching among all cards in the collectible card game VtES.*
 
-The offical version of the app is hosted at [vtes.gartner.io](https://vtes.gartner.io), though note that the app is under active development and may be unstable. 
+The offical version of the app is hosted at [vtesdb.com](https://vtesdb.com), though note that the app is under active development and may be unstable. 
 
 ## Features
 
