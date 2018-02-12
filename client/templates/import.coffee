@@ -11,7 +11,7 @@ Template.import.helpers
     return ArdbInventory.find().count() - ArdbInventory.find(id:-1).count()
 
   isMatched: ->
-    return @id >= 0
+    return @id != -1 and @id != -2
 
   isLoading: ->
     return @id == -1

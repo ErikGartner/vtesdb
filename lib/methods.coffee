@@ -17,9 +17,10 @@ Meteor.methods
       return
     if !Meteor.call('validCard', id)
       throw new Meteor.Error('invalid card id')
+
     if count > 0
       Inventories.upsert {
-        card_id: id
+        cardid: id
         owner: uid
       },
         count: count
@@ -69,22 +70,24 @@ Meteor.methods
     if count < 0
       throw new Meteor.Error('negative-count')
 
+    console.log "#{uid} is importing their library."
+
     name = name.toLowerCase()
     if adv != ''
-      selector = 'norm_name': name, 'adv': adv
+      selector = norm_name: "#{name} (adv)"
     else
-      selector = 'norm_name': name
+      selector = norm_name: name
 
     card = Cards.findOne(selector)
     if not card?
-      return -1
+      return -2
     id = card.card_id
 
-    inv = Inventories.findOne {cardId: id, owner: uid}
+    inv = Inventories.findOne {card_id: id, owner: uid}
     if inv?
       Inventories.update {_id:inv._id}, {$inc: {count: count}}
     else
-      Inventories.insert {cardId: id, owner: uid, count: count}
+      Inventories.insert {card_id: id, owner: uid, count: count}
 
     return id
 
