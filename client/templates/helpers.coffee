@@ -26,7 +26,7 @@ Template.registerHelper 'buyLink', (cardName) ->
 
 Template.registerHelper 'inventoryStatus', (card_id) ->
 
-  card = Inventories.findOne(cardId: card_id)
+  card = Inventories.findOne(card_id: card_id)
   inventory = if card? then card.count else 0
 
   # Find active decks that use the card
@@ -35,11 +35,11 @@ Template.registerHelper 'inventoryStatus', (card_id) ->
   # Total the ammount used
   used = inDecks.map (doc) ->
     return doc.cards[card_id]
-  console.log used, inDecks.fetch()
+
   used = _.reduce(used, (memo, num) ->
     return memo + num
   , 0)
 
   missing = if used > inventory then used - inventory else false
   deckNames = inDecks.map (d) -> return {name: d.name, count: d.cards[card_id]}
-  return {inv: inventory, used: used, missing: missing, in_decks: deckNames}
+  return {card_id: card_id, inv: inventory, used: used, missing: missing, in_decks: deckNames}

@@ -34,11 +34,28 @@
           {{#each cryptItems}}
             <div class="item">
               <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
-                <img src="/thumbnails/{{card_id}}.jpg">
+
+                {{#with inventoryStatus card_id}}
+                  {{#if missing}}
+                  <div class="ui dimmable dimmed segment">
+                    <img src="/thumbnails/{{card_id}}.jpg">
+                    <div class="ui simple dimmer">
+                      <div class="content">
+                        <div class="center">
+                          {{missing}}
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  {{else}}
+                    <img src="/thumbnails/{{card_id}}.jpg">
+                  {{/if}}
+                {{/with}}
+
               </a>
               <div class="content">
                 <div class="header">
-                  {{deck_count}}x <a class="card-name">{{name}}</a>
+                  {{deck_count}}x <a class="card-name">{{name}} {{#with inventoryStatus}}{{missing}}{{/with}}</a>
                 </div>
                 <div class="description">
                   {{#each disciplines}}
@@ -58,7 +75,24 @@
               {{#each cards}}
                 <div class="item">
                   <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
-                    <img src="/thumbnails/{{card_id}}.jpg">
+
+                    {{#with inventoryStatus card_id}}
+                      {{#if missing}}
+                      <div class="ui dimmable dimmed segment">
+                        <img src="/thumbnails/{{card_id}}.jpg">
+                        <div class="ui simple dimmer">
+                          <div class="content">
+                            <div class="center">
+                              {{missing}}
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      {{else}}
+                        <img src="/thumbnails/{{card_id}}.jpg">
+                      {{/if}}
+                    {{/with}}
+
                   </a>
                   <div class="content">
                     <div class="header">
@@ -77,7 +111,6 @@
     </div>
 
   </div>
-
 </template>
 
 <template name="addDeck">
