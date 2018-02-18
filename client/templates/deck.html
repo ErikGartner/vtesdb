@@ -35,7 +35,7 @@
             <div class="item">
               <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
 
-                {{#with inventoryStatus card_id}}
+                {{#with deckCardStatus card_id}}
                   {{#if missing}}
                   <div class="ui dimmable dimmed segment">
                     <img src="/thumbnails/{{card_id}}.jpg">
@@ -55,7 +55,7 @@
               </a>
               <div class="content">
                 <div class="header">
-                  {{deck_count}}x <a class="card-name">{{name}} {{#with inventoryStatus}}{{missing}}{{/with}}</a>
+                  {{deck_count}}x <a class="card-name">{{name}}</a>
                 </div>
                 <div class="description">
                   {{#each disciplines}}
@@ -76,7 +76,7 @@
                 <div class="item">
                   <a href="{{pathFor route='searchCard' searchString=name}}" class="ui circular card-small image">
 
-                    {{#with inventoryStatus card_id}}
+                    {{#with deckCardStatus card_id}}
                       {{#if missing}}
                       <div class="ui dimmable dimmed segment">
                         <img src="/thumbnails/{{card_id}}.jpg">

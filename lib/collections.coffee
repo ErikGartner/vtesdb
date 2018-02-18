@@ -60,7 +60,7 @@ Decks.helpers
   library: ->
     items = _.map(@cards, (num, id) ->
       card = Cards.findOne(card_id: id)
-      if card?.type != 'Vampire' and card?.type != 'Imbued'
+      if card? and card?.type != 'Vampire' and card?.type != 'Imbued'
         card.deck_count = num
         return card
       else
@@ -73,7 +73,7 @@ Decks.helpers
   crypt: ->
     items = _.map(@cards, (num, id) ->
       card = Cards.findOne(card_id: id)
-      if card?.type == 'Vampire' or card?.type == 'Imbued'
+      if card? and card?.type == 'Vampire' or card?.type == 'Imbued'
         card.deck_count = num
         return card
       else

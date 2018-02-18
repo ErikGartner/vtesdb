@@ -32,7 +32,7 @@ Template.registerHelper 'inventoryStatus', (card_id) ->
   # Find active decks that use the card
   inDecks = Decks.find {owner: Meteor.userId(), active: true, "cards.#{card_id}": $gt: 0}
 
-  # Total the ammount used
+  # Total the amount used
   used = inDecks.map (doc) ->
     return doc.cards[card_id]
 
