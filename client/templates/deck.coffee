@@ -26,8 +26,9 @@ Template.deck.helpers
 
   deckCardStatus: (card_id) ->
 
-    card = Inventories.findOne(card_id: card_id)
-    inventory = if card? then card.count else 0
+    inv = Inventories.findOne owner: Meteor.userId()
+    card_count = inv?.cards[card_id]
+    inventory = if card_count? then card_count else 0
 
     deck_id =  Router.current().data()._id
 

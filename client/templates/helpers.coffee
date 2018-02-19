@@ -26,8 +26,9 @@ Template.registerHelper 'buyLink', (cardName) ->
 
 Template.registerHelper 'inventoryStatus', (card_id) ->
 
-  card = Inventories.findOne(card_id: card_id)
-  inventory = if card? then card.count else 0
+  inv = Inventories.findOne owner: Meteor.userId()
+  card_count = inv?.cards[card_id]
+  inventory = if card_count? then card_count else 0
 
   # Find active decks that use the card
   inDecks = Decks.find {owner: Meteor.userId(), active: true, "cards.#{card_id}": $gt: 0}

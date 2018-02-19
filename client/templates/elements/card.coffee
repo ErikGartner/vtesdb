@@ -1,8 +1,8 @@
 Template.card.helpers
   inventoryCount: ->
-    card = Inventories.findOne(card_id: @card_id)
-    if card?
-      return card.count
+    inv = Inventories.findOne owner: Meteor.userId()
+    if inv?
+      return if inv.cards[@card_id]? then inv.cards[@card_id] else 0
     else
       return 0
 

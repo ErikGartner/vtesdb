@@ -7,27 +7,30 @@ Meteor.methods
       # Client assums valid card_id. This allows for latency comp.
       return true
 
-  setInv: (id, count) ->
+  setInv: (card_id, count) ->
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
+
+    check card_id, String
     check count, Match.Integer
-    check id, String
+
     if count < 0
       return
-    if !Meteor.call('validCard', id)
-      throw new Meteor.Error('invalid card id')
 
-    if count > 0
-      Inventories.upsert {
-        card_id: id
-        owner: uid
-      },
-        count: count
-        card_id: id
-        owner: uid
+    inv = Inventories.findOne owner: uid
+
+    if Meteor.isServer
+      # Validate the card id but only on the server side
+      card = Cards.findOne card_id: card_id
+      if not card?
+        throw new Meteor.Error('invalid-card')
+
+    if count == 0
+      delete inv.cards[card_id]
     else
-      Inventories.remove card_id: id
+      inv.cards[card_id] = count
+    Inventories.update inv._id, $set: cards: inv.cards
     return
 
   setDeckCard: (card_id, deckId, count) ->
@@ -42,12 +45,10 @@ Meteor.methods
     if count < 0
       return
 
-    if not Meteor.isServer
-      return true
-
-    card = Cards.findOne(card_id: card_id)
-    if not card?
-      throw new Meteor.Error('invalid-card')
+    if Meteor.isServer
+      card = Cards.findOne(card_id: card_id)
+      if not card?
+        throw new Meteor.Error('invalid-card')
 
     deck = Decks.findOne(_id: deckId, owner: uid)
     if not deck?
@@ -64,13 +65,12 @@ Meteor.methods
     uid = Meteor.userId()
     if !uid
       throw new Meteor.Error('not-authorized')
+
     check name, String
     check adv, String
     check count, Match.Integer
     if count < 0
       throw new Meteor.Error('negative-count')
-
-    console.log "#{uid} is importing their library."
 
     name = name.toLowerCase()
     if adv != ''
@@ -78,18 +78,22 @@ Meteor.methods
     else
       selector = norm_name: name
 
-    card = Cards.findOne(selector)
-    if not card?
+    if Meteor.isClient
       return -2
-    id = card.card_id
 
-    inv = Inventories.findOne {card_id: id, owner: uid}
-    if inv?
-      Inventories.update {_id:inv._id}, {$inc: {count: count}}
-    else
-      Inventories.insert {card_id: id, owner: uid, count: count}
+    card = Cards.findOne selector
+    if not card?
+      return -1
 
-    return id
+    card_id = card.card_id
+
+    inv = Inventories.findOne owner: uid
+    inv = if inv? then inv else {owner: uid, cards: {}}
+
+    current_count = if inv.cards[card_id]? then inv.cards[card_id] else 0
+    inv.cards[card_id] = current_count + count
+    Inventories.upsert {owner: uid}, $set: cards: inv.cards
+    return card_id
 
   forkDeck: (deckId) ->
     uid = Meteor.userId()

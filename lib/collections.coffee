@@ -3,6 +3,24 @@
 @Decks = new Meteor.Collection 'decks'
 
 # Schemas
+InventorySchema = new SimpleSchema
+  owner:
+    type: String
+    label: 'Owner ID'
+    autoValue: ->
+      if @isInsert
+        return Meteor.userId()
+
+  cards:
+    type: Object
+    label: 'Cards'
+    optional: true
+    blackbox: true
+    defaultValue: ->
+      return {}
+
+#Inventories.attachSchema InventorySchema
+
 DeckSchema = new SimpleSchema
   name:
     type: String
