@@ -7,11 +7,13 @@ Meteor.startup ->
     return
 
   all_ids = _.map all_inv, (i) -> return i._id
-  Inventories.remove _id: $in: all_ids
 
   all_inv = _.groupBy all_inv, (c) -> return c.owner
   _.each all_inv, (val, key) ->
     cards = {}
     for v in val
-      cards[v.card_id] = v.count
+      old_val = if cards[v.card_id]? then cards[v.card_id] else 0
+      cards[v.card_id] = Math.max(old_val, v.count)
     Inventories.insert {owner: key, cards: cards}
+
+  Inventories.remove _id: $in: all_ids
