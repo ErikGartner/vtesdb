@@ -2,6 +2,17 @@
 @Inventories = new Meteor.Collection 'inventories'
 @Decks = new Meteor.Collection 'decks'
 
+Cards.deny(
+  insert: ->
+    return true
+
+  update: ->
+    return true
+
+  remove: ->
+    return true
+)
+
 # Schemas
 InventorySchema = new SimpleSchema
   owner:
@@ -19,7 +30,17 @@ InventorySchema = new SimpleSchema
     defaultValue: ->
       return {}
 
-#Inventories.attachSchema InventorySchema
+Inventories.attachSchema InventorySchema
+Inventories.allow(
+  insert: (userId, doc) ->
+    return userId
+
+  update: (userId, doc) ->
+    return userId == doc.owner
+
+  remove: (userId, doc) ->
+    return userId == doc.owner
+)
 
 DeckSchema = new SimpleSchema
   name:
