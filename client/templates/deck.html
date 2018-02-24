@@ -7,16 +7,20 @@
           {{name}}
 
           <span class="ui labels">
+            {{#if isOwner}}
             {{#if active}}
               <div class="ui green label">active</div>
             {{else}}
               <div class="ui label">inactive</div>
             {{/if}}
+            {{/if}}
             {{#if public}}<div class="ui blue label">public</div>{{/if}}
           </span>
 
           <i class="icons">
+            {{#if isOwner}}
             <a href={{pathFor 'decks.edit' _id}}><i class="edit link icon"></i></a>
+            {{/if}}
             <a class="right align" href={{pathFor 'deck.simulator' _id}}><i class="play link icon"></i></a>
             <a class="right align" id="forkButton"><i class="fork link icon"></i></a>
           </i>

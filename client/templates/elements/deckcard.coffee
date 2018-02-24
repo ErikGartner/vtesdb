@@ -8,6 +8,9 @@ Template.cardSearch.helpers
   inputAttributes: ->
     return {id: 'card-search-input'}
 
+Template.deckCard.onRendered ->
+  $('.card .image').dimmer(on: 'hover')
+
 Template.deckCard.events
 
   'submit .set-card': (event) ->
