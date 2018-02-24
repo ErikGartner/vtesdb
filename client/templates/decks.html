@@ -1,64 +1,75 @@
 <template name="decks">
 
-  <div class="ui doubling stackable grid">
-
-    <div class="twelve wide column">
-      <div class="fluid ui big icon input">
-        {{> EasySearch.Input index=DeckIndex placeholder="Search..." class="form-control" }}
-        <i class="search icon"></i>
-      </div>
-    </div>
-
-    <div class="four wide column">
-      <a class="ui big fluid green button" id="addDeckButton" href={{pathFor 'decks.add'}}>
-        Add
-      </a>
-    </div>
-
+  <div class="fluid ui big icon input">
+    {{> EasySearch.Input index=DeckIndex placeholder="Search..." class="form-control" }}
+    <i class="search icon"></i>
   </div>
 
-  <div class="ui container">
+  <div class="ui container" style="padding-top: 1em;">
 
-    <div class="ui three doubling stackable cards">
       {{#EasySearch.IfInputEmpty index=DeckIndex}}
+
+        <div class="ui link unstackable divided items">
         {{#each decks}}
           {{> deckResult}}
         {{/each}}
+        </div>
+
+        <div class="ui two column centered grid">
+          <div class="column">
+            <a class="ui big fluid green button" id="addDeckButton" href={{pathFor 'decks.add'}}>
+              Add
+            </a>
+          </div>
+        </div>
+
       {{else}}
+
+        <div class="ui link unstackable divided items">
         {{#EasySearch.Each index=DeckIndex}}
           {{> deckResult}}
         {{/EasySearch.Each}}
-      {{/EasySearch.IfInputEmpty}}
-    </div>
+        </div>
 
-    <div class="ui two column centered grid">
-      <div class="column">
-        {{> EasySearch.LoadMore index=DeckIndex attributes=loadMoreAttributes}}
-      </div>
-    </div>
+        <div class="ui three column centered grid">
+          <div class="column">
+            <a class="ui big fluid green button" id="addDeckButton" href={{pathFor 'decks.add'}}>
+              Add
+            </a>
+          </div>
+          <div class="column">
+            {{> EasySearch.LoadMore index=DeckIndex attributes=loadMoreAttributes}}
+          </div>
+        </div>
+
+      {{/EasySearch.IfInputEmpty}}
+
   </div>
 
 </template>
 
 <template name="deckResult">
-  <div class="ui card">
+
+  <div class="item">
+    <div class="ui small rounded image">
+      <img src="/thumbnails/{{deckImage}}.jpg" onerror="this.src='/cardback.jpg'">
+    </div>
     <div class="content">
-      <a class="header" href="{{pathFor "decks.view" _id=deckId }}">
-        {{name}}
-      </a>
+      <a class="header" href="{{pathFor "decks.view" _id=deckId }}">{{name}}</a>
       <div class="meta">
-        Cards: {{cardCount}}
+        <span>Cards: {{cardCount}}</span>
       </div>
       <div class="description">
         <p>{{description}}</p>
       </div>
-    </div>
-    <div class="extra content">
-      {{#if active}}
-        <div class="ui green horizontal label">active</div>
-      {{else}}
-        <div class="ui horizontal label">inactive</div>
-      {{/if}}
+      <div class="extra">
+        {{#if active}}
+          <div class="ui green horizontal label">active</div>
+        {{else}}
+          <div class="ui horizontal label">inactive</div>
+        {{/if}}
+      </div>
     </div>
   </div>
+
 </template>

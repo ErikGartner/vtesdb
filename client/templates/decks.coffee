@@ -22,3 +22,8 @@ Template.deckResult.helpers
       return @__originalId
     else
       return @_id
+
+  deckImage: ->
+    # Picks the most common card in the deck as the image
+    cards = _.sortBy _.pairs(@cards), (c) -> return c[1]
+    return _.last(cards)[0]

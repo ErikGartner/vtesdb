@@ -1,0 +1,35 @@
+<template name="inventory">
+
+  <table class="ui padded table">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Have</th>
+        <th>Matched</th>
+      </tr>
+    </thead>
+
+    <tbody>
+
+      {{#each card}}
+        <tr>
+            <td> {{name}} </td>
+            <td> {{have}} </td>
+            <td>
+              {{#if isMatched }}
+                <i class="green checkmark icon"></i>
+              {{else}}
+                {{#if isLoading}}
+                  <div class="ui active small inline loader"></div>
+                {{else}}
+                  <i class="red remove icon"></i>
+                {{/if}}
+              {{/if}}
+            </td>
+        </tr>
+      {{/each}}
+
+    </tbody>
+  </table>
+
+</template>

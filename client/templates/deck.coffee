@@ -24,6 +24,9 @@ Template.deck.helpers
     p = Decks.findOne @parent
     return p.name
 
+  isOwner: ->
+    return @owner == Meteor.userId()
+
   deckCardStatus: (card_id) ->
 
     inv = Inventories.findOne owner: Meteor.userId()
