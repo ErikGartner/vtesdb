@@ -2,7 +2,7 @@ Meteor.publish 'inventory', ->
   Inventories.find owner: @userId
 
 Meteor.publish 'privateDecks', ->
-  return Decks.find {owner: @userId}
+  return Decks.find {owner: @userId}, {sort: name: 1}
 
 # Get all data associated with a public or owned deck
 Meteor.publishComposite 'deck', (deckId) ->
