@@ -27,8 +27,7 @@ InventorySchema = new SimpleSchema
     label: 'Cards'
     optional: true
     blackbox: true
-    defaultValue: ->
-      return {}
+    defaultValue: {}
 
 Inventories.attachSchema InventorySchema
 Inventories.allow(
@@ -69,8 +68,7 @@ DeckSchema = new SimpleSchema
     label: 'Cards'
     optional: true
     blackbox: true
-    defaultValue: ->
-      return {}
+    defaultValue: {}
 
   parent:
     type: String
