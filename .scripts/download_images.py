@@ -27,8 +27,12 @@ def download(args):
 
     # Use legacy card id if different for current id
     new_card_id = filename.replace('.jpg', '')
-    filename = cards[new_card_id]['card_id'] + '.jpg'
 
+    if new_card_id not in cards:
+        print('Card missing in card list: %s' % url)
+        return
+
+    filename = cards[new_card_id]['card_id'] + '.jpg'
     path = 'downloads/%s' % filename
     with open(path, 'wb') as f:
         print('Writing %s to %s' % (url, path))
