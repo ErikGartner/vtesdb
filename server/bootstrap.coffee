@@ -13,16 +13,16 @@ Meteor.startup ->
       Cards.update {card_id: rule['id']}, {$set: {rulings: rule['rulings']}}
     console.log 'Done!'
 
-    Decks.remove {owner: 'TWD'}
-    console.log 'Reading TWDs'
-    decks = JSON.parse(Assets.getText('twds.json'))
-    for deck in decks
-      Decks.insert {
-        name: deck['name']
-        cards: deck['cards']
-        owner: 'TWD'
-        description: deck['description']
-        public: true
-        active: false
-      }, {bypassCollection2: true}
-    console.log 'Done!'
+    # Decks.remove {owner: 'TWD'}
+    # console.log 'Reading TWDs'
+    # decks = JSON.parse(Assets.getText('twds.json'))
+    # for deck in decks
+    #   Decks.insert {
+    #     name: deck['name']
+    #     cards: deck['cards']
+    #     owner: 'TWD'
+    #     description: deck['description']
+    #     public: true
+    #     active: false
+    #   }, {bypassCollection2: true}
+    # console.log 'Done!'
