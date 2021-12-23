@@ -1,4 +1,5 @@
-import { ReactiveVar } from 'meteor/reactive-var'
+# import { ReactiveVar } from 'meteor/reactive-var'
+ReactiveVar = require('meteor/reactive-var').ReactiveVar
 
 @simCrypt = ReactiveVar([])
 @cryptSize = ReactiveVar(3)

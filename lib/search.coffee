@@ -1,4 +1,5 @@
-import EasyQuery from 'easy-query-dsl'
+# import EasyQuery from 'easy-query-dsl'
+EasyQuery = require('easy-query-dsl').default
 
 selector_function = (searchObject, options, aggregation) ->
   eq = new EasyQuery({
